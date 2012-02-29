@@ -1,0 +1,239 @@
+<?php
+class Admin_branch_model extends Model 
+{
+	
+	function Admin_branch_model()
+	{
+		parent::Model();
+	}
+	
+	 
+	
+	function add_branch($val) 
+	{
+     extract($val);
+	 //echo $fcode;
+
+    if($bcode=="")
+	echo "Branch Code required.";
+	else
+	 if($bname=="")
+	echo "Firm Name required.";
+	else
+	 if($bcname=="")
+	echo "Contact Person Name required.";
+	else
+	if($bmobile=="")
+	echo "Mobile Number required.";
+	else
+	if($bphone=="")
+	echo "Land Phone Number required.";
+	else
+	if($bstreet1=="")
+	echo "Address required.";
+	else
+	if($bcity=="")
+	echo "City required.";
+	else
+	if($bstate=="")
+	echo "State required.";
+	else
+	if($bpincode=="")
+	echo "Pincode required.";
+	else
+	if($buser=="")
+	echo "User Name required.";
+	else
+	if($bpass=="")
+	echo "Password required.";
+	else
+	{
+	$res_exist=mysql_query("select *from tbl_login where username='".$buser."'");
+	$res_exist2=mysql_query("select *from tbl_branches where branchname='".$bname."'");
+	$res_exist3=mysql_query("select *from tbl_branches where branchcode='".$bcode."'");
+	$res_exist4=mysql_query("select *from tbl_distributors where dname='".$bname."'");
+	if(mysql_num_rows($res_exist3)==1)
+	echo "Branch code already Exists.";
+	else
+	if(mysql_num_rows($res_exist)==1)
+	echo "Username already Exists.";
+	else 
+	if(mysql_num_rows($res_exist2)==1)
+	echo "Branch name already Exists.";
+	else
+	if(mysql_num_rows($res_exist4)==1)
+	echo "Name already Exists.";
+	else
+	{
+	mysql_query("insert into tbl_login(username,password,type) values('".$buser."','".$bpass."','Branch')");
+	mysql_query("insert into tbl_branches(branchcode,name,mobile,phone,street1,street2,city,state,username,password,tinnumber,pincode,branchname,ecc,cst) values('".$bcode."','".$bcname."','".$bmobile."','".$bphone."','".$bstreet1."','".$bstreet2."','".$bcity."','".$bstate."','".$buser."','".$bpass."','".$btin."','".$bpincode."','".$bname."','".$becc."','".$bcst."')");
+	//echo "insert into tbl_branches(branchcode,name,mobile,phone,street1,street2,city,state,username,password,tinnumber,pincode,branchname) values('".$bcode."','".$bcname."','".$bmobile."','".$bphone."','".$bstreet1."','".$bstreet2."','".$bcity."','".$bstate."','".$buser."','".$bpass."','".$btin."','".$bpincode."','".$bname."')";
+	echo "Branch Registered Successfully.";
+	}
+	}
+	}
+	
+	
+	function edit_branch($val) 
+	{
+     extract($val);
+	 //echo $fcode;
+
+    
+	/* if($bname=="")
+	echo "Firm Name required.";
+	else*/
+	 if($bcname=="")
+	echo "Contact Person Name required.";
+	else
+	if($bmobile=="")
+	echo "Mobile Number required.";
+	else
+	if($bphone=="")
+	echo "Land Phone Number required.";
+	else
+	if($bstreet1=="")
+	echo "Address required.";
+	else
+	if($bcity=="")
+	echo "City required.";
+	else
+	if($bstate=="")
+	echo "State required.";
+	else
+	if($bpincode=="")
+	echo "Pincode required.";
+	
+	else
+	//echo "update tbl_branches set name='".$bcname."',mobile='".$bmobile."',phone='".$bphone."',street1='".$bstreet1."',street2='".$bstreet2."',city='".$bcity."',state='".$bstate."',tinnumber='".$btin."',pincode='".$bpincode."',branchname='".$bname."' where id=".$bid;
+	
+	mysql_query("update tbl_branches set name='".$bcname."',mobile='".$bmobile."',phone='".$bphone."',street1='".$bstreet1."',street2='".$bstreet2."',city='".$bcity."',state='".$bstate."',tinnumber='".$btin."',pincode='".$bpincode."',username='".$busername."',password='".$bpassword."',ecc='".$becc."',cst='".$bcst."' where id=".$bid);
+	//echo "insert into tbl_branches(branchcode,name,mobile,phone,street1,street2,city,state,username,password,tinnumber,pincode,branchname) values('".$bcode."','".$bcname."','".$bmobile."','".$bphone."','".$bstreet1."','".$bstreet2."','".$bcity."','".$bstate."','".$buser."','".$bpass."','".$btin."','".$bpincode."','".$bname."')";
+	echo "Branch Updated Successfully.";
+
+	}
+
+	
+function delete_branch($val)	
+{
+
+
+mysql_query("delete from tbl_branches where id=".$val);
+
+echo "Branch Deleted Successfully.";
+} 
+	 	
+
+
+function add_distributor($val) 
+	{
+     extract($val);
+	if($customertype=='Select Type')
+	echo "Please select Customer Type.";
+	else
+	if($dcode=="")
+	echo "Distributor Code required.";
+	else
+	 if($dname=="")
+	echo "Firm Name required.";
+	else
+	 if($dcname=="")
+	echo "Contact Person Name required.";
+	else
+	if($dmobile=="")
+	echo "Mobile Number required.";
+	else
+	if($dphone=="")
+	echo "Land Phone Number required.";
+	else
+	if($dstreet1=="")
+	echo "Address required.";
+	else
+	if($dcity=="")
+	echo "City required.";
+	else
+	if($dstate=="")
+	echo "State required.";
+	else
+	if($dpincode=="")
+	echo "Pincode required.";
+	else
+/*	if($duser=="")
+	echo "User Name required.";
+	else
+	if($dpass=="")
+	echo "Password required.";
+	else*/
+	{
+	$res_exist=mysql_query("select *from tbl_distributors where dcode='".$dcode."'");
+	$res_exist2=mysql_query("select *from tbl_distributors where dname='".$dname."'");
+	$res_exist3=mysql_query("select *from tbl_branches where branchname='".$dname."'");
+	if(mysql_num_rows($res_exist)==1)
+	echo "Customer code already Exists.";
+	else 
+	if(mysql_num_rows($res_exist2)==1)
+	echo "Customer name already Exists.";
+	else
+	if(mysql_num_rows($res_exist3)==1)
+	echo "Name already Exists.";
+	else
+	{
+	//mysql_query("insert into tbl_login(username,password,type) values('".$duser."','".$dpass."','Distributor')");
+	mysql_query("insert into tbl_distributors(dcode,name,mobile,phone,street1,street2,city,state,tinnumber,pincode,dname,ecc,cst,customertype) values('".$dcode."','".$dcname."','".$dmobile."','".$dphone."','".$dstreet1."','".$dstreet2."','".$dcity."','".$dstate."','".$dtin."','".$dpincode."','".$dname."','".$decc."','".$dcst."','".$customertype."')");
+	//echo "insert into tbl_branches(branchcode,name,mobile,phone,street1,street2,city,state,username,password,tinnumber,pincode,branchname) values('".$bcode."','".$bcname."','".$bmobile."','".$bphone."','".$bstreet1."','".$bstreet2."','".$bcity."','".$bstate."','".$buser."','".$bpass."','".$btin."','".$bpincode."','".$bname."')";
+	echo "Customer Registered Successfully.";
+	}
+	}
+}	 
+	 
+	 
+	 
+	 function edit_distributor($val) 
+	{
+     extract($val);
+	 //echo $dcode;
+
+    
+	  if($dcode=="")
+	echo "Distributor Code required.";
+	else
+	/* if($dname=="")
+	echo "Firm Name required.";
+	else*/
+	 if($dcname=="")
+	echo "Contact Person Name required.";
+	else
+	if($dmobile=="")
+	echo "Mobile Number required.";
+	else
+	if($dphone=="")
+	echo "Land Phone Number required.";
+	else
+	if($dstreet1=="")
+	echo "Address required.";
+	else
+	if($dcity=="")
+	echo "City required.";
+	else
+	if($dstate=="")
+	echo "State required.";
+	else
+	if($dpincode=="")
+	echo "Pincode required.";
+	
+	else{
+//	echo "update tbl_distributors set name='".$dcname."',mobile='".$dmobile."',phone='".$dphone."',street1='".$dstreet1."',street2='".$dstreet2."',city='".$dcity."',state='".$dstate."',tinnumber='".$dtin."',pincode='".$dpincode."',dname='".$dname."' where id='".$bid."'";
+	$str=mysql_query("update tbl_distributors set name='".$dcname."',mobile='".$dmobile."',phone='".$dphone."',street1='".$dstreet1."',street2='".$dstreet2."',city='".$dcity."',state='".$dstate."',tinnumber='".$dtin."',ecc='".$decc."',cst='".$dcst."',pincode='".$dpincode."',customertype='".$dtype."' where id=".$bid);
+	if($str>0){	echo "Distributor Updated Successfully.";}
+		}
+	}
+	
+	
+function delete_distributor($val)	
+{
+mysql_query("delete from tbl_distributors where id=".$val);
+echo "Distributor Deleted Successfully.";
+} 
+	 
+}
+?>

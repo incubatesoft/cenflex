@@ -1,0 +1,248 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	background: #d3d3d3;
+}
+.app{
+	color: #565656;
+	min-width: 1000px;
+	min-height: 500px; /*650*/
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+}
+.app a{
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
+.app form{
+	margin: 0;
+	padding: 0;
+}
+.app .contentarea, .app .controlbar, .app .header{
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+
+.app .header{
+	top: 0;
+}
+.app .contentarea{
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+}
+.app .controlbar{
+	border-top: 1px solid #f0f0f0;
+	bottom: 0;
+	height: 30px;
+	background-color: #dfe1e3;
+}
+/*Application Header*/
+.app.header_true > .contentarea{
+	top: 45px;
+}
+/*Application Control bar*/
+.app.controlbar_true > .contentarea{
+	bottom: 31px;
+	border-bottom: 1px solid #aaa;
+}
+
+/*When Left Content is fixed*/
+.app .contentarea.leftcontent_true > .contentarea.left_content{
+	left: 0;
+	right: auto;
+	/*background: #e0e0e0;*/
+	background-color: #dfe1e3;
+	width: 210px;
+	border-right: 1px solid #bcc2c7;
+}
+.app .contentarea.leftcontent_true > .contentarea.right_content{
+	right: 0;
+	left: 211px;
+}
+
+/*When Right Content is Fixed*/
+
+.app .contentarea.rightcontent_true > .contentarea.left_content{
+	left: 0;
+	right: 211px;
+}
+.app .contentarea.rightcontent_true > .contentarea.right_content{
+	right: 0;
+	left: auto;
+	width: 210px;
+	border-left: 1px solid #aaa;
+}
+
+/*When Right and Left Content are Fixed*/
+.app .contentarea.leftrightcontent_true > .contentarea.left_content{
+	left: 0;
+	right: auto;
+	width: 210px;
+	border-right: 1px solid #aaa;
+}
+.app .contentarea.leftrightcontent_true > .contentarea.center_content{
+	left: 211px;
+	right: 211px;
+}
+.app .contentarea.leftrightcontent_true > .contentarea.right_content{
+	right: 0;
+	left: auto;
+	width: 210px;
+	border-left: 1px solid #aaa;
+}
+
+/*When Left and Right is 50%*/
+.app .contentarea.leftright50_true > .contentarea.left_content{
+	left: 0;
+	right: 50%;
+	border-right: 1px solid #aaa;
+}
+
+.app .contentarea.leftright50_true > .contentarea.right_content{
+	right: 0;
+	left: 50%;
+	border-left: 1px solid #eee;
+}
+
+
+/*Each Contentarea when Header is true*/
+.app .contentarea.header_true > .contentarea{
+	top: 31px;
+}
+/*Each Contentarea when Controlbar is true*/
+.app .contentarea.controlbar_true > .contentarea{
+	bottom: 31px;
+	border-bottom: 1px solid #aaa;
+}
+
+
+/*Search bar styles*/
+.app #search_bar{
+	position: absolute;
+	/*float: right;*/
+	width: 180px;
+	height: 20px;
+	top: 4px;
+	right: 8px;
+}
+.app #search_bar .search_left{
+	position: absolute;
+	top: 0;
+	width: 16px;
+	left: 0;
+	height: 20px;
+	background: url(images/controls.png) no-repeat left -5753px;
+}
+.app #search_bar input.search{
+	background: url(images/controls.png) repeat-x 0 -5777px;
+	border: none;
+	color: #111;
+	left: 16px;
+	top: 0;
+	height: 17px;
+	position: absolute;
+	width: 138px;
+	font-size:12px;
+	line-height: 13px;
+	padding: 3px 10px 0 2px;
+	outline: none;
+	margin: 0;
+}
+.app #search_bar input.blur, .app input.blur{
+	color: #888;
+}
+.app #search_bar .search_right{
+	width: 12px;
+	height: 20px;
+	left:164px;
+	top: 0;
+	position: absolute;
+	display: block;
+	background: url(images/controls.png) no-repeat right -5801px;
+}
+.app #search_bar .clear_search{
+	background: url(images/mail_assets.png) no-repeat -48px -240px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 8px;
+	top: 2px;
+	display: none;
+}
+.app #search_bar .clear_search:hover{
+	background-position: -48px -208px;
+}
+.app #search_bar.widesearch{
+	width: 380px;
+}
+.app #search_bar.widesearch input.search{
+	width: 342px;
+	margin: 0;
+}
+.app #search_bar.widesearch .search_right{
+	right: 0;
+	left: auto;
+}
+.app #search_bar.widesearch .clear_search{
+	right: 4px;
+}
+
+
+/*3 Cols layout*/
+.app .three_cols{
+	border-right: none;
+	position: relative;
+	height:192px; 
+	overflow:hidden;
+	min-width: 760px;
+}
+.app .three_cols > div{
+	float: left;
+	width: 33%;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+}
+.app .three_cols > .left_content{
+	background: #ffe8e5;
+	border-left: 1px solid #bbb;
+}
+.app .three_cols > .center_content{
+	background: #feffe5;
+}
+.app .three_cols > .right_content{
+	background: #e5ffe7;
+	border-right: 1px solid #bbb;
+}
+.app .three_cols > div > .col_area{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #bbb;
+	height: 190px;
+	overflow:auto;
+	margin: 0;
+}
+.app .three_cols > .right_content > .col_area{
+	border-right-color:#fff ;
+}
+
+
+/* @group Hack for ie7 */
+.app .contentarea.controlbar_true, 
+.app .contentarea.header_true, 
+.app .contentarea.leftcontent_true, 
+.app .contentarea.rightcontent_true, 
+.app .contantarea.leftrightcontent_true{
+	overflow: hidden;
+}
+/* @end */
+
+/*Hide every section in the app*/
+.app .section{
+	display: none;
+}
+
+
+
+

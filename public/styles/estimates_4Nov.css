@@ -1,0 +1,321 @@
+/* *********
+	author: EnterPI
+	Date Created: 20 Sept, 2009
+	Content: estimates styles.
+********* */
+/*start: skelton layout*/
+
+.app ul.cols_3{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	clear: left;
+	min-height: 32px;
+}
+.app ul.cols_3 li{
+	float: left;
+	width: 240px;
+	padding: 8px 15px 8px 5px;
+	_background: #92a2c0;
+	min-height: 16px;
+	overflow: hidden;
+	border-top: 1px dotted transparent;
+}
+.app ul.cols_3 li.s_2{
+	width: 500px;
+}
+.app ul.cols_3 li.s_3{
+	width: 760px;
+	margin: 0;
+}
+.app .estimates_section ul.cols_3 li > label{
+	display: inline-block;
+	zoom: 1;
+	width: 122px;
+	text-transform: capitalize;
+	border: 1px dotted transparent;
+}
+.app ul.cols_3 li > span.r_o{
+	border-bottom: 1px dotted #cdcdcd;
+	display: inline-block;
+	zoom: 1;
+}
+.app input[type="text"].cost{
+	_background: #fff url(images/dollar_bg.png) no-repeat 0 -4px;
+	_padding-left: 16px;
+	border: 1px solid #9d9d9d;
+	text-align: right;
+}
+.app input[type="text"].percentage{
+	_background: #fff url(images/percent_bg.png) no-repeat 100% -4px;
+	_padding-right: 16px;
+	border: 1px solid #9d9d9d;
+	text-align: right;
+}
+.app input[type="text"].rmb{
+	background: #fff url(images/rmb_bg.png) no-repeat 0 -4px;
+	padding-left: 35px;
+	border: 1px solid #9d9d9d;
+	text-align: right;
+	width: 70px;
+	
+}
+
+.app ul.cols_3 li.cost_area input[type="text"]{
+	width: 80px;
+	_float: right;
+}
+
+.app .section .focus input[type="text"].cost{
+	background-position: 0 -4px;
+}
+.app .section .focus input[type="text"].percentage{
+	background-position: 100% -4px;
+}
+.app .section .focus input[type="text"].rmb{
+	background-position: 0 -4px;
+}
+/*end: skelton layout*/
+
+
+/*vendor specific*/
+.app .vendor_section, .app .default_estimates{
+	margin: 10px 0 16px;
+}
+.app .vendor_section{
+	border: 1px solid #e0e0e0;
+	width: 640px;
+	background: #f2f2f2;
+	position: relative;
+}
+.app .default_estimates{
+	border: 1px solid #cfd0d5;
+	width: 780px;
+	background: #f0f1f6;
+}
+.app .readonly .vendor_section ul.cols_3 li{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e3e3e3;
+	height: 16px;
+}
+.app .editmode .vendor_section ul.cols_3{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e3e3e3;
+}
+.app .editmode .vendor_section ul.cols_3 li{
+	padding: 8px 15px 8px 5px;
+	min-height: 16px;
+	border-top: 0 none;
+	border-bottom: 0 none;
+	height: auto;
+}
+.app .editmode .vendor_section ul.cols_3.footer_row li{
+	padding: 8px 15px 8px 5px;
+}
+
+.app .editmode .default_estimates ul.cols_3.other{
+	height: 72px;
+}
+.app .editmode .default_estimates ul.cols_3.other li{
+	height: 56px;;
+}
+.app .editmode .default_estimates ul.cols_3.other li > label{
+	float: left;
+}
+
+.app .default_estimates li{
+	height: auto;
+	overflow: visible;
+	
+}
+.app .vendor_txt{
+	width: 90px;
+}
+.app ul.cols_3 li.v_est_l, .app ul.cols_3 li.v_est_f{
+	width: 100px;
+}
+
+/*.app ul.cols_3 li.cost_area{
+	background-color: #f5fff5; 
+}*/
+.app ul.cols_3 li.cost_area > label{
+	width: auto;
+	float: left;
+}
+.app .editmode ul.cols_3 li.cost_area > label{
+	width: 122px;
+	margin-top: 2px;
+}
+
+.app ul.cols_3 li.cost_area > span{
+	float: right;
+}
+
+
+.app ul.cols_3.footer_row{
+	background: #eeeeee url(images/footer_bg.png) repeat-x 0 100%;
+}
+.app ul.cols_3.footer_row li{
+	border-bottom-color: #cbcbcb;
+}
+
+.app ul.cols_3 li img.add_v_est, ul.cols_3 li img.rem_v_est{
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	cursor: default;
+}
+.app ul.cols_3 li.v_est_l, .app ul.cols_3 li.cost_area{
+	background: url(images/brdr_l_v.png) repeat-y 0 0;
+}
+.app ul.cols_3 li.s_2 > label.long{
+	width: 300px;
+}
+.app ul.cols_3 > li .small_fnt{
+	font-size: 11px;
+	text-shadow: 0 1px 0 #fff;
+	margin-right: 10px;
+}
+.app ul.cols_3 li.s_2 > span.r_o.vendor_cst_total, .app ul.cols_3 li.s_2 > input[type="text"].r_o{
+	width: 100px;
+	margin-right: 16px;
+	font-weight: bold;
+}
+.app ul.cols_3 li.s_2 > input[type="text"].r_o{
+	width: 94px;
+	_margin-right: 22px;
+	_margin-right: 14px;
+	_margin-right: 29px;
+	margin-right: 25px;
+	margin-left: 4px;
+	
+	
+}
+.app ul.cols_3 li.s_2 > .yen_sym{
+	position: relative;
+	_left: -9px;
+	_left: -24px;
+	left: 7px;
+}
+.app ul.cols_3 li.s_2 > input[type="text"].r_o{
+	background: url(images/footer_bg.png) repeat-x scroll 0 -8px;
+	border: 0 none;
+	text-align: right;
+}
+/*.app .editmode ul.cols_3 li.s_2 > span.r_o.vendor_cst_total{
+	width: 104px;
+}*/
+.app .vendor_section .total_cost > label, .app .vendor_section .total_cost > input.vendor_txt{
+	text-align: right;
+}
+.app .vendor_section .total_cost > span{
+	float: right;
+	margin-right: 16px;
+	zoom: 1;
+}
+
+.app .estimates_section h4{
+	margin-top: 30px;
+}
+.app .vendor_section .total_cost{
+	position: relative;
+}
+.app .editmode .estimates_section .vendor_section ul.cols_3 li.total_cost > label{
+	background: url(images/controls.png) no-repeat 100% -6046px;
+	padding-right: 9px;
+	margin-right: 4px;
+	width: 60px;
+	_margin-left: 49px;
+	margin-left: 34px;	
+	border: 1px solid transparent;
+}
+.app .editmode .estimates_section .vendor_section ul.cols_3 li:hover.total_cost > label{
+	border: 1px solid #c9c9c9;	
+	background-color: #eaebee;
+}
+.app .hdn_v_cost{
+	left: 39px;
+	opacity: 0;
+	position: absolute;
+	top: 8px;
+	width: 70px;
+	filter: Alpha(opacity=0);
+}
+.app .estimates_other{
+	width: 346px;
+	height: 50px;
+}
+.app .estimates_section > ul.twoCols > li .smalTxtB[name="rfqEst_exchangeRate"]{
+	_width: 66px;
+	text-align: right;
+	margin-right: 12px;
+}
+.app .vendor_section li.vendor_id_rel{
+	position: relative;
+}
+#preview_estimate_window{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	width: auto;
+	height: auto;
+}
+
+.app ul.cols_3 li > span.r_o.est_qty {
+	color: #369;
+	text-shadow: 0 1px 0 #f8f9fb;
+	font-weight: bold;
+	border-bottom: 1px dotted #ffffff;
+	font-size: 16px;
+	line-height: 13px;
+}
+
+.app .opt_est_qty{
+	color: #999;
+	font-size: 16px;
+	font-weight: normal;
+}
+.app .qty_empty_msg{
+	background:#FFFDEC url(images/controls.png) no-repeat scroll 14px -5652px;
+	border: 1px solid #f0e2d0;
+	font-size: 16px;
+	color: #3a3a3a;
+	text-shadow: 0 1px 0 #e7e0b1;
+	padding: 10px 10px 10px 40px;
+	margin: 10px;
+	width: 700px;
+}
+
+
+
+.app .cust_save_box{
+	padding: 10px;
+	border: 1px solid #90969b;
+	background: #efefef;
+	left: 50%;
+	margin-left: -200px;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	width: 400px;
+	margin-top: -20px;
+	text-align: center;
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.app .cust_save_box .load_msg{
+	background: url(images/spinner.gif) no-repeat 0 center;
+	padding: 10px 32px; 
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+.app .growlUI_hdr .opt_est_qty{
+	display: block;
+}

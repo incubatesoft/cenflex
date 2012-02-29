@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/************@options icons and option info@***************/
+/*.app ul.inner_revision{
+	height:64px;
+    margin-left: 180px;
+    z-index:100;	
+}
+.app ul.inner_revision li{	
+    background:transparent url(images/.png) no-repeat scroll 0 0;
+    border:1px solid transparent;
+	float:left;
+	height:56px;
+	margin-right:60px;
+	margin-top: 20px;
+	position:relative;
+	text-shadow:0 1px 0 #FFFFFF;
+	width:52px;
+}
+.app ul.inner_revision li.rev_paper_1.opt_greendollar{
+	background: url(images/revision_sprite.png) no-repeat 0 -293px;
+}
+.app ul.inner_revision li.rev_paper_2.opt_approve{
+	background: url(images/revision_sprite.png) no-repeat 0 -206px;
+}
+.app ul.inner_revision li.rev_paper_3.opt_approve{
+	background: url(images/revision_sprite.png) no-repeat 0 -206px;
+}
+.app ul.inner_revision li label{
+	color:#666666;
+	font-size:14px;
+	font-weight:bold;
+	position:absolute;
+	text-align:center;
+	width:60px;*/
+	/*left: -6px;*/
+/*	top: 60px;
+}*/
+
+/**********************@end@*******************************/
+
+/***********@styles for show_info@****************/

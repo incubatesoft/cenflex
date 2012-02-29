@@ -1,0 +1,234 @@
+/* Default style sheet for jQuery date picker v3.7.5. */
+#datepick-div, .datepick-inline {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	background: #ddd;
+	color: #ccc;
+	width: 15em;
+}
+#datepick-div {
+	display: none;
+	border: 1px solid #777;
+	z-index: 100; /*must have*/
+}
+.datepick-inline {
+	float: left;
+	display: block;
+	border: 1px solid #777;
+}
+.datepick-rtl {
+	direction: rtl;
+}
+.datepick-dialog {
+	padding: 5px !important;
+	border: 4px ridge #ddd !important;
+}
+.datepick-disabled {
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+button.datepick-trigger {
+	width: 25px;
+	padding: 0px;
+}
+img.datepick-trigger {
+	margin: 2px;
+	vertical-align: middle;
+}
+.datepick-prompt {
+	float: left;
+	padding: 2px;
+}
+* html .datepick-prompt { /* IE6 */
+	width: 15em;
+}
+.datepick-control, .datepick-links, .datepick-header, .datepick {
+	clear: both;
+	float: left;
+	width: 100%;
+	color: black;
+}
+.datepick-control {
+	background:#001a01;
+	padding: 2px 0px;
+	color:black;
+}
+.datepick-links {
+border: 1px solid #649ee6;
+	background: #87bffe;
+	padding: 1px 0px;
+	color:black;
+}
+.datepick-control, .datepick-links {
+	font-weight: bold;
+	font-size: 80%;
+}
+.datepick-links label {
+	padding: 2px 5px;
+	color: #888;
+}
+.datepick-clear, .datepick-prev {
+	float: left;
+	width: 34%;
+	color:black;
+}
+.datepick-rtl .datepick-clear, .datepick-rtl .datepick-prev {
+	float: right;
+	text-align: right;
+	color:black;
+}
+.datepick-current {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+.datepick-close, .datepick-next {
+	float: right;
+	width: 34%;
+	text-align: right;
+}
+.datepick-rtl .datepick-close, .datepick-rtl .datepick-next {
+	float: left;
+	text-align: left;
+}
+.datepick-header {
+	background: #87bffe;
+	text-align: center;
+	font-weight: bold;
+	min-height: 1.75em;
+	border: 1px solid #649ee6;
+}
+.datepick-header select {
+	background: white;
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	border:#000000 solid 1px;
+	font-weight: bold;
+}
+.datepick-header span 
+{
+	position: relative;
+	top: 3px;
+}
+.datepick {
+	background: #ccc;
+	text-align: center;
+	font-size: 100%;
+}
+.datepick a {
+	display: block;
+	width: 100%;
+	color: #000;
+}
+.datepick-title-row {
+border: 1px solid #649ee6;
+	background: #87bffe;
+}
+.datepick-title-row th {
+	text-align: center;
+	font-weight: normal;
+}
+.datepick-days-row {
+	background:white;
+	color: #666;
+	border: 1px solid #649ee6;
+}
+.datepick-week-col {
+	background: #87bffe;
+	color: #fff;
+	border: 1px solid #649ee6;
+}
+.datepick-days-cell {
+	color: white;
+	border: 1px solid #649ee6;
+}
+.datepick-other-month {
+	background: #fff;
+	border: 1px solid #649ee6;
+}
+.datepick-week-end-cell 
+{
+	background: white;
+	border: 1px solid #649ee6;
+}
+.datepick-title-row .datepick-week-end-cell 
+{
+	background: #87bffe;
+	border: 1px solid #649ee6;
+}
+.datepick-week-over {
+	background: #ddd;
+}
+.datepick-unselectable {
+	color: #888;
+}
+.datepick-today {
+	background: white;
+}
+.datepick-current-day, .datepick-current-day a {
+	background: #87bffe;
+	color: black;
+}
+.datepick-days-cell-over {
+	background: #fff;
+	color: #000;
+	border: 1px solid #777;
+}
+.datepick-status {
+	background: #ddd;
+	width: 100%;
+	font-size: 80%;
+	text-align: center;
+}
+#datepick-div a, .datepick-inline a {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.datepick-inline .datepick-links a {
+	padding: 0 5px !important;
+}
+.datepick-control a, .datepick-links a {
+	padding: 2px 5px !important;
+	color: #eee;
+}
+.datepick-title-row a {
+	color: #eee;
+}
+.datepick-control a:hover {
+	
+	color: white;
+}
+.datepick-links a:hover, .datepick-title-row a:hover {
+
+	color: #333;
+}
+.datepick-multi .datepick {
+	border: 1px solid #777;
+}
+.datepick-one-month {
+	float: left;
+	width: 15em;
+}
+.datepick-new-row {
+	clear: left;
+}
+/* ___________ IE6 IFRAME FIX ________ */
+.datepick-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -1px; /*must have*/
+    left: -1px; /*must have*/
+    width: 187px; /*must have*/
+    height: 187px; /*must have*/
+}

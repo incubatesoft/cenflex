@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+.app .profit_margin_table{}
+.app .profit_margin_container tr.row_pm{
+	_background: #f00;
+	margin: 2px 0;
+}
+.app .profit_margin_table tr td{
+	padding: 4px 0;
+}
+
+.app #active_heading{
+
+	background: transparent url(images/mail_assets.png) repeat-x scroll 0 -1420px;
+	color: #444444;
+	font-size: 14px;
+	height: 20px;
+	line-height: 15px;
+	margin: 0;
+	overflow: hidden;
+	padding: 6px 2px 4px 6px;
+	text-shadow: 0 1px 0 #ECECEC;
+}
+
+
+.app .profit_margin_container{
+	max-width: 900px;
+	min-width: 800px;
+}
+.app .profit_margin_container.two_cols{
+	width: 700px;
+}
+
+.app .section .profit_margin_container li{
+	float: none;
+	vertical-align: top;
+	width: 800px;
+	border: 1px dotted #f7f9fa;
+	margin-bottom: 10px;
+	background: #fafdff;
+	
+}
+/*.app .profit_margin_container.two_cols li{
+	float: left;
+	height: 26px;
+	width: 300px;
+}
+.app .profit_margin_container.two_cols li.formula{
+	margin-top: 0;
+	width: auto;
+	float: right
+}
+.app .profit_margin_container.two_cols li.formula .profitmargin_formula{
+	width: 509px;
+	height: 184px;
+	background: url(images/pm_formula.png) no-repeat 0 0;
+}*/
+.app .profit_margin_container li.formula{
+	margin-top: 0;
+	width: auto;
+	float: right
+}
+.app .profit_margin_container li.formula .profitmargin_formula{
+	width: 509px;
+	height: 184px;
+	background: url(images/pm_formula.png) no-repeat 0 0;
+}
+
+
+
+
+.app .profit_margin_container li > label{
+	
+}
+
+
+.app #openText{
+	display: inline-block;
+	max-width: 400px;
+	line-height: 24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.app #renamePname{
+	margin-top: -2px;
+	_border: 0 none;
+	height: 20px;
+	width: 300px;
+}
+
+.app .errortext{
+	background: #fde8f8 !important;
+	border: 1px solid #dbc1d6;
+}
+
+.app #estimates{
+	_background: #efefef;
+	border: 1px solid #e3e3e3;
+	border-bottom: 0 none;
+}
+
+
+
+/****/
+.app #last, .app #estimates .cols_3, .app .profit_margin_container ul.cols_3 li .hidden_txt{
+	background: #f7f7f7;
+}
+.app #last{
+	margin-left: 120px;
+	width: 572px;
+}
+.app #last .cols_3{
+	border: 1px solid #e3e3e3;
+	border-top: 0 none;
+	border-bottom: 0 none;
+}
+.app .profit_margin_container > li .p_m_label_main{
+	width: 120px;
+}
+.app .profit_margin_container input[type="text"].text{
+	
+}
+/****/
+
+

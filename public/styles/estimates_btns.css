@@ -1,0 +1,186 @@
+@charset "utf-8";
+/*--start: estimate buttons--*/
+/*************************************************
+					Edit: 	.edit_sec
+		  cancel changes:	.cancelchanges
+			save changes: 	.save_sec
+save a& Preview Estimate: 	.save_prv_est
+ Preview & Send Estimate: 	.prv_send_est
+		   View Estimate: 	.view_est
+		   View Estimate: 	.view_est
+*************************************************/
+
+/****************
+by default all the buttons are in hidden mode.
+we need to view them when ever the condition is true.
+******************/
+.app .btn_bar.est_btn_bar .smallbtn{
+	display: none;	
+}
+
+.app .btn_bar.est_btn_bar .cancel_clone{
+	display: none;
+}
+
+/**********************
+	state: 	when ever a estimate in a edit mode edit button should not be visible
+			hide the corresponding readonly buttons in the edit mode in each state
+*************************/
+.app .btn_bar.est_btn_bar .edit_sec{
+	display: inline-block;
+	zoom: 1;
+}
+
+
+
+/**********************
+	state: No Estimate
+*************************/
+/*read-only-mode*/
+.app .btn_bar.est_btn_bar.no_estimate{
+	/*display: none;
+	height: 19px;*/
+} 
+
+/*edit-mode*/
+.app .btn_bar.est_btn_bar.no_estimate.est_editing .cancelchanges, 
+.app .btn_bar.est_btn_bar.no_estimate.est_editing .save_sec, 
+.app .btn_bar.est_btn_bar.no_estimate.est_editing .save_prv_est{
+	display: inline-block;
+	zoom: 1;
+}
+.app .btn_bar.est_btn_bar.no_estimate.est_editing{
+	display: block;
+}
+
+/**********************
+	state: has Estimae
+*************************/
+/*read-only-mode*/
+.app .btn_bar.est_btn_bar.has_estimate .smallbtn.edit_sec,
+.app .btn_bar.est_btn_bar.has_estimate .smallbtn.prv_send_est{
+	display: inline-block;
+	zoom: 1;
+}
+.app .btn_bar.est_btn_bar.est_editing .edit_sec,
+.app .btn_bar.est_btn_bar.has_estimate.est_editing .edit_sec{
+	display: none;
+}
+
+/*edit-mode*/
+.app .btn_bar.est_btn_bar.has_estimate.est_editing .smallbtn.cancelchanges, 
+.app .btn_bar.est_btn_bar.has_estimate.est_editing .smallbtn.save_sec, 
+.app .btn_bar.est_btn_bar.has_estimate.est_editing .smallbtn.save_prv_est{
+	display: inline-block;
+	zoom: 1;
+}
+.app .btn_bar.est_btn_bar.has_estimate.est_editing .smallbtn.prv_send_est{
+	display: none;
+}
+
+
+/**********************
+	state: Estimae Sent
+*************************/
+/*read-only-mode*/
+.app .btn_bar.est_btn_bar.estimate_sent .edit_sec,
+.app .btn_bar.est_btn_bar.estimate_sent .view_est{
+	display: inline-block;
+	zoom: 1;
+}
+
+/*edit-mode*/
+.app .btn_bar.est_btn_bar.estimate_sent.est_editing .cancelchanges, 
+.app .btn_bar.est_btn_bar.estimate_sent.est_editing .save_sec, 
+.app .btn_bar.est_btn_bar.estimate_sent.est_editing .save_prv_est{
+	display: inline-block;
+	zoom: 1;
+}
+.app .btn_bar.est_btn_bar.estimate_sent.est_editing .view_est{
+	display: none;
+}
+
+/*clone estimate*/
+.app .btn_bar.est_btn_bar.est_editing.cloned .cancel_clone{
+	display: inline-block;
+	zoom: 1;
+}
+.app .btn_bar.est_btn_bar.est_editing.cloned .smallbtn.cancelchanges{
+	display: none;
+}
+
+
+/***/
+.app .btn_bar.est_btn_bar .smallbtn.save_create_revision.revisionSave{
+	display: none;
+}
+.app .btn_bar.est_btn_bar.est_editing .smallbtn.save_create_revision.revisionSave{
+	display: inline-block;
+	zoom: 1;
+}
+/***/
+
+/*start:if older revision has estimate View Estimate */
+.app .btn_bar.est_btn_bar.has_estimate.older_revision .smallbtn.view_est{
+	display: inline-block;
+	zoom: 1;
+	margin-left: 170px;
+}
+.app .btn_bar.est_btn_bar.has_estimate.older_revision.est_editing .smallbtn.view_est{
+	display: none;
+}
+/*end: if older revision has estimate View Estimate */
+
+
+
+.app .btn_bar.est_btn_bar.has_estimate.estimate_sent.est_editing .smallbtn.prv_send_est,
+.app .btn_bar.est_btn_bar.has_estimate.estimate_sent .smallbtn.prv_send_est{
+	display: none;
+}
+
+
+
+/**start: est btn positions on the bar**/
+.app .btn_bar.est_btn_bar.estimate_sent .view_est{
+	margin: 0 0 0 450px;
+}
+.app .btn_bar.est_btn_bar.estimate_sent.est_editing .view_est{
+	margin: 0 0 0 248px;
+}
+.app .job_estimates .estimates_section > ul.twoCols{
+	margin: 2px 0 8px 0;
+}
+.app .job_estimates .estimates_section  > ul.twoCols > li.l > label{
+	width: 142px;
+}
+.app .btn_bar.est_btn_bar .edit_sec{
+	margin:0 0 0 8px;
+}
+.app .btn_bar.est_btn_bar.no_estimate .edit_sec{
+	margin:0 0 0 178px;
+}
+
+
+
+
+
+/**ends: est btn positions on the bar**/
+/*--end: estimate buttons--*/
+
+/*start: older-revision
+.app .btn_bar.latest_revision .edit_sec.edit_to_new_revision{
+	display: none;
+}
+.app .btn_bar.older_revision .edit_sec.edit_to_new_revision{
+	display: inline-block;
+	zoom: 1;
+}
+.app .btn_bar.older_revision.editing .edit_sec.edit_to_new_revision, .app .btn_bar.est_btn_bar.est_editing .edit_sec.edit_to_new_revision{
+	display: none;
+}
+.app .btn_bar.older_revision .edit_sec{
+	display: none;
+}
+
+end: older-revision*/
+

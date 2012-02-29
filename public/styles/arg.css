@@ -1,0 +1,181 @@
+.main h2{
+	color: #ad7600;
+	padding-left: 10px;
+}
+/*.arg{
+	margin:4px auto;
+	padding: 4px;
+	border-top:1px solid #dcdcdc;
+	border-bottom:1px solid #bbb;
+	
+}*/
+dl.arg{
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+.arg dt.arg_title{
+	margin-top: 5px;
+	height: 17px;
+	border-top:1px solid #dcdcdc;
+	border-bottom:1px solid #bbb;
+	text-shadow: #fff 0 1px 0;
+}
+.arg dt.arg_title .collapse{
+	margin-top: 3px;
+}
+.arg dt.arg_title form{
+	margin-left: 15px;
+	margin-top: -3px;
+}
+.arg dt.arg_title form input{
+	margin: 0;
+	height: 15px;
+	padding: 2px;
+	line-height: 13px;
+	min-width: 260px;
+} 
+.arg_title{
+	cursor: default;
+	padding:4px;
+	background: #eee;
+	/*height: 26px;*/
+	/*background: url(images/mail_assets.png) repeat-x 0 -1364px;*/
+}
+/*.arg_title:hover{
+	background: #ddd;
+}*/
+#ac_title h4.edit_cat{
+	margin-right: 100px;
+}
+/*.edit_cat:hover, .r_title:hover, .arg_responses dd.incd_notes:hover, dd.response_txt:hover{
+	background-color: #fcf3a1;
+	cursor: default;
+}*/
+.title_opend{
+	background: #c5e1ff;
+}
+.edit_response, .delete_response{
+	width:50px; height:16px; padding-bottom:2px; margin-top:-2px;
+}
+
+.response_num{
+	float: right;
+	width: 20px;
+	background: #ccc;
+	padding: 0 5px;
+	margin-right: 5px;;
+	text-align: right;
+}
+dd.arg_responses{
+	display: none;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #bbb;
+	background: #fff;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.arg_responses dl{
+	margin: 0;
+	padding: 0;
+}
+.arg_responses dl dd{
+	margin: 0 0 4px;
+}
+.arg_responses dt.incd_notes{
+	margin: 0;
+	color: #777;
+	/*border-top:1px dotted #ddd;*/
+}
+.arg_responses dd.incd_notes{
+	margin: 0;
+	border-bottom:1px dotted #ddd;
+}
+.arg_responses .incd_notes{
+	background: #fef2e4;
+	padding: 4px 8px;
+}
+.arg_responses dt.response_txt{
+	color: #777;
+}
+.arg_responses .response_txt{
+	padding: 4px 10px;
+}
+.arg_responses dd.response_txt{
+	padding: 4px 14px;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 0;
+	color: #454545;
+}
+.arg_responses dd.response_txt p.MsoNormal span, .main div.mceIframeContainer .mceContentBody p.MsoNormal span{
+	font-size:14px !important;
+	color:444 !important;
+}
+.arg_responses dd.response_txt p.MsoNormal{
+	margin:4px 0 !important;
+	font-size:14px !important;
+}
+.arg_responses dd.response_txt p.MsoNormal span{
+	margin:0;
+}
+/*.arg_responses dd textarea{
+	height: 100px;
+}*/
+/* @group Add Response Form */
+.msgmodal{
+	cursor: default;
+}
+.msgmodal dl{
+	margin: 10px 20px;
+	padding: 0;
+}
+.msgmodal dt{
+	float: left;
+	display: block;
+	width: 120px;
+	clear: both;
+	margin-top: 5px;
+	padding-top: 0;
+}
+.msgmodal dl dd{
+	margin: 5px 4px 2px 0;
+	padding: 0;
+	padding-left:150px;
+}
+.msgmodal dl textarea{
+	width: 550px;
+	height: 130px;
+}
+
+/* @end */
+
+/* @group Search */
+
+.searchbox{
+	background: url(images/mail_assets.png) repeat-x 0 -1270px;
+	padding: 6px 10px;
+	height: 24px;
+}
+.searchbox h4{ 
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	color: #777;
+	text-shadow: #fff 0 1px 0;
+}
+.searchresults h4{
+	color: #6b7a89;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 1px 2px;
+}
+/* @end */
+.no_responses{
+	font-size: 14px;
+	padding: 10px;
+}
+#argCat{
+	font-size: 12px;
+	margin-top: -1px;
+}

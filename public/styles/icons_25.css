@@ -1,0 +1,151 @@
+/*
+EnterPi CSS Framework- Icons
+Sizes of all the icons will be mentioned, if nothing is mentioned then the icon will be 16x16.
+*/
+
+/*Snapback icon*/
+.app .snapback_ico{
+	background: url(images/mail_assets.png) no-repeat -32px -192px;
+}
+.app a:hover .snapback_ico, .app .snapback_ico:hover{
+	background-position: -32px -240px;
+}
+.app a:active .snapback_ico, .app .snapback_ico:active{
+	background-position: -32px -208px;
+}
+/* @group Plus Icons */
+.app .plus_ico{
+	background: url(images/mini_icons.png) no-repeat 0 0;
+}
+.app a:hover .plus_ico, .app .plus_ico:hover{
+	background: url(images/mini_icons.png) no-repeat -16px 0;
+}
+.app a:active .plus_ico, .app .plus_ico:active{
+	background: url(images/mini_icons.png) no-repeat -32px 0;
+}
+.app .plus_ico.disabled{
+	background: url(images/mini_icons.png) no-repeat -48px 0;
+	cursor: not-allowed;
+}
+/*White Plus*/
+.app .plus2_ico{
+	background: url(images/controls.png) no-repeat -8px -3856px;
+}
+.app a:hover .plus2_ico, .app .plus2_ico:hover{
+	background: url(images/controls.png) no-repeat -8px -3840px;
+}
+.app a:active .plus2_ico, .app .plus2_ico:active{
+	background: url(images/controls.png) no-repeat -8px -3856px;
+}
+/* @end */
+
+/* @group Delete Icon */
+.app .delete_ico{
+	background: url(images/mini_icons.png) no-repeat 0 -16px;
+}
+.app .label .delete_ico{
+	background: url(images/mini_icons.png) no-repeat 0 -16px;
+}
+.app a:hover .delete_ico, .app .delete_ico:hover{
+	background: url(images/mini_icons.png) no-repeat -16px -16px;
+}
+.app a:active .delete_ico, .app .delete_ico:active{
+	background: url(images/mini_icons.png) no-repeat -32px -16px;
+}
+.app .delete_ico.disabled{
+	background: url(images/mini_icons.png) no-repeat -48px -16px;
+}
+
+.app .delete_ico.white{
+	background: url(images/mini_icons.png) no-repeat -80px -16px;
+}
+.app .delete_ico.white:hover{
+	background: url(images/mini_icons.png) no-repeat -64px -16px;
+}
+.app .delete_ico.white:active{
+	background: url(images/mini_icons.png) no-repeat -80px -16px;
+}
+
+/* @end */
+
+/************/
+.app .jobs_ico{ background: url(images/icons/icon_sprites24.png) no-repeat 0 0; } 
+.app .contacts_ico{ background: url(images/icons/icon_sprites24.png) no-repeat 0 -24px; } 
+.app .shipping_ico{ background: url(images/icons/icon_sprites24.png) no-repeat 0 -48px; } 
+.app .statistics_ico{ background: url(images/icons/icon_sprites24.png) no-repeat  0 -72px; } 
+.app .logout_ico{background: url(images/icons/icon_sprites24.png) no-repeat 0 -96px; } 
+/************/
+
+/* @group Go to Contacts */
+.app .go_contacts_ico{
+	background: url(images/icons/icon_sprites.png) no-repeat left -1690px;
+}
+.app .go_contacts_ico:hover{
+	background: url(images/icons/icon_sprites.png) no-repeat left -1710px;
+}
+.app .go_contacts_ico:active{
+	background: url(images/icons/icon_sprites.png) no-repeat left -1730px;
+}
+/* @end */
+/* @group Feedback icons*/
+.app .nofeedback_ico{
+	background: url(images/icons/icon_sprites.png) no-repeat left -1779px;
+	width: 16px;
+	height: 16px;
+}
+.app .feedback_ico{
+	background: url(images/icons/icon_sprites.png) no-repeat left -1748px;
+	width: 16px;
+	height: 16px;
+}
+.app .feedback_ico:hover{
+	background: url(images/icons/icon_sprites.png) no-repeat left -1763px;
+}
+/* @end */
+/* @group Estimates */
+.app .estSent_ico{
+	background: url(images/icons/icon_sprites24.png) no-repeat -3px -182px;
+	width: 20px;
+	height: 16px;
+}
+.app .estAcc_ico{
+	background: url(images/icons/icon_sprites24.png) no-repeat -3px -212px;
+	width: 22px;
+	height: 16px;
+}
+/* @end */
+
+.app .print_form{
+	background: url(images/icons/icon_sprites.png) no-repeat scroll left -806px;
+}
+
+.app .login_loading{
+	background: transparent url(images/spin_login.gif) no-repeat 0 0;
+}
+
+
+.app .saved{
+	background: transparent url(images/tennis_ball.png) no-repeat 0 0;
+}
+
+
+
+.app .right_ico{
+	background: url(images/icons/icon_sprites.png) no-repeat left -1835px;
+}
+.app .right_ico.active{
+	background: url(images/icons/icon_sprites.png) no-repeat left -1855px;
+}
+
+
+.app .inbox_ico{
+	background: url(images/mail_assets.png) no-repeat -48px -256px;
+	margin-bottom: -3px;
+	margin-right: 3px;
+	margin-left: -3px;	
+}
+.app .pool_ico{
+	background: url(images/icons/icon_sprites.png) no-repeat 0 -1065px;
+}
+
+

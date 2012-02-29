@@ -1,0 +1,4 @@
+body bordercolor #073c68
+body bg 	#e2ecfa
+left nav bg 	#dce9fb
+main menu bg	#c8defd

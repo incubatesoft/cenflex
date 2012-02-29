@@ -1,0 +1,409 @@
+/* @group Left Nav */
+/*..base.css..*/
+ 
+.parent_nav li.sub_head > a{
+	font-weight: bold;
+}
+.parent_nav li.sub_head a{
+	padding-left: 3px;
+}
+.sub_head a img{
+	background: url(images/controls.png) 0 -4048px;
+	float:left;
+	cursor: default;
+	margin-top: 4px;
+	margin-top: 6px !ie;
+}
+.sub_head a img.up{
+	background: url(images/controls.png) 0 -4032px;
+	width: 10px;
+	height: 10px;
+}
+.parent_nav .sub_head ul li a{
+	padding-left: 15px;
+} 
+
+
+
+.parent_nav .sub_head ul{
+	margin-bottom: 10px;
+}
+.parent_nav li.editing_nav{
+	background: url(images/mail_assets.png) repeat-x 0 -1196px;
+	border-bottom: 1px solid #dbccb3;
+	border-top: 1px solid #e2d7c2;	
+	position: relative;
+	padding: 2px;
+}
+.parent_nav li.editing_nav input{
+	width: 130px;
+}
+.parent_nav li.editing_nav .save_disk{
+	float: none ;
+	position: absolute;
+	top: 6px;
+	display: none;
+	right: 28px;
+}
+.parent_nav li.editing_nav .clear_add{
+	float: none ;
+	position: absolute;
+	top: 6px;
+	right: 5px;
+}
+/* @end */ 
+/*.base.css.*/
+
+
+
+
+
+#left_nav{
+	padding:0;
+}
+.app #left_nav h3.header{
+	background: url(images/mail_assets.png) repeat-x 0 -1420px;
+	height: 20px;
+	overflow: hidden;
+	margin: 0;
+	color: #444;
+	font-size: 14px;
+	line-height: 15px;
+	font-weight: bold;
+	padding: 6px 2px 4px 6px;
+	text-shadow: #ececec 0 1px 0;
+}
+ 
+.app #left_nav #left_nav_long.contentarea{
+	/*..overflow: auto;..*/
+	overflow-x: hidden;/*.19June.*/
+	overflow-y: auto;/*.19June.*/
+}
+.no_head{
+	top: 0;
+	padding-top: 2px;
+}
+.app .parent_nav{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+	overflow-y: auto;
+	overflow-y: scroll !ie;
+	list-style: none;
+}
+/*When Control bar is present*/
+.app .control_bar_true .parent_nav{
+	position: absolute;
+	top: 4px;
+	bottom: 31px;
+	margin: 0;
+	overflow: auto;
+	border-bottom: 1px solid #aaa ;
+}
+/*When Header is enabled*/
+.app  #contentarea .header_true > .parent_nav{
+	top: 30px;
+}
+.app .parent_nav li{
+	margin-bottom: 5px;
+}
+.app .parent_nav #show_my_options > li{
+	margin-bottom: 0;
+}
+.app  .parent_nav li a{
+	padding: 4px 6px;
+	cursor: pointer;
+	display: block;
+	/*color: #666;*/
+	color:#40474d;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	text-shadow: #efefe 0 1px 0;
+}
+
+.app .parent_nav li a:hover, .app .parent_nav.tall_nav li a.active_nav{
+	background: url(images/controls.png) 0 -4208px;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: #686868 0 1px 0;
+}
+.app .parent_nav li a.active_nav, .app .parent_nav li.i a{
+	background: url(images/controls.png) 0 -4248px;
+	color: #fff;
+	text-shadow: #575757 0 1px 0;
+}
+
+/*taller navs*/
+.app  .parent_nav.tall_nav li a, .app  .parent_nav.tall_nav li.has_children a{
+	height: 20px;
+	padding: 6px;
+	line-height: 20px;
+}
+.app .parent_nav.tall_nav #show_my_options > li a{
+	padding-left: 44px;
+}
+.app .parent_nav.tall_nav li.has_children a.arg_nav, .app .parent_nav.tall_nav li.has_children > ul > li > a{
+	padding-left: 16px;
+}
+.app .parent_nav.tall_nav > li{
+	background:url(images/controls.png) 0 -5568px repeat-x;
+	padding-bottom: 2px;
+	margin: -1px 0 0;
+}
+.app .parent_nav.tall_nav > li.has_children{
+	background: none;
+	padding-bottom: 2px;
+	margin: -1px 0 0;
+}
+.app .parent_nav.tall_nav > li.has_children .a_l_icn{
+	margin-left: 0;
+}
+/*active left nav*/
+/*.app  #active_left_nav .parent_nav{
+	margin: 0;
+}*/
+.app  #active_left_nav > h3{
+	font-size: 14px;
+	line-height: 17px;
+	background: #d3d3d3 url(images/controls.png) 0 -5576px repeat-x;
+	cursor: default;
+	margin: 0;
+	padding: 4px;
+	font-weight: normal;
+	color: #fff;
+	border-bottom:1px solid #e5e5e5 ;
+	text-shadow: #999999 0 1px 0;
+}
+/* Same as Super layout commented by Tejas, 17 Oct 09
+.app #left_nav.controlbar_true .controlbar, .app #actve_left_nav.controlbar_true .controlbar{
+	background: #f0f0f0;
+	height: 26px;
+	padding: 2px;
+	z-index:3;
+}*/
+.app .parent_nav li.has_children > a{
+	font-weight: bold;
+	color: /*#707578*/ rgb(102, 114, 129);
+	
+	text-shadow: #f5f5f5 0px 1px 0px;
+}
+.app .parent_nav li.has_children > a:hover{
+	color: #fff;
+	text-shadow: #000000 0px 1px 0px;
+}
+.app .parent_nav li.has_children a{
+	padding-left: 3px;
+}
+.app .has_children a .arr{
+	background: url(images/controls.png) 0 -4048px;
+	float: left;
+	cursor: default;
+	margin-top: 5px;
+	margin-top: 3px !ie;
+	width: 10px;
+	margin-right: 2px;
+	height: 10px;
+	display: inline;
+}
+.app .has_children a .arr.collapse{
+	background: url(images/controls.png) 0 -4032px;
+}
+.app .parent_nav .has_children ul li a{
+	padding-left: 15px;
+}
+ 
+
+.app .parent_nav .has_children ul{
+	margin-bottom: 10px;
+}
+#show_my_options{
+	margin-bottom: 00px;
+}
+.app .parent_nav .has_children ul a{
+	font-size: 12px;
+	line-height: 16px;
+	height: 16px;
+	padding: 5px;
+	
+}
+.app .parent_nav .has_children .bot_sep{
+	background: url(images/controls.png) 0 -5600px repeat-x;
+	height: 2px;
+}
+.app .parent_nav li.editing_nav{
+	background: url(images/mail_assets.png) repeat-x 0 -1196px;
+	border-bottom: 1px solid #dbccb3;
+	border-top: 1px solid #e2d7c2;	
+	position: relative;
+	padding: 2px;
+}
+.app .parent_nav li.editing_nav input{
+	width: 130px;
+}
+.app .parent_nav li.editing_nav .save_disk{
+	float: none ;
+	position: absolute;
+	top: 6px;
+	display: none;
+	right: 28px;
+}
+.app .parent_nav li.editing_nav .clear_add{
+	float: none ;
+	position: absolute;
+	top: 6px;
+	right: 5px;
+}
+
+.app .parent_nav li.i a{
+	font-style: italic;
+	color: #fff;
+	text-shadow:0 1px 0 #575757;
+}
+
+
+/*..............11/09/09................................*/
+.app .parent_nav.tall_nav li a .det,
+.app #trackjob .l_bars .row .track_icn{
+	background:url(images/left_nav.png) no-repeat 0 3px;
+	width: 16px;
+	height: 16px;
+}
+.app .parent_nav.tall_nav li a .det{
+	float:left;
+	margin-right:2px;
+}
+
+.app .parent_nav.tall_nav li a .det.jdetails,
+.app #trackjob .l_bars .row .track_icn.jod_det_icn{
+	background-position: 0 -25px;
+}
+.app .parent_nav.tall_nav li a .det.cinfo{
+	background-position: 0 3px;
+}
+.app #trackjob .l_bars .row .track_icn.client_info_icn{
+	background-position: 0 2px;
+}
+.app .parent_nav.tall_nav li a .det.feedback,
+.app #trackjob .l_bars .row .track_icn.feed_icn{
+	background-position: 0 -48px;
+}
+.app .parent_nav.tall_nav li a .det.dlogues,
+.app #trackjob .l_bars .row .track_icn.dialogue_icn{
+	background-position: 0 -94px;
+}
+.app .parent_nav.tall_nav li a .det.rvisions,
+.app #trackjob .l_bars .row .track_icn.rev_icn{
+	background-position: 0 -120px;
+}
+.app .parent_nav.tall_nav li a .det.jlog{
+	background-position: 0 -147px;
+}
+.app .parent_nav.tall_nav li a .det.tmrs{
+	background-position: 0 -171px;
+}
+.app .parent_nav.tall_nav li a .det.prodetails,
+.app #trackjob .l_bars .row .track_icn.prod_spec_icn{
+	background-position: 0 -72px;
+}
+.app #trackjob .l_bars .row .track_icn.ship_icn{
+	background-position: 0 -199px;
+}
+
+.app #trackjob .l_bars .row .track_icn.revision_ico{
+	background-position: 0 -229px;
+}
+.app #trackjob .l_bars .row .track_icn.estimate_ico{
+	background-position: 0 -250px;
+}
+
+
+
+
+
+
+
+
+
+.app .feed{
+	position: relative;
+}
+.app .has_feed{
+	position: absolute;
+	right: 10px;
+	height: 16px;
+	width: 16px;
+}
+
+/*...........end..........................*/
+
+
+
+.app .parent_nav a > .opt_count_r, .parent_nav a > span .opt_count_l, .parent_nav a > span .opt_count_label{
+	background: url(images/controls.png) no-repeat;
+	color: #fff;
+	text-shadow: none;
+	display: inline-block;
+	zoom: 1;
+	/*text-shadow: 0 1px 0 #333;*/
+	font-size: 11px;
+} 
+.app .parent_nav a > span .opt_count_l{
+	background-position: 0 -4063px;
+	padding-left: 8px;
+	display: block;
+}
+.app .parent_nav a > .opt_count_r{
+	background-position: 100% -4111px;
+	padding-right: 8px;
+}
+.app .parent_nav a > span .opt_count_label{
+	background-position:  0 -4087px;
+	background-repeat: repeat-x;
+	line-height: 18px;
+	display: block;
+}
+
+.app .parent_nav a.active_nav > span .opt_count_l, .parent_nav a:hover > span .opt_count_l{
+	background-position: 0 -4135px;
+}
+.app .parent_nav a.active_nav > .opt_count_r, .parent_nav a:hover > .opt_count_r{
+	background-position: 100% -4183px;
+}
+.app .parent_nav a.active_nav > span .opt_count_label, .parent_nav a:hover > span .opt_count_label{
+	background-position:  0 -4159px;
+	color: #51677E;
+	/*text-shadow: 0 1px 0 #aaa;*/
+}
+
+/*--end: options count--*/
+
+
+/*......................*/
+.app #left_nav ul.parent_nav li.deliverydate:hover > a, .app #left_nav ul.parent_nav li.incoterms:hover > a{
+ background: none;
+ color: #666;
+ cursor: default;
+ text-shadow: #fff 0 1px 0; 
+}
+/*......................*/
+
+
+/* @group LeftNav */
+.app #left_nav ul.parent_nav li.status:hover > a, .app #left_nav ul.parent_nav li.deliverydate:hover > a, .app #left_nav ul.parent_nav li.incoterms:hover > a{
+	background: none;
+	color: #666;
+	cursor: default;
+	text-shadow: #fff 0 1px 0;
+	
+}
+/* @end */
+
+
+
+
+
+
+/* @end */

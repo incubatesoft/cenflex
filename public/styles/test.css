@@ -1,0 +1,675 @@
+@charset "utf-8";
+/* CSS Document */
+.dlog{
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	border-bottom:1px dotted #ededed;
+	padding-bottom:15px;
+}
+.user_send{
+	height:32px;
+	float:left;
+	_display:inline;
+	/*background: url(images/dialog_img/tarrow.png) no-repeat 30px bottom;*/
+	background: url(images/dialog_img/baloons.png) no-repeat 30px 19px;
+	width:300px;
+	z-index:2;
+	overflow:hidden;
+	position:relative;
+	zoom:1;
+}
+.user_send .uname{
+	padding-left:20px;
+	background:url(images/dialog_img/ugrey.png) no-repeat 4px center;
+	color: #333;
+	margin-left:10px;
+	height:16px;
+	line-height:16px;
+}
+.user_send .udep{
+	margin-left:50px;
+	margin-top:-2px;
+	color:#888;
+	height:14px;
+	font-size:11px;
+	line-height:14px;
+}
+.sent_to{
+	height:29px;
+	float:left;
+	width:250px;
+	overflow: hidden;
+}
+.sent_to .send
+{
+	padding: 8px 16px 0 20px;
+	/*background:url(images/back.png) no-repeat right -14px;*/
+	background:transparent url(images/dialog_img/ublue.png) no-repeat scroll 4px center;
+	color: #333;
+	margin-top: 5px;
+	margin-left:10px;
+	height:18px;
+	line-height:9px;
+	/*text-align:right;*/
+}
+.lc{
+	float:left;
+	_display:inline;
+	height:13px;
+	width:18px;
+	margin-top:-3px;
+	/*background:url(images/dialog_img/c_ltop.png) no-repeat left top;*/
+	background: url(images/dialog_img/baloons.png) no-repeat left -74px;
+	z-index:1
+}
+.rc{
+	float:right;
+	_display:inline;
+	height:13px;
+	width:18px;
+	margin-top:-3px;
+	/*background:url(images/dialog_img/c_rtop.png) no-repeat right top;*/
+	background: url(images/dialog_img/baloons.png) no-repeat right -27px;
+	z-index:1
+}
+.tline{
+	margin:0 18px;
+	display:block;
+	background:#f5f5f5;
+	height:10px;
+	z-index:1;
+	margin-top:-3px;
+	border-top:3px solid #e1e1e1
+}
+.clearfloat{
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+.btext{
+	overflow:auto;
+	padding:10px;
+	border-left:3px solid #e1e1e1;
+	border-right:3px solid #e1e1e1;
+	background:#f5f5f5;
+	max-height:80px;
+	margin:0 1px;
+}
+table.scroll tbody td .btext{
+	white-space: normal;
+}
+.bbotm .lc{
+	clear:both;
+	margin-top:0;
+	/*background:url(images/dialog_img/c_bl.png) no-repeat left top;*/
+	background: url(images/dialog_img/baloons.png) no-repeat left -100px;
+}
+.bbotm .rc{
+	margin-top:0;
+	/*background:url(images/dialog_img/c_br.png) no-repeat left top;*/
+	background: url(images/dialog_img/baloons.png) no-repeat right -50px;
+}
+.bbotm .tline{
+	margin-top:0;
+	border-bottom:3px solid #e1e1e1;
+	border-top:none;
+}
+.bbotm .timestamp{	
+	width:300px;
+	text-align:right;
+	padding-right:20px;
+	padding-top:3px;
+	float:right;
+	_display:inline;
+	font-size:12px;
+}
+.bbotm .attaches{
+    margin:4px 0 0 15px;
+	/*padding-left:18px;
+    background:url(images/dialog_img/attachment.png) no-repeat left top;*/
+	padding-top:3px;
+	font-size:12px;
+	
+}
+.app .bbotm .attaches > a, .app #feed .attach > a{
+    padding-left: 18px;
+	background:url(images/dialog_img/attachment.png) no-repeat left top;
+}
+.app div.disply_responses{
+	max-height:140px;
+	overflow:auto;
+	background:#f9f9f9;
+	padding:4px;
+	border:#9dbcdd solid 1px;
+}
+
+/*green*/
+.green
+   {
+	border-bottom:1px dotted #bbe1c7;
+   }
+.green .user_send{
+	
+	background: url(images/dialog_img/green.png) no-repeat 30px 19px;
+	
+}
+.green .user_send .uname{
+	
+	background:url(images/dialog_img/ugreen.png) no-repeat 4px center;
+	
+}
+
+.green .lc{
+	
+	background: url(images/dialog_img/green.png) no-repeat left -74px;
+	
+}
+.green .rc{
+	
+	background: url(images/dialog_img/green.png) no-repeat right -27px;
+	
+}
+.green .tline{
+    background:#f0faf3;
+	border-top:3px solid #bbe1c7;
+}
+
+.green .btext{
+	
+	border-left:3px solid #bbe1c7;
+	border-right:3px solid #bbe1c7;
+	background:#f0faf3;
+	
+}
+.green .bbotm .lc{
+	
+	background: url(images/dialog_img/green.png) no-repeat left -100px;
+}
+.green .bbotm .rc{
+	
+	background: url(images/dialog_img/green.png) no-repeat right -50px;
+}
+.green .bbotm .tline{
+	margin-top:0;
+	border-bottom:3px solid #bbe1c7;
+	border-top:none;
+}
+
+/*endgreen*/
+
+/*blue*/
+.blue
+  {
+  border-bottom:1px dotted #b8dbef;
+   }
+
+.blue .user_send{
+	background: url(images/dialog_img/blue.png) no-repeat 30px 19px;
+	float: right;
+}
+.blue .user_send .uname{
+	
+	background:url(images/dialog_img/ublue.png) no-repeat 4px center;
+	
+}
+.blue .sent_to .send
+{
+	padding-left:16px;
+	padding-right: 0;
+	background:url(images/next.png) no-repeat left -14px;
+	margin-left:10px;
+	text-align:left;
+}
+
+.blue .lc{
+	
+	background: url(images/dialog_img/blue.png) no-repeat left -74px;
+	
+}
+.blue .rc{
+	
+	background: url(images/dialog_img/blue.png) no-repeat right -27px;
+	
+}
+.blue .tline{
+	
+	background:#e6f4fc;
+	border-top:3px solid #b8dbef;
+}
+
+.blue .btext{
+	
+	border-left:3px solid #b8dbef;
+	border-right:3px solid #b8dbef;
+	background:#e6f4fc;
+	max-height:200px;
+	
+}
+.blue .bbotm .lc{
+	
+	background: url(images/dialog_img/blue.png) no-repeat left -100px;
+}
+.blue .bbotm .rc{
+	
+	background: url(images/dialog_img/blue.png) no-repeat right -50px;
+}
+.blue .bbotm .tline{
+	
+	border-bottom:3px solid #b8dbef;
+	border-top:none;
+}
+
+/*endblue*/
+/*pink*/
+.pink
+	{
+	border-bottom:1px dotted #f2d5f0;
+	}
+
+.pink .user_send{
+	
+	background: url(images/dialog_img/pink.png) no-repeat 30px 19px;
+	
+	
+}
+.pink .user_send .uname{
+	
+	background:url(images/dialog_img/upd.png) no-repeat 4px center;
+	
+}
+
+.pink .lc{
+	
+	background: url(images/dialog_img/pink.png) no-repeat left -74px;
+	
+}
+.pink .rc{
+	
+	background: url(images/dialog_img/pink.png) no-repeat right -27px;
+	
+}
+.pink .tline{
+	
+	background:#fef9fd;
+	border-top:3px solid #f2d5f0;
+}
+
+.pink .btext{
+	
+	border-left:3px solid #f2d5f0;
+	border-right:3px solid #f2d5f0;
+	background:#fef9fd;
+	
+}
+.pink .bbotm .lc{
+	
+	background: url(images/dialog_img/pink.png) no-repeat left -100px;
+}
+.pink .bbotm .rc{
+	
+	background: url(images/dialog_img/pink.png) no-repeat right -50px;
+}
+.pink .bbotm .tline{
+	
+	border-bottom:3px solid #f2d5f0;
+	border-top:none;
+}
+
+/*endpink*/
+
+/*orange*/
+
+.orange
+	{
+	border-bottom:1px dotted #ffdb94;
+	}
+.orange .user_send{
+	
+	background: url(images/dialog_img/orng.png) no-repeat 30px 19px;
+	
+	
+}
+.orange .user_send .uname{
+	
+	background:url(images/dialog_img/ouser.png) no-repeat 4px center;
+	
+}
+
+.orange .lc{
+	
+	background: url(images/dialog_img/orng.png) no-repeat left -74px;
+	
+}
+.orange .rc{
+	
+	background: url(images/dialog_img/orng.png) no-repeat right -27px;
+	
+}
+.orange .tline{
+	
+	background:#fff7e4;
+	border-top:3px solid #ffdb94;
+}
+
+.orange .btext{
+	
+	border-left:3px solid #ffdb94;
+	border-right:3px solid #ffdb94;
+	background:#fff7e4;
+	
+}
+.orange .bbotm .lc{
+	
+	background: url(images/dialog_img/orng.png) no-repeat left -100px;
+}
+.orange .bbotm .rc{
+		
+	background: url(images/dialog_img/orng.png) no-repeat right -50px;
+ }
+
+.orange .bbotm .tline{
+		
+	border-bottom:3px solid #ffdb94;
+	border-top:none;
+		
+		}
+/*.....................for dialogue btns............................*/
+.app #active_content .section ul.dialog_btn{
+	display: block;
+	height:20px;
+	padding:8px 0;
+	position:relative;
+	z-index:10;
+	margin-left:40px;
+	}
+.app #active_content .section ul.dialog_btn li{
+	float:left;
+	margin-right:100px;
+	border: none;
+	padding: 0;
+	width: auto;
+}
+
+/*for border below the attachments in internal notes*/
+.app #active_content .section #dialog_box ul.dialog_ul li.attch_dg{
+	 border-bottom:#aeaeae dotted 1px;
+	 padding-bottom:4px;
+	 }
+.app .int_dg{
+	 border-bottom:#b7d6e3 dotted 1px;
+	 margin-bottom:14px;
+	 padding-bottom:4px
+	 }
+.app .rep_dg{
+	 border-bottom:#ebebec dotted 1px;
+	 margin-bottom:14px;
+	 padding-bottom:4px
+	 }
+.app div.rem_attch{
+	margin-top:4px;
+	cursor:pointer;
+	}
+.app div.rem_attch:hover {
+	color:#222;
+	}
+.app div.rem_attch:hover div.delete{
+	background-position:-48px -208px;
+}
+/*.............end.................................*/
+
+.app #active_content .section ul.dialog_btn li a{
+	text-decoration:none;
+	color:#777;
+	outline:none;
+	display:block;
+	padding:4px;
+	border:solid 1px transparent;
+	}
+
+.app #active_content .section ul.dialog_btn li a:hover{
+	color:#333;
+	text-shadow:#fefefe 1px 1px;
+	}
+.app #active_content .section ul.dialog_btn li a.internal_tab img{
+	background:url(images/window_edit.png) left no-repeat;
+	float:left;
+	margin-right:4px;
+	}
+.app #active_content .section ul.dialog_btn li a.internal_reply img{
+	background:url(images/replycust.png) left no-repeat;
+	float:left;
+	margin-right:4px;
+	}
+
+
+.app #active_content .section ul.dialog_btn li.act_dlog .internal_tab{
+	background:#fdfbe2 url(images/dialog_img/internal_tabbg.gif) repeat-x left top;
+	border:#e8e4b9 solid 1px;
+	}
+.app #active_content .section ul.dialog_btn li.act_dlog .internal_dialog{
+	background:#e0fcfe url(images/dialog_img/internal_dialog.gif) repeat-x left top;
+	border:#c1dae5 solid 1px;
+	}
+.app #active_content .section ul.dialog_btn li.act_dlog .internal_reply{
+	background:#ebebec url(images/dialog_img/internal_reply.gif ) repeat-x left top;
+	border:#d2d2d2 solid 1px;
+	}
+
+.app #active_content .section #dialog_box{
+	background:#fdfbe2 url(images/dialog_img/internal_tabbg.gif) repeat-x left bottom;
+	padding:6px;
+	position:relative;
+	width:660px;
+	top:-5px;
+	border:#e8e4b9 solid 1px;
+	margin-left:20px;
+}
+.app #active_content .section #dialog_box .outGoingMail{
+	clear:both;
+	padding:6px 4px 4px;
+	margin-bottom: 5px;
+	background:#eaf4fd url(images/arg_bg.png) repeat-x left top;
+	border:1px solid #84b2df;
+	width:650px;
+}
+.app div.dialogue_main{
+	width:700px;
+	margin-left:20px;
+}
+.app #active_content .section #dialog_box .outGoingMail:hover{
+	background:#eaf4fd url(images/arg_bg.png) repeat-x left top;
+	border:1px solid #84b2df;
+}
+.app #active_content .section #dialog_box ul.dialog_ul{
+	list-style:none;
+	}
+.app #active_content .section #dialog_box ul.dialog_ul li{
+	margin-bottom:14px;
+	}
+.app #active_content .section #dialog_box ul.dialog_ul li label{
+	width:90px;
+	display:block;
+	float:left;
+	padding-top:5px;
+	}
+.app #active_content .section #dialog_box.green_note{
+	background:#e5f7ff;
+	border:#c1dae5 solid 1px;
+	}
+.app #active_content .section #dialog_box.grey_note{
+	background:#ebebec;
+	border:#d2d2d2 solid 1px;
+	}
+.app #active_content .section ul.dialog_btn li.act_dlog a{
+	border-bottom: none !important;
+}
+/*................for btc dialog.......................*/
+	
+.dlog_int{
+	background:#f9fad2;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-bottom:25px;
+	padding-bottom:5px;
+	border:#e2e277 dotted 1px;
+}
+.user_rfq{
+	float:left;
+}
+
+.d_name{
+	background:url(images/dialog_img/ugrey.png) no-repeat left center;
+	padding-left:16px;
+	}
+.send_to{
+	height:29px;
+	float:right;
+	width:78px;
+}
+.rtext{
+	overflow:auto;
+	padding:4px 13px;
+	max-height:80px;
+	color:#333;
+}
+
+.dbotom .time_spec{
+	text-align:right;
+	padding-right:20px;
+	padding-top:3px;
+	float:right;
+	_display:inline;
+	font-size:12px;
+}
+
+.dbotom .attach_f{
+    margin:4px 0 0 15px;
+    /*padding-left:18px;
+    background:url(images/dialog_img/attachment.png) no-repeat left top;*/
+    padding-top:3px;
+    font-size:12px;
+	
+}
+.dbotom .attach_f > a{
+	padding-left:18px;
+    background:url(images/dialog_img/attachment.png) no-repeat left top;
+}
+.app #active_content .dlog_int .dtitle{
+	padding:8px 0px;
+	margin:0 8px;
+	color:#505050;
+	cursor:pointer;
+	border-bottom:1px dotted #E2E277;
+	}
+.app #active_content .dlog_int .dtitle:hover .d_name{
+	/*border-bottom:1px dotted #333;*/
+	color:#333;
+	}
+.app #active_content .dlog_int .dtitle .send_to .sents{
+    margin-top:5px;
+	padding-right:10px;
+	padding-top:8px;
+	background:url(images/dialog_img/arrow.png) no-repeat right center;
+	color: #333;
+	margin-right:10px;
+	height:18px;
+	line-height:9px;
+}
+/*.......................................................*/
+/*.app #active_content div.attach_f > a{
+	display:block;
+	float:left;
+	margin-right:16px;
+	text-decoration:none;
+	color:#777;
+	}
+.app #active_content div.attach_f > a:hover{
+	color:#333
+	}*/
+/*.................for attachments.........................................*/
+/*start:commented by raju bogi*/
+/*.app #active_content a[href^="http://"] {
+background:transparent url(images/external.png) center right no-repeat;
+display:-moz-inline-stack;
+display:inline-block;
+padding-right:15px;
+text-decoration:none;
+}
+
+.app #active_content a[href $='.jpg'], .app #active_content a[href $='.jpeg']{
+display:-moz-inline-stack;
+display:inline-block;
+padding-left:20px;
+line-height:18px;
+background:transparent url(images/blue_grad.png) center left no-repeat;
+text-decoration:none;
+}
+.app #active_content a[href $='.pdf']{
+display:-moz-inline-stack;
+display:inline-block;
+padding-left:20px;
+line-height:18px;
+background:transparent url(images/pdf.png) center left no-repeat;
+}*//*end:commented by raju bogi*/
+
+/*.app a[href$='.swf'], .app a[href$='.fla'], .app a[href$='.swd'] {
+display:-moz-inline-stack;
+display:inline-block;
+padding-left:20px;
+line-height:18px;
+background:transparent url(/Images/FlashIcon.gif) center left no-repeat;
+}*/
+
+
+/*start:commented by raju bogi*/
+/*
+.app #active_content a[href $='.xlsx'], .app #active_content a[href $='.xls']{
+display:-moz-inline-stack;
+display:inline-block;
+padding-left:20px;
+line-height:18px;
+background:transparent url(images/xls.png) center left no-repeat;
+}
+
+.app #active_content a[href $='.doc'], .app #active_content a[href $='.docx'], .app #active_content a[href $='.rtf'], .app #active_content a[href $='.txt'], .app #active_contenta[href $='.wps'] {
+display:-moz-inline-stack;
+display:inline-block;
+padding-left:20px;
+line-height:18px;
+background:transparent  url(images/txt.png) center left no-repeat;
+text-decoration:none;
+}
+
+.app #active_content a[href $='.zip'], .app #active_content a[href $='.rar'] {
+display:-moz-inline-stack;
+display:inline-block;
+padding-left:20px;
+line-height:18px;
+background:transparent url(images/zip.png) center left no-repeat;
+}*//*end:commented by raju bogi*/
+
+/**************/
+.app .bbotm .attaches > a, .app #feed .attach > a, .app .att_empty_dialouge > a, .app .att_empty_dialouge_section > a {
+    padding-left: 18px;
+	background:url(images/dialog_img/attachment.png) no-repeat left top;
+}
+
+.app .subgrid .att_empty_dialouge{
+	margin:-20px 0 20px 15px;
+}
+.app .att_empty_dialouge_section{
+	margin:  12px 0 12px 24px;
+}
+/**************/
+
+
+	
+/*endorng*/
+.app .cust_face{
+	background:url(images/dialog_img/ugrey.png) no-repeat 0 0;
+	margin-bottom: -3px;
+	margin-top: -3px;
+}

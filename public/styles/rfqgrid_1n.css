@@ -1,0 +1,485 @@
+
+/* @group Status Bar */
+
+#search_display{
+	background:url(images/mini_icons.png) 0 -63px no-repeat;
+	/*position: absolute;*/
+	color: #8f7e5f;
+	text-shadow: #f5eee3 0 1px 1px;
+	padding: 2px 4px 0 16px;
+	margin-left: 10px;
+	font-size: 12px;
+	display: inline-block;
+}
+#search_display span{
+	color: #5e5036;
+}
+/* @end */
+
+/* @group Filters */
+.app .filterGrid{
+	padding: 2px 5px 3px 10px;
+	color: #555 !important;
+	display: block;
+	width: 48px;
+	margin-right:15px;
+	float: left;
+	margin-top: 3px;
+	font-weight: bold;
+	line-height: 15px;
+	height: 18px;
+	text-align: center;
+	background:url(images/icons/icon_sprites.png) no-repeat 3px -595px;
+	outline:none;
+}
+.app .filterGrid .delete{
+	display: none;
+}
+.app .filter_opts{
+	background:url(images/icons/icon_sprites.png) no-repeat left -619px;
+	padding-left:18px;
+}
+.app .filterGrid:hover{
+	color: #333;
+}
+.app .filter_tab{
+	background: url(images/filter_bg.png) no-repeat left top;
+	padding: 5px 3px 0 10px;
+	color: #666;
+	width:54px; 
+}
+.app .filter_tab .delete{
+	display: block;
+}
+.app #filterBox{
+	z-index: 2;
+	display: none;
+	top: 29px;
+	position: absolute;
+	background: #fff1be url(images/filter_box.gif) left bottom repeat-x ;
+	padding: 0;
+	border-bottom: 1px solid #c2ab5c;
+	/*newly added*/
+	right: 0;
+	left: 0;
+}
+#filterBox .f_tab_ext{
+	/*background: url(images/filter_bg.png) no-repeat 40px -23px;*/
+	height: 8px;
+	margin-bottom: -3px;
+}
+div.remove_cl{
+	float:right;
+	margin-right:60px;
+}
+filterBox .filterrow:first-child{
+	border-top:#000 solid 2px;
+	border-right:#000 solid 2px;
+	border-left:#000 solid 2px;
+	}
+#filterBox .filterrow{
+	padding: 2px 6px;
+	height: 22px;
+	border-bottom:1px #e1dbc5 dotted;
+
+}
+#filterBox .filter_n{
+	padding:10px 0 6px 10px;
+	}
+#filterBox div.filterrow > label{
+	display:block;
+	width:140px;
+	float:left;
+	padding-top:3px;
+	color: #666;
+	}
+a.surya{
+	background: url(images/mail_assets.png) no-repeat -48px -240px;
+	width: 16px;
+	height: 16px;
+	padding-left: 16px;
+	margin-left:4px;
+	}
+a.surya:hover{
+	background: url(images/mail_assets.png) no-repeat -48px -208px;
+	}
+.app ul.inline{
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+.app ul.inline li{
+	display: inline;
+	margin-right:10px;
+}
+.app div.minus{
+	background:url(images/icons/icon_sprites.png) no-repeat left -657px;
+	float:right;
+	margin-right:15px;
+	padding-left:16px;
+	cursor:pointer;
+	margin-top:4px;
+	width:50px;
+	height:16px;
+}
+.app div.minus > span{
+	display:none;
+	padding-top:1px;
+	font-size:12px;
+	color:#666;
+	}
+.app div.minus:hover > span{
+	display:block;
+	}
+.app div.minus:hover{
+	background-position:left -639px;
+	}
+.app .add{
+	cursor:default
+}
+.app .add img{
+	background: url(images/add.png) no-repeat left -16px;
+}
+.app .add:hover img{
+	background-position:left 2px;
+}
+.app #filterBox .remove_c{
+	background:#fffde9 url(images/ft_bg.gif) repeat-x left bottom;
+	}
+
+/*........for filter child box................*/
+
+#new_filter_child.filter_child{
+	border:#c2ab5c solid 1px;
+	margin:0 10px;
+	background:#fff url(images/child_bg.gif) repeat-x top;
+	min-height:26px;
+	max-height: 81px;
+	overflow-x: hidden;
+	oveflow-y: scroll;
+}
+/* @end */
+
+
+/* @group Grid Styles */
+/*.autoGrid{
+	background: url(images/grid.png) repeat scroll;
+}*/
+.app .norecords{
+	border:#444 dotted 1px;
+	background:#ffffcc;
+	padding:4px;
+	color:#000;
+}
+#norecords td img{
+	display:none;
+}
+.no_rec{
+	position:absolute;
+	width:100%;
+	background:#f0f0f0;
+	color:#555;
+	left:0;
+	top:0;
+	text-align:left;
+	bottom:0;
+	padding:6px 0 0 6px;
+	font-weight:bold;
+}
+.autoGrid{
+	position:absolute;
+	left:0;
+	right:0;
+	top:20px;
+	bottom:31px;
+	z-index:1;/*_3*/
+	border-bottom:1px solid #bcc2c7;
+}
+.settings .selectCols li.recordsNum{
+	height:20px
+}
+.settings .selectCols li.recordsNum label{
+	width: auto;
+	float: none;
+	display: inline;
+}
+/* @end */
+
+/* @group Subgrid Styles */
+.secondrow{
+	min-height: 26px;
+}
+.secondrow > div{
+	float: left;
+	width: 120px;
+}
+.app #active_content table.scroll tr.subgrid td.sub_icon{
+	padding: 4px;
+}
+.app #active_content table.scroll tr.subgrid td{
+	background:#eaecec;
+	/*background:url(../../images/act_row.gif) left top repeat-x;*/
+}
+.app #active_content table.scroll tr.subgrid div.secondrow{
+	background:url(../images/act_row.gif) left top repeat-x;
+	/*margin-top:3px;*/
+}
+.app #active_content table.scroll tr.subgrid div.secondrow > ul > li{
+	margin-bottom:4px;
+	float:left;
+	display:block;
+	width:350px;
+	/*background:#f4efef;*/
+}
+.app #active_content table.scroll tr.expanded_row td{
+	background: #778DA8 url(images/controls.png) repeat-x 0 -4210px;
+	border-left:/*#627894*/ #8b9aab solid 1px;
+}
+
+.app #active_content table.scroll tr.expanded_row td a, .app #active_content table.scroll tr.expanded_row td{
+	color:#fff;
+	/*text-decoration:none;*/
+}
+.app #active_content table.scroll tr.subgrid div.secondrow ul > li > label{
+	width:132px;
+	display:block;
+	float:left;
+	color: #666;
+	padding:4px;
+}
+.app #active_content table.scroll tr.subgrid div.secondrow ul > li > span{
+	display:block;
+	float:left;
+	padding-top:4px;
+	color:#333;
+	border-bottom:#333 dotted 1px;
+}
+.app #active_content table.scroll tr.selected td a{
+	color: #fff;
+}
+/* @end */
+/* @lft nav */
+.app .parent_nav li.tallerLeftNav a img.inbox_ico{
+	margin-bottom: -3px;
+	margin-right: 3px;
+	margin-left: -3px;	
+}
+.app .parent_nav li.tallerLeftNav a img.pool_ico{
+	margin-bottom: -3px;
+	margin-right: 3px;
+	margin-left: -3px;
+}
+.app .circle_menu{
+	background:url(images/shared_single.png) left -1px no-repeat;
+}
+/***************/
+.app #active_content table.scroll tr.subgrid div.secondrow > ul > li.job_hist{
+	padding:6px 0 4px 5px;;
+	width:100%;
+	background:#fffecc;
+	border-top:#e6de9f solid 1px;
+}
+.app #active_content table.scroll tr.subgrid div.secondrow > ul > li.job_hist > div{
+	margin-bottom:8px;
+}
+.app #active_content table.scroll tr.subgrid div.secondrow > ul > li.job_hist > div.job_hist_first{
+	width:135px;
+	float:left;
+	color:#666666;
+}
+.app #active_content table.scroll tr.subgrid div.secondrow > ul > li.job_hist > div.job_hist_second{
+	color:#333;
+}
+/*************/
+/**********/
+.app .jqgrow .grid_path_arrow{
+	height: 17px;
+	cursor: default;
+}
+.app .jqgrow .grid_path_arrow .follow{
+	height: 16px;
+	width: 16px;
+	margin-left: 4px;
+	margin-bottom: -2px;
+	background: url(images/mini_icons.png) no-repeat -78px -32px;
+}
+.app .jqgrow:hover .grid_path_arrow .follow, .app .jqgrow.over .grid_path_arrow .follow{
+	background-position: -16px -32px;
+}
+.app .jqgrow.selected  .grid_path_arrow .follow, .app .jqgrow.expanded_row  .grid_path_arrow .follow{
+	background-position: -64px -32px;
+}
+/**********/
+
+/* @end */
+
+/* @group Icons column */
+
+.app .opt_icon{
+	background: url(images/icons/icon_sprites.png) no-repeat left -1795px;
+	color: #8392a4;
+	display: inline-block;
+	font-size: 11px;
+	height: 14px;
+	line-height: 14px;
+	overflow: hidden;
+	padding: 2px 1px 0 4px;
+	width: 10px;
+	float: right;
+	margin-top: -1px;
+}
+.app .selected .opt_icon, .app .expanded_row .opt_icon{
+	background-position: left -1813px;
+	color: #fff;
+}
+
+/* @end */
+
+ 
+/* @group Column Selection */
+ 
+.app .settings img.gear{
+	/*background: url(images/gear.png) no-repeat left -1px;*/
+	background:url(images/shared_single.png) left -1px no-repeat;
+	position: absolute;
+	z-index: 4;
+	border-right: 1px solid #BCC2C7;
+}
+.app .settings img.gear:hover{
+	/*background: url(images/gear.png) no-repeat left -21px;*/
+}
+.app .settings{
+	margin-left: 0;
+	position: relative;
+	z-index: 10;
+	height: 26px;
+	margin-right: 4px;
+	margin-top: -2px;
+	width: 35px;
+	overflow: visible;
+	float: left;
+}
+.app .mr_20{
+	margin-right: 20px;
+}
+.app .settings img.gearDown, .app .settings img.gearDown:hover{
+	background: url(images/gear.png) no-repeat left -41px;
+	background:url(images/shared_single.png) left -49px no-repeat;
+}
+.settings .selectMenu{
+	position: absolute;
+	padding: 0;
+	display: none;
+	z-index: 3;
+	bottom: 24px;
+	left: 8px;
+	height: 200px;
+	width: 200px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius:6px;
+	box-shadow: 0 4px 10px #222;
+	-webkit-box-shadow: 0 4px 10px #222;
+	-moz-box-shadow: 0 4px 10px #222;
+	background: #eee;
+	z-index:5;
+}
+.settings .selectCols{
+	width: 180px;
+	padding: 0 0 4px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 6;
+	_border: 2px solid #1c4167 !ie;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius:6px;
+	overflow: hidden;
+	/*-moz-box-shadow: 0px 1px 12px #000;
+	-webkit-box-shadow: 0px 1px 12px #000;
+	box-shadow: 0px 1px 12px #000;*/
+}
+.settings .selectCols li{
+	padding: 2px 4px;
+	margin: 0;
+	font-size: 12px;
+	clear: both;
+	height: 18px;
+	/*background: #eee;*/
+}
+.settings .selectCols li.menuTitle, .settings .selectCols li.menuTitle:hover {
+	color:#777;
+	font-weight: bold;
+	border-bottom:1px solid #efefef; 	
+	background:#fff url(images/controls.png) 0 -4504px repeat-x; 
+	padding-top:6px; padding-bottom:2px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius:6px;
+	text-shadow: #fff 0px 1px 0px;
+}
+.settings .selectCols li.menuBtn, .settings .selectCols li.menuBtn:hover {
+	text-align:right; background:url(images/controls.png) 0 -5600px repeat-x; padding:4px 4px 0 0
+}
+.settings .selectCols li input{
+	float: left;
+}
+.settings .selectCols li label{
+	display: block;
+	line-height: 15px;
+	float: left;
+	height: 14px;
+	margin-top: 2px;
+	width: 150px;
+}
+.settings .selectCols li:hover{
+	background: #fff;
+	color: #111;
+}
+.app a#excel img, .app a#create_rfq img{
+	float:left;
+	background:url(images/icons/icon_sprites.png) left -311px;
+	margin-right:2px;
+	margin-left:-4px;
+}
+.app a#create_rfq img.c_rfq{
+	background:url(images/icons/icon_sprites.png) left -853px;
+}
+.app a#excel:hover img{
+	background-position:left -331px;
+}
+/* @end */
+
+/*Apperance of no double control bar for grid - overwriting active_actions*/
+.app .negative_margin{
+	margin-top: -26px;
+}
+.app #active_actions{
+	background: none;
+	height: 0px;
+	padding: 0;
+	border-top: none;
+	bottom: 2px;
+	width: 300px;
+	right: auto;
+	z-index:3;
+}
+.app #ac_heading.search_res{
+	background:url(images/mail_assets.png) left -1210px repeat-x;
+}
+
+.app .scroll td a{
+	color: #336999;
+	cursor: pointer;
+}
+
+.app .jqgrow td:first-child, .app .jqgrow.expanded_row td:first-child, .app .jqgrow td:nth-child(2), .app .scroll th:nth-child(2){
+	border-left: none !important;
+}
+.app .jqgrow td:first-child > img{
+	visibility: hidden;
+}
+.app .jqgrow.expanded_row td:first-child > img{
+	visibility: visible;
+}

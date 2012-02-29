@@ -1,0 +1,346 @@
+@charset "utf-8";
+/*black bg track job styles*/
+/*.app #trackjob{
+	min-width: 790px;
+}*/
+.app .bold{
+	font-weight: bold;
+}
+
+.app #trackjob .header_black_bg{
+	background: url(images/trackjob.png) repeat 0 -175px; 
+	height: 36px;
+	position:relative;
+    z-index:2;
+}
+.app #trackjob .header_black_bg .hdr_left{
+	position: absolute;
+    left: 10px;
+    top: 0;
+    width: 75%;
+	color: #fafafa;
+	font-size: 14px;
+	line-height:37px;
+}
+.app #trackjob .header_black_bg .hdr_right{
+	position: absolute;
+    left: 81%;
+    top: 0;
+    width: 25%;
+	line-height:37px;
+}
+.app #trackjob .header_black_bg .hdr_right .date_text{
+	color: #d6d6d6;
+	font-size: 14px;
+}
+.app #trackjob .header_black_bg .hdr_right .date_year{
+	color: #e58f36;
+    font-size: 14px;
+}
+/*********@end*********/	
+/*styles for setting position absolute and relative for all divs*/
+.app #trackjob .contentarea.total_content{
+	top: 37px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.app #trackjob .radial_blue_bg{
+	background: #d4d9df  url(images/white_shadded.png) no-repeat;
+	/*min-width: 700px;*/
+}
+.app #trackjob .cont_header{
+	background: url(images/trackjob.png) repeat-x 0 -620px;
+	/*border-bottom: 1px solid #9fa1a5;*/
+	position: abolute;
+	line-height: 22px;
+	height: 22px;
+	font-weight: bold;
+	right:0;
+	top:36px;
+	z-index:2000;
+	text-shadow: 0 1px 0 #c7c8c8;
+}
+.app #trackjob .cont_header .left_cont .chngs_text{
+	padding-left: 10px;
+}
+.app #trackjob .left_cont{
+	position: absolute;
+    left: 38px;
+    min-width: 50%;
+	max-width: 52%;
+    padding: 9px 0 7px;
+	z-index: 1;
+}
+.app #trackjob .cont_header .left_cont{
+	left: 0;
+}
+.app #trackjob .middle_cont{
+	position: absolute;
+    left: 53%;
+    min-width: 25%;
+    max-width: 27%;
+	padding-top: 7px;
+	z-index: 1;
+}
+
+.app #trackjob .right_cont{
+	position: absolute;
+    left: 83%;
+    min-width: 14%;
+	max-width: 17%;
+	padding-top: 8px;
+	z-index: 1;
+}
+.app #trackjob .cont_header .right_cont, 
+.app #trackjob .cont_header .middle_cont, 
+.app #trackjob .cont_header .left_cont{
+	padding-top: 0;
+}
+/*******************@end@************************/
+.app #trackjob .l_bars{
+    margin-top: 20px;  
+}
+.app #trackjob .l_bars .row{
+	background:transparent url(images/trackjob.png) repeat-x scroll left -212px;
+	min-width:790px;
+	height: 30px;
+	color: #656565;
+	font-size: 12px;
+	/*margin-top: 10px;*/
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+	text-shadow: 0 1px 0 #e2e3e5;	
+}
+.app #trackjob .l_bars .row.grey{
+	background-position:0 -142px;
+	border-top: 1px solid #adadad;
+	/*border-bottom: 1px solid #adadad;*/
+}
+.app #trackjob .l_bars .row.grey:hover{
+	background-position: 0 -282px;
+	border-top: 1px solid #adadad;
+	/*border-bottom: 1px solid #adadad;*/
+}
+.app #trackjob .l_bars .row.blue, 
+.app #trackjob .l_bars .row.current, 
+.app #trackjob .l_bars .row.current:hover{
+	background-position: 0 -109px;
+	border-top: 1px solid #afc4d7;
+	/*border-bottom: 1px solid #afc4d7;*/
+}
+.app #trackjob .l_bars .row.blue:hover{
+	background-position:0 -446px;
+	border-top: 1px solid #afc4d7;
+	border-bottom: 1px solid #afc4d7;
+}
+.app #trackjob .l_bars .row.orange,
+.app #trackjob .l_bars .row.orange:hover{
+	/*background-position: 0 -660px;*/
+}
+
+
+.app #trackjob .l_bars .row .rev_cnt{
+	background: url(images/trackjob.png) no-repeat -2px -710px;
+	color: #FFFFFF;
+	font-size: 10px;
+	height: 11px;
+	left: 10px;
+	padding: 4px 0;
+	position: absolute;
+	text-align: center;
+	text-shadow: 0 1px 0 #7E7D7D;
+	top: 6px;
+	width: 20px;
+}
+
+.app #trackjob .l_bars .row.orange .rev_cnt{
+	background-position: -2px -928px;
+}
+
+.app #trackjob .l_bars .row_content{
+	background: #e0e3e8 url(images/shadded_grey.png) repeat-x scroll;
+	border: 1px solid #b7b7b7;
+	border-color:#b7b7b7 #bfc1c6 #b8bcc1 #bfc1c6;
+	margin: 0 16px 16px;
+	/*overflow-x:hidden;*/
+	overflow: auto;
+	display: none;
+	max-height: 104px;
+	padding: 4px 0;
+}
+.app #trackjob .l_bars .row_content .act_desc{
+	margin: 5px 10px;
+	border-bottom: 1px dotted #bdbec0;
+	padding: 5px;
+}
+.app #trackjob .cont_header .middle_cont img.user_ico{
+	background: url(images/trackjob.png) no-repeat 0 -394px; 
+	width: 16px;
+	height: 16px;
+	margin-bottom: -2px;	
+}
+.app #trackjob .cont_header .right_cont img.small_cal_ico{
+	background: url(images/trackjob.png) no-repeat 0 -22px;
+	width: 16px;
+	height: 16px;
+	margin-bottom: -2px;
+}
+.app #trackjob .l_bars .row .track_icn{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 1px;
+	top: 8px;
+
+	/*-webkit-animation-name: spinnerRotate;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;*/
+	
+	-webkit-animation-name: glowAnimation;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes glowAnimation {
+	from {
+		opacity: 1;
+	}
+	50% {
+		opacity: .50;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes spinnerRotate {
+	from {
+		-webkit-transform:rotate(0deg);
+	}
+	to {
+		-webkit-transform:rotate(360deg);
+	}
+}
+
+/*.app #trackjob .l_bars .row img.product_ico{
+	background:url(images/trackjob.png) no-repeat 0 -72px;
+	width:18px;
+	height:16px;
+	margin-bottom: -2px;
+}*/
+.app #trackjob .l_bars .row .left_cont,
+.app #trackjob .l_bars .row .middle_cont,
+.app #trackjob .l_bars .row .right_cont{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.app #trackjob .l_bars .row .left_cont .sec_desc{
+	padding-left: 26px;
+}
+
+
+.app #trackjob_details .row .c_inf{
+	background:  url(images/trackjob.png) no-repeat 26px -843px;
+}
+.app #trackjob_details .row .c_inf.open{
+	background-position: 26px -859px;
+}
+.app #trackjob_details .row .left_cont .sec_desc.c_inf{
+	padding-left: 42px;
+}
+
+
+
+.app #trackjob .l_bars .row_content .vend_added{
+	width: 210px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.app #trackjob .l_bars .row_content .tot_cost{
+	padding-top: 10px;
+}
+.app #trackjob .l_bars .row_content .vend_added .dyn_vend{
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #656565;
+}
+.app #trackjob .l_bars .row_content .tot_cost .dyn_tcost{
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #656565;
+}
+.app #trackjob .show_changes{
+	margin: 25px;
+} 
+.app #trackjob .show_changes a.click_changes{
+	color: #566778;
+	font-weight: bold;
+	background:  url(images/trackjob.png) no-repeat 0 -590px;
+	padding-left: 20px;
+	margin-left: 12px;
+	/*border: 1px solid #eee;
+	background: #fff;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	text-shadow: 0 1px 0 #ddd;
+	padding: 0 10px;*/
+}
+.app #trackjob .show_changes a:hover{
+	color: #3e4e5e;
+}
+.app .parent_nav.tall_nav li a .trc_clk{
+	background: url(images/trackjob.png) no-repeat 0 -90px;
+	width: 16px;
+	height: 16px;
+}
+.app #trackjob #trackjob_details.l_bars.no_changes{
+	padding-left:8px;
+	padding-top:10px;
+	font-size:14px;
+	font-weight:bold;
+}
+.app #trackjob .l_bars.no_changes .show_changes{
+	display: none;
+}
+
+
+
+.app #trackjob .l_bars .row_content .act_desc .tj_value{
+	font-weight: bold;
+}
+
+.app #trackjob .l_bars .row_content .act_desc{
+	color: #666;
+	font-size: 11px;
+}
+.app #trackjob .l_bars .row_content .act_desc .tj_label,
+.app #trackjob .l_bars .row_content .act_desc .tj_value,
+.app #trackjob .l_bars .row_content .act_desc .tj_sub_head{
+	color: #444;
+}
+.app #trackjob .l_bars .row_content .act_desc .tj_sub_head{
+	font-size: 13px;
+}
+.app #trackjob .l_bars .row_content .act_desc .p_l_20{
+	padding-left: 20px;
+}
+.app #trackjob .l_bars .row_content .act_desc .p_l_40{
+	padding-left: 40px;
+}
+
+
+.app #trackjob .prev_nextWrap{
+	margin-top: 2px;
+}
+
+.app #trackjob .prev_nextWrap img{
+	margin-bottom: -4px;
+}

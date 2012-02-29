@@ -1,0 +1,421 @@
+
+.app #active_content .sepbg
+{
+background:#ccc url(../styles/images/ship_bg.gif) left center repeat-x;
+height:8px;
+}
+
+.app #active_content h4{
+	border-bottom:1px solid #d4dbe2;
+	padding:8px;
+	margin:8px 10px 2px 10px;
+	line-height:12px;
+	color:#5f7084;
+	font-weight:normal;
+	font-size:16px;
+	font-weight:bold;
+	}
+.app #active_content h5{
+	border-bottom:1px solid #f7f7f7;
+	padding:8px;
+	margin:15px 10px 2px 10px;
+	line-height:18px;
+	color:#444;
+	font-size:13px;
+	font-weight:normal;
+	}
+.app #active_content h6{	
+	color:#878787;
+	font-size:16px;
+	font-weight:400;
+	padding:6px;
+	margin:0;
+	color:#444;
+	border-bottom:#f3f3cd dotted 1px;
+	background:#feffe0;
+	}
+.detls{
+	border-bottom:1px solid #eee;
+	padding-bottom:8px;
+	margin:8px 10px 0 18px;
+	}
+
+.app .autoGrid{
+	position:absolute;
+	bottom:31px;
+	top:22px;
+	left:0;
+	right:0;
+	}
+
+.app div#staffship_div.scroll a#excel img{
+	float:left;
+	background:url(../images/excel_ex.png)  no-repeat left top;
+	margin-right:2px;
+	margin-left:-4px;
+	opacity:0.7;
+}
+.app div#staffship_div.scroll a#excel:hover img{
+	background:background:url(../images/excel_ex.png)  no-repeat left top;
+	opacity:1;
+}
+.app div#staffship_div.scroll a#print_ship img{
+	float:left;
+	background:url(../styles/images/icons/icon_sprites.png) left -807px no-repeat;
+}
+.app div#staffship_div.scroll a#print_ship:hover img{
+	background-position:left -830px;
+}
+.app div#staffship_div.scroll a#print_ship img{
+	float:left;
+	background:url(../styles/images/icons/icon_sprites.png) left -807px no-repeat;
+}
+.app div#staffship_div.scroll a#print_ship:hover img{
+	background-position:left -830px;
+}
+.app a#add_admin_newship img{
+	float:left;
+	background: url(../styles/images/icons/icon_sprites.png) no-repeat left -219px;
+	margin-right:2px;
+	margin-left:-4px;
+}
+.app a#add_admin_newship:hover img{
+	background-position:left -243px;
+}
+
+
+.app #active_content .topcont{
+	top:0;
+	height:50%;
+	position:absolute;
+	/*overflow:auto;*/
+	left:0;
+	right:0;
+	}
+.app #active_content .botcont{
+	bottom:0;
+	height:50%;
+	position:absolute;
+	overflow:auto;
+    border-top:1px solid #ccc;
+   left:0;
+   right:0;
+	}
+.app #active_content .shpdet
+   {
+   font-size:14px;
+   color:#878787;
+   font-weight:normal;
+   }
+.app #active_content .shlight
+   {
+   font-size:12px;
+   width:120px;
+   display:block;
+   float:left;
+   color:#444;
+   }
+.app #active_content .dprtmts
+   {
+    padding:0;
+	padding-bottom:10px;
+	margin:0 10px;
+	height:55px;
+	border-bottom:1px solid #eee;
+	color:#878787;
+	}
+.app #active_content .dprtmts ul
+	{
+	list-style:none;
+	display:block;	
+	}	
+.app #active_content .dprtmts li
+	{
+	margin:10px 5px 0 100px;
+	padding:5px 5px 8px 40px;
+	width:65px;
+	float:left;
+	}
+/*.app #active_content .etchina
+	{
+	background:url(../styles/images/etachina.png) no-repeat left center;
+	}
+.app #active_content .etport
+	{
+	background:url(../styles/images/port.png) no-repeat left center;
+	}
+.app #active_content .etdes
+	{
+	background:url(../styles/images/etades.png) no-repeat left center;
+	}*/
+.app #active_content .detls ul
+	{
+	list-style:none;
+	display:block;
+	padding-bottom:15px;
+	}
+.app #active_content .detls li{
+     width:350px;
+	 float:left;
+	 display:block;
+	 }
+.app #active_content .detls li span{
+	display:block;
+	padding-right:14px;
+	margin-left:140px;
+	}
+.app #active_content .detls label{
+    width:140px;
+	display:block;
+	float:left;
+	color:#878787;
+	}
+.app #active_content .note
+    {
+    padding:0 0 8px 8px;
+	margin:0 10px 0 10px;
+	border-bottom:1px solid #f7f7f7;
+	}
+	
+.app #active_content #contactgroups
+	{
+	height:100px; 
+	background:#eee;
+	right:0;
+    position:absolute; 
+    overflow: auto;
+	left:0; 
+    border-right: 1px solid #aaa;
+	border-left: 1px solid #fff;	
+	border-bottom: 1px solid #aaa;
+	}
+
+.app #active_content #comlist
+	{
+	position:absolute;
+	overflow: auto;
+    top: 102px;
+	bottom: 1px;
+    background: #eee; 
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #fff;
+	left:0;
+	right:0;
+	
+	
+	}
+.app #active_content #comlist ul
+{
+    margin: 2px 0;
+	padding: 0;
+	list-style: none;	
+}
+.app #active_content #comlist li
+	{
+	margin: 4px 0;
+	padding:5px;
+	
+	}
+.app #active_content #comlist li:hover
+	{
+	background:#d6d6d6;
+	}
+.app #comlist li a
+	{
+	text-decoration:none;
+	}
+.app #active_content .group
+	{
+	background:url(images/bg.jpg) repeat-x left top;
+	border:1px solid #ccc;
+	height:20px;
+	width:100px;
+	margin:12px 0 2px 8px;
+	padding-left:3px;
+	
+	}
+.app #active_content .dwn{
+	background:url(images/dwn.jpg) no-repeat right;
+	width:20px;
+	height:20px;
+	float:right;
+	}
+.app #active_content .photo{
+   background:url(images/brace.gif) no-repeat left;
+   width:50px;
+   height:50px;
+   top:30px;
+   position:absolute; 
+   right:60px;
+}
+.app #active_content .tmenu
+	{
+	margin:28px 5px -1px 12px;
+	padding:0;
+	overflow:visible;
+	}
+.app #active_content .tmenu ul
+	{
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:block;
+	position:relative;
+	z-index:2;
+}
+.app #active_content .tmenu li
+	{
+	margin:0 3px 0 0;
+	display:block;
+	float:left;
+	background:#fbfbfb;
+	}
+.app #active_content .tmenu li a
+	{
+	background:#fafafa;
+	text-decoration: none;
+	margin-top:1px;
+	padding:3px 4px 2px 4px;
+	color:#aaa;
+	display:block;
+	height:18px;
+	line-height:14px;
+	font-size:14px;
+	overflow:hidden;
+	border-top:1px solid #eee;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+	cursor:pointer;
+	}
+	
+
+.app #active_content .tmenu li a.active
+	{
+	background:#fff url(images/acbg.jpg) repeat-x left top;
+	padding:3px 4px 4px 4px;
+	color:#777;
+	margin:0;
+	line-height:15px;
+	font-size:15px;
+	cursor:default;
+	border-top:1px solid #c9c9c9;
+	border-left:1px solid #c9c9c9;
+	border-right:1px solid #c9c9c9;
+
+	}
+.app #active_content .descrip
+	{
+	margin:-1px 5px 0 12px;
+    padding:23px;
+	border:1px solid #ccc;
+    height:120px;
+	overflow:auto;
+	clear:both;
+	z-index:1;
+
+	}
+.app #active_content .descrip ul
+	{
+	margin-top:48px;
+	list-style:none;
+	display:block;	
+	}
+.app #active_content .descrip li
+{
+	display:block;
+	float:left;
+	width:320px;
+	padding:12px 5px 3px 12px;
+}
+.app #active_content .descrip li label{ 
+float:left;
+width:120px;
+display:block;
+}
+.app .norecords{
+	border:#444 dotted 1px;
+	background:#ffffcc;
+	padding:4px;
+	color:#000;
+}
+
+
+.no_rec{
+	position:absolute;
+	width:100%;
+	background:#f0f0f0;
+	color:#555;
+	left:0;
+	top:0;
+	text-align:left;
+	bottom:0;
+	padding:6px 0 0 6px;
+	font-weight:bold;
+}
+
+/**modal window styles**
+.app .msgmodal.admin_shipping_win{
+	width: 800px;
+	margin-left: -400px;
+	height: 500px;
+	margin-top: -250px;
+}
+.app .msgmodal.admin_shipping_win .frmholder{
+	position: absolute; 
+	right: 14px; 
+	left: 14px; 
+	bottom: 54px; 
+	top: 60px; 
+}
+*@end*/
+
+.app #inform .ship_table{
+	width: 100%;
+}
+.app #inform .ship_table td{
+	vertical-align: top;
+}
+.app #inform .ship_table td.l_label{
+	width: 140px;
+}
+.app #inform .ship_table td.r_label{
+	width: 100px;
+}
+.app #inform .ship_table td.empty{
+	width: 50px;
+}
+.app #inform .ta_ship_fwd{
+	width: 210px;
+	height: 50px;
+}
+.app #inform .ta_ship{
+	width: 584px;
+	height: 80px;
+}
+
+
+/**modal window styles**/
+.app .msgmodal.admin_shipping_win{
+	width: 800px;
+	margin-left: -400px;
+	height: 500px;
+	margin-top: -250px;
+}
+.app .msgmodal.admin_shipping_win .frmholder{
+	position: absolute; 
+	right: 14px; 
+	left: 14px; 
+	bottom: 0px; 
+	top: 60px; 
+}
+/*@end*/
+/*******start: modal window custom styles**********/
+.app .msgmodal.admin_shipping_win .frmholder .bdy{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 56px;
+	left: 0;
+}
+
+/*******end: modal window custom styles**********/

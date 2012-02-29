@@ -1,0 +1,121 @@
+/************************
+	content: pdf format styles
+	author: EnterPI
+	MOdified on 22 Oct 2009
+***********************/
+.qfc_temp{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.qfc_temp .est_opt_hdr{
+	border-bottom: 1px dotted #efefef;
+	padding-bottom: 4px;
+}
+.qfc_temp .est_hdr, .qfc_temp .est_master_table{
+	width: 1000px;
+}
+.qfc_temp .est_hdr{
+	margin: 10px 0;
+}
+.qfc_temp .est_master_table {	
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+.qfc_temp .est_master_table td {
+	_border: 1px solid #dedede;
+	width: 104px;
+}
+
+
+.qfc_temp .est_master_table .ar{
+	text-align: right;
+}
+
+
+
+
+
+
+.qfc_temp .est_master_table .empty_row{
+	border: 0 none;
+	height: 2px;
+}
+
+.qfc_temp .est_master_table .top_est_sec{
+	background-color: #e9f0ea;
+}
+.qfc_temp .est_master_table .sec_hdr{
+	background-color: #ececec;
+	border: 1px solid #dedede;
+	font-weight: bold;
+	font-size: 14px;
+}
+.qfc_temp .est_master_table .sec_hdr.l{
+	border-right: 0 none;
+}
+.qfc_temp .est_master_table .sec_hdr.r{
+	border-left: 0 none;
+}
+.qfc_temp .est_master_table .cost_sec{
+	background-color: #f3f3f3;
+}
+
+
+.qfc_temp .est_master_table .l_brdr {
+	border-left: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .r_brdr {
+	border-right: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .lr_brdr {
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .t_brdr {
+	border-top: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .b_brdr {
+	border-bottom: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .tb_brdr {
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .lb_brdr {
+	border-left: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .rb_brdr {
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .lt_brdr {
+	border-left: 1px solid #dedede;
+	border-top: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .rt_brdr {
+	border-right: 1px solid #dedede;
+	border-top: 1px solid #dedede;
+}
+.qfc_temp .est_master_table .cst_brdr{
+	border-left: 1px solid #fefefe;
+	border-right: 1px solid #dedede;
+}
+
+
+.qfc_temp .est_master_table .no_brdr {
+	border: 0 none;
+}
+
+
+
+.qfc_temp .comp_ph {
+	width: 378px;
+}
+.qfc_temp .comp_ph td {
+	width: 50%;
+	text-align: right;
+}
+
+
+

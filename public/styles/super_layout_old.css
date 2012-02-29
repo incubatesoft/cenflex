@@ -1,0 +1,109 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	background: #d3d3d3;
+}
+form{
+	margin: 0;
+	padding: 0;
+}
+.app{
+	color: #565656;
+	
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+}
+.app a{
+	text-decoration: none;
+}
+.app > .contentarea{
+	min-width: 1000px;
+	min-height: 500px;
+}
+.app .contentarea, .app .header, .app .controlbar{
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+.app .header{
+	top: 0;
+}
+.app .contentarea{
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+}
+.app .controlbar{
+	border-top: 1px solid #fff;
+	bottom: 0;
+	height: 30px;
+	background: #f0f0f0;
+}
+/*Application Header*/
+.app.header_true > .contentarea{
+	top: 45px;
+}
+/*Application Control bar*/
+.app.controlbar_true > .contentarea{
+	bottom: 31px;
+	border-bottom: 1px solid #aaa;
+}
+
+/*When Left Content is fixed*/
+.app .contentarea.leftcontent_true > .contentarea.left_content{
+	left: 0;
+	right: auto;
+	background: #e0e0e0;
+	width: 210px;
+	border-right: 1px solid #aaa;
+}
+.app .contentarea.leftcontent_true > .contentarea.right_content{
+	right: 0;
+	left: 211px;
+}
+
+/*When Right Content is Fixed*/
+.app .contentarea.rightcontent_true > .contentarea.left_content{
+	left: 0;
+	right: 211px;
+}
+.app .contentarea.rightcontent_true > .contentarea.right_content{
+	right: 0;
+	left: auto;
+	width: 210px;
+	border-left: 1px solid #aaa;
+}
+
+/*When Right and Left Content are Fixed*/
+.app .contentarea.leftrightcontent_true > .contentarea.left_content{
+	left: 0;
+	right: auto;
+	width: 210px;
+	border-right: 1px solid #aaa;
+}
+.app .contentarea.leftrightcontent_true > .contentarea.center_content{
+	left: 211px;
+	right: 211px;
+}
+.app .contentarea.leftrightcontent_true > .contentarea.right_content{
+	right: 0;
+	left: auto;
+	width: 210px;
+	border-left: 1px solid #aaa;
+}
+
+
+/*Each Contentarea when Header is true*/
+.app .contentarea.header_true > .contentarea{
+	top: 31px;
+}
+/*Each Contentarea when Controlbar is true*/ /*added form class for extra form in between*/
+.app .contentarea.controlbar_true > .contentarea, .app .contentarea.controlbar_true > form > .contentarea{
+	bottom: 31px;
+	border-bottom: 1px solid #aaa;
+}
+
+/*Hide every section in the app*/
+.app .section{
+	display: none;
+}

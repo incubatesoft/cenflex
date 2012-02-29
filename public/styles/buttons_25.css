@@ -1,0 +1,326 @@
+/* @group Buttons */
+.app  .cbtn{
+	border: 1px solid #7a7a7a;
+	background: #f6f6f6 url(images/button.png) center top;
+	color: #666;
+	padding: 3px 10px;
+}
+.app  .cbtn:hover{
+	border: 1px solid #555;
+	background: #f6f6f6 url(images/button.png) center -26px;
+	color: #333;
+}
+.app  .cbtn:active{
+	border: 1px solid #555;
+	background: #f6f6f6 url(images/button.png) center -53px;
+	color: #555;
+}
+.app  .btn_txt{
+	float: left;
+	padding-top: 2px;
+	font-size: 12px;
+	display: block;
+	height: 17px;
+	padding-bottom: 2px;
+	background: url(images/controls.png) repeat-x 0 -1152px;
+}
+.app  a.btn{
+	text-decoration: none !important;
+	color: #000 !important;
+	background: url(images/controls.png) no-repeat 100% -360px;
+	padding-right: 12px;
+	padding-left: 2px;
+	margin: 2px 3px 2px 0; /*prev: 0 3px 0 0*/
+	height: 24px;
+	display: -moz-inline-stack;
+	display: inline-block;	
+	outline: none;
+	cursor: not-allowed;
+	text-shadow: #fff 0 1px 0;
+}
+.app  a.btn span.inner-btn{
+	background: url(images/controls.png) no-repeat left -24px;
+	height: 24px;
+	display: block;
+	padding-left: 4px;
+}
+.app  a.btn span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -216px;
+	padding: 3px 0 7px;
+	display: block;
+	min-width:48px;
+	text-align: center;
+	margin-left: 8px;
+	height: 14px;
+}
+
+/* @group Active Button Styles */
+.app  a.active{
+	text-decoration: none !important;
+	color: #000 !important;
+	background: url(images/controls.png) no-repeat 100% -336px;
+	cursor: default;
+	text-shadow: #fff 0 1px 0;
+}
+.app  a.active span.inner-btn{
+	background: url(images/controls.png) no-repeat left top;
+}
+.app  a.active span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -192px;
+}
+.app  a.active:hover, .app  a.main_btn{
+	background-position:100% -384px;
+}
+.app  a.active:hover span.inner-btn, .app  a.main_btn span.inner-btn{
+	background-position: left -48px;
+}
+.app  a.active:hover span.inner-btn span.label, .app  a.main_btn span.inner-btn span.label{
+	background-position: left -240px;
+	color: #000;
+	text-shadow: silver 0 1px 0;
+}
+.app  a.active:active, .app  a.active.btn_press:hover  {
+	background-position:100% -408px;
+}
+.app  a.active:active span.inner-btn, .app  a.active.btn_press:hover span.inner-btn{
+	background-position: left -72px;
+}
+.app  a.active:active span.inner-btn span.label, .app  a.active.btn_press:hover span.inner-btn span.label{
+	background-position: left -264px;
+	color: #222;
+	text-shadow: #aaa 0 1px 0;
+}
+ 
+ 
+ 
+/* @end */
+ 
+.app  a.smallbtn{
+	text-decoration: none !important;
+	color: #777 !important;
+	background: url(images/controls.png) no-repeat 100% -1800px;
+	padding-right: 11px;
+	padding-left: 2px;
+	margin-right: 3px;
+	height: 19px;
+	display: -moz-inline-stack;
+	display: inline-block;	
+	outline: none;
+	font-size: 12px;
+	cursor: not-allowed;
+	text-shadow: #fff 0 1px 0;
+}
+.app  a.smallbtn span.inner-btn{
+	background: url(images/controls.png) no-repeat left -1656px;
+	height: 24px;
+	display: block;
+	padding-left: 3px;
+}
+.app  a.smallbtn span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -1176px;
+	padding: 2px 0 7px;
+	display: block;
+	min-width:48px;
+	text-align: center;
+	margin-left: 8px;
+	height: 14px;
+}
+/* @group Active Button Styles */
+.app  a.smallbtn.smallactive{
+	text-decoration: none !important;
+	color: #000 !important;
+	background: url(images/controls.png) no-repeat 100% -1776px;
+	cursor: default;
+	text-shadow: #fff 0 1px 0;
+}
+.app  a.smallbtn.smallactive span.inner-btn{
+	background: url(images/controls.png) no-repeat left -1632px;
+}
+.app  a.smallbtn.smallactive span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -1152px;
+}
+
+
+.app  a.smallbtn.smallactive:hover, .app  a.smallmain_btn{
+	background-position:100% -1824px;
+}
+
+.app  a.smallbtn.smallactive:hover span.inner-btn, .app  a.smallbtn.smallmain_btn span.inner-btn{
+	background-position: left -1680px;
+}
+.app  a.smallbtn.smallactive:hover span.inner-btn span.label, .app  a.smallbtn.smallmain_btn span.inner-btn span.label{
+	background-position: left -1200px;
+	color: #000;
+	text-shadow: silver 0 1px 0;
+}
+.app  a.smallbtn.smallactive:active, .app  a.smallbtn.smallactive.btn_press:hover  {
+	background-position:100% -1824px;
+}
+.app  a.smallbtn.smallactive:active span.inner-btn, .app  a.smallbtn.smallactive.btn_press:hover span.inner-btn{
+	background-position: left -1680px;
+}
+.app  a.smallbtn.smallactive:active span.inner-btn span.label, .app  a.smallbtn.smallactive.btn_press:hover span.inner-btn span.label{
+	background-position: left -1200px;
+	color: #222;
+	text-shadow: #aaa 0 1px 0;
+}
+ 
+ 
+.app  a.smallbtn.smallactive span.inner-btn{
+	background: url(images/controls.png) no-repeat left -1632px;
+}
+.app  a.smallbtn.smallactive span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -1152px;
+}
+.app  a.smallbtn.smallactive:hover, .app  a.smallbtn.smallmain_btn{
+	background-position:100% -1824px;
+}
+.app  a.smallbtn.smallactive:hover span.inner-btn, .app  a.smallbtn.smallmain_btn span.inner-btn{
+	background-position: left -1680px;
+}
+.app  a.smallbtn.smallactive:hover span.inner-btn span.label, .app  a.smallbtn.smallmain_btn span.inner-btn span.label{
+	background-position: left -1200px;
+	color: #000;
+	text-shadow: silver 0 1px 0;
+}
+.app  a.smallbtn.smallactive:active, .app  a.smallbtn.smallactive.btn_press:hover  {
+	background-position:100% -1848px;
+}
+.app  a.smallbtn.smallactive:active span.inner-btn, .app  a.smallbtn.smallactive.btn_press:hover span.inner-btn{
+	background-position: left -1704px;
+}
+.app  a.smallbtn.smallactive:active span.inner-btn span.label, .app  a.smallbtn.smallactive.btn_press:hover span.inner-btn span.label{
+	background-position: left -1224px;
+	color: #222;
+	text-shadow: #aaa 0 1px 0;
+}
+
+
+/*start: contacts save cancel delete buttons*/
+.app a.btn > span > span > img{
+	float: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	background: transparent url(images/contacts_assets.png) no-repeat;
+	width: 16px;
+	height: 16px;
+}
+.app a.btn > span > span > img.edit{
+	background-position: -27px 0;
+}
+.app a:hover.btn > span > span > img.edit{
+	background-position: -27px -22px;
+}
+.app a.btn > span > span > img.cancel{
+	background-position: -56px 1px;
+}
+.app a:hover.btn > span > span > img.cancel{
+	background-position: -56px -21px;
+}
+.app a.btn > span > span > img.save{
+	background-position: -2px 0;
+}
+.app a:hover.btn > span > span > img.save{
+	background-position: -2px -22px;
+}
+.app a.btn > span > span > img.delete{
+	background-position: -84px 0;
+}
+.app a:hover.btn > span > span > img.delete{
+	background-position: -84px -22px;
+}
+/*end: buttons*/
+
+
+.app  .block_load{
+	color:#333;
+	font-size:20px;
+	min-width: 300px;
+	font-weight: bold;
+	background: #f0f0f0;
+	padding: 10px 20px;
+	/*white-space: nowrap;*/
+	overflow: hidden;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #999;
+	text-shadow: #fff 0 1px 0;
+}
+.app  h2.block_load{
+	display: -moz-inline-stack;
+	display: inline-block;	
+	font-size: 16px;
+	white-space: nowrap;
+	max-width:350px !ie;
+	overflow: hidden;
+}
+ 
+.load_over{
+	overflow: hidden;
+}
+.app  .block_load img{
+	margin-bottom: -6px;
+}
+.app  h2.block_load img{
+	margin-bottom: -8px;
+}
+/* @end */
+ 
+ 
+.prev_nextWrap{
+	width: 400px;
+	/*float: right;*/
+	position: relative;
+	padding:3px 8px 1px;
+	float: right;
+	text-align: right;
+}
+.prev_nextWrap span, .prev_nextWrap a{
+	display: inline;
+	margin: auto;
+	padding: 0;
+}
+.prev_nextWrap span.fl{
+	color: #777;
+	margin-top: -1px;
+}
+.prev_nextWrap span.fl select{
+	color: #777;
+	font-size: 11px;
+	background: #efefef;
+	border: 1px solid #999;
+	margin: -2px 2px;
+}
+.prev_nextWrap img{
+	margin-top: -2px;
+}
+.prev img{
+	background: url(images/controls.png) left -5344px;
+	margin-right: -3px;
+	margin-left: -2px;
+	margin-bottom: -3px;
+}
+.prev a.active img{
+	background-position: left -5280px;
+}
+.prev a.mdown img{
+	background-position: left -5312px;
+}
+.prev_disabled{
+	background: url(images/controls.png) left -5344px;
+	cursor: default;
+}
+.next img{
+	background: url(images/controls.png) left -5440px;
+	margin-right: -3px;
+	margin-left: -3px;
+	margin-bottom: -3px;
+}
+.next a.active img{
+	background: url(images/controls.png) left -5376px;
+	cursor: default;
+}
+.next a.mdown img{
+	background-position: left -5408px;
+}
+/* @end */

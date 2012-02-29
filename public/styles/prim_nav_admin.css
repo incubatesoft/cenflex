@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* Added by Sharmila for Admin Header fixes*/
+/* @group Menu Nav */
+.app #header{
+	border-bottom:1px solid #888
+}
+/*Overwriting custom for admin*/
+.app > .contentarea#contentarea{
+	margin-top:0;
+}
+.app ul.nav{
+	/*clear: both;*/
+	margin: 1px 0 0;
+	padding:0;
+	height:46px;
+	border-left:1px solid #222;
+	border-right:1px solid #666;
+}
+ul.nav li{
+	float: left;
+}
+ul.nav li.current_page{
+}
+ul.nav li a{
+	color: #aaa;
+	font-size: 14px;
+	text-shadow: #000000 0 1px 0;
+	display: block;
+	padding:13px 8px 3px;
+	line-height: 18px;
+	height:30px;
+	text-decoration: none;
+	outline: none;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	border-left:1px solid #666;
+	border-right:1px solid #222
+}
+ul.nav li a img{
+	width: 16px;
+	height: 16px;
+	margin-bottom:-1px;
+	margin-right:3px;
+	outline:none;
+}
+ul.nav li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+ul.nav li.current_page a{
+	background:url(images/admin_header_new.png) repeat-x;
+	padding: 14px 8px 2px;
+	text-shadow: #000000 0 -1px 0;
+}
+ul.nav li.current_page a,ul.nav li.current_page a:hover{
+	color:#fff;
+}
+ul.nav li a img.forms{
+	background:url(images/icon_sprites.png) no-repeat 0 -1323px;
+}
+ul.nav li a:hover img.forms{
+	background:url(images/icon_sprites.png) no-repeat 0 -1353px;
+}
+ul.nav li a img.users{
+    background:url(images/icon_sprites.png) no-repeat 0 -85px;
+}
+ul.nav li a:hover img.users{
+    background:url(images/icon_sprites.png) no-repeat 0 -105px;
+}
+ul.nav li a img.jobs{
+    background:url(images/icon_sprites.png) no-repeat 0 -740px;
+}
+ul.nav li a:hover img.jobs{
+    background:url(images/icon_sprites.png) no-repeat 0 -762px;
+}
+ul.nav li a img.shipping{
+    background:url(images/icon_sprites.png) no-repeat 0 -220px;
+}
+ul.nav li a:hover img.shipping{
+    background:url(images/icon_sprites.png) no-repeat 0 -244px;
+}
+ul.nav li a img.jobs_ico{
+    background: url(images/icons/icon_sprites24.png) no-repeat 0 0;
+	opacity:0.7;
+} 
+ul.nav li a:hover img.jobs_ico{
+    background: url(images/icons/icon_sprites24.png) no-repeat 0 0; 
+	opacity:1;
+} 
+
+
+
+ul.nav li.current_page a img.forms{
+	background:url(images/icon_sprites.png) no-repeat 0 -1353px;
+}
+ul.nav li.current_page a img.users{
+	background:url(images/icon_sprites.png) no-repeat 0 -104px;
+}
+ul.nav li.current_page a img.jobs{
+	background:url(images/icon_sprites.png) no-repeat 0 -762px;
+}
+ul.nav li.current_page a img.shipping{
+	background:url(images/icon_sprites.png) no-repeat 0 -244px;
+}
+ul.nav li.current_page a img.jobs_ico{
+    background: url(images/icons/icon_sprites24.png) no-repeat 0 0; 
+	opacity:1;
+} 
+
+
+/*for superadmin*/
+ul.nav li a img.contacts{
+    background:url(images/mail-open.png) no-repeat;
+	opacity:0.7;
+}
+ul.nav li a:hover img.contacts{
+    background:url(images/mail-open.png) no-repeat;
+	opacity:1;
+}
+ul.nav li.current_page a img.contacts{
+	background:url(images/mail-open.png) no-repeat;
+	opacity:1;
+}
+/*end*/
+
+
+.login_info{
+	color: #ddd;
+	padding-right: 5px;
+	max-width:300px;
+	height:46px;
+	width: auto !important;
+}
+.login_info .userdetails{
+   	color:#CCCCCC;
+    float:right;
+    font-size:12px;
+	padding:4px 10px 2px 5px;
+	text-overflow: ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+ }
+.app .login_info a{
+   clear:right;
+   color:#eee;
+   text-decoration: none;
+   display: inline-block;
+   font-size:12px;
+   background:url(images/icons/icon_sprites24.png) no-repeat 0 -96px;
+   opacity:0.7;
+   margin:0 5px 0 0;
+   padding:4px 7px 4px 24px;
+}
+.app .login_info a:hover{
+   background:url(images/icons/icon_sprites24.png) no-repeat 0 -96px;
+   opacity:1;
+   color:fff;
+}
+
+/* @end */
+
+
+
+
+
+
+
+
+

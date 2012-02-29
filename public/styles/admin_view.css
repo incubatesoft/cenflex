@@ -1,0 +1,428 @@
+@charset "utf-8";
+/* CSS Document */
+
+.app .contentarea #active_content h3.main_header {
+	background: url(images/mail_assets.png) repeat-x 0 -1420px;
+	font-weight: bold;
+	font-size: 16px;
+	border-bottom: 1px dotted #d7d7d7;
+	color: #444;
+	margin: 0 10px 0 0;
+	padding: 6px 2px 4px 6px;
+	height: 20px;
+	text-shadow: #ececec 0 1px 0;
+}
+.app .contentarea #active_content a.main_add_link {
+	left: 330px;
+	position: absolute;
+	top: 2px;
+}
+.app #active_content .admin_header {
+	position: relative;
+	
+}
+.app .filter_pos{
+	position: absolute;
+	left :50%;
+	margin-left: -50px;
+}
+
+
+.app .contentarea #active_content a.main_add_link:hover {
+}
+.app .changesMade {
+	padding: 0;
+	margin: 0;
+}
+.app ul.form_bars div.bar_label div.err {
+	position: absolute;
+	left: 0px;
+	margin: 0;
+	top: 20px;
+	width: 300px;
+	color: #ad1414;
+	padding: 0 16px;
+	background: transparent url(images/warning.png) no-repeat scroll left center;
+	text-shadow: 0 1px 0 #eee;
+	display: none;
+}
+.app .contentarea .btn_container {
+	margin: 10px 0 10px 0;
+	padding: 10px 0 0 0;
+	border-top: 1px dotted #ccc;
+}
+.app .contentarea #user_name {
+	background: #ededed;
+	height: 18px;
+	padding: 6px;
+	border-bottom: 1px solid #ddd;
+}
+.app .contentarea #user_name > .user {
+	font-weight: bold;
+	display: block;
+	zoom: 1;
+	width: 350px;
+	overflow: hidden;
+	height: 18px;
+}
+.app #active_right_left_content {
+	right: auto;
+	width: 370px;
+}
+.app #active_right_right_content {
+	left: 370px;
+	width: auto;
+}
+.app #right_content.clients #active_right_left_content {
+	right: 0;
+	width: auto;
+}
+.app #right_content.clients #active_right_right_content {
+	width: 0;
+	display: none;
+}
+.app #active_right_right_contentarea {
+	top: 31px;
+}
+.app #active_right_right_header ul.horizontal_tab {
+	left: 0;
+	right: 0;
+	background: #ededed;
+}
+.app #active_right_right_contentarea .access_region {
+	display: none;
+}
+.app .sys_pad {
+	padding-top: 20px;
+}
+.app .form_pad {
+	padding-top: 14px;
+}
+/**..admin component..**/
+.app .access_region h2 {
+	font-size: 14px;
+	margin: 12px 0 6px;
+}
+.app .departments {
+	margin: 0 10px 10px;
+}
+.app .departments > h2{
+	margin-top: 20px; 
+}
+.app .department_contentarea {
+	border: 1px solid #dedede;
+	margin: 0 0 2px 0;
+	max-width: 420px;
+	background: #fcfcfc;
+	padding: 0 0 1px;
+	min-width: 330px;
+}
+.app .department_contentarea.new_dept {
+	background: #fff5ec;
+	margin-top: 10px;
+}
+.app .department_contentarea.new_dept > h3{
+}
+.app .department_contentarea > h3 {
+	background: #efefef;
+	margin: 0;
+	padding: 4px;
+	font-size: 13px;
+	text-shadow: 0 1px 0 #fff;
+	color: #51677e;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+}
+.app .department_contentarea > h3 .dep_hdr{
+	margin-left: 7px;
+}
+.app .department_contentarea > h3 .remove_dept{
+	float: right;
+	background: transparent url(images/mail_assets.png) no-repeat scroll -48px -192px;
+	height: 16px;
+	width: 16px;
+}
+.app .department_contentarea > h3 .remove_dept:hover{
+	background: url(images/mail_assets.png) no-repeat -48px -208px;
+}
+.app .no_bottom_margin {
+	margin-bottom: 0px;
+}
+.app .info_bar {
+	position: relative;
+	margin: 10px 0 0;
+}
+.app .info_bar .l_info_label, .app .info_bar .r_info_label {
+	position: absolute;
+	font-size: 11px;
+	color: #555;
+	left: 0px;
+	top: 1px;
+	font-weight: bold;
+}
+.app .info_bar .r_info_label {
+	left: auto;
+	right: 53px;
+}
+.app #form_access h2 {
+	max-width: 520px;
+	border-bottom: 1px dotted#CCCCCC;
+	margin: 2px 0;
+	padding: 0;
+	padding-bottom: 2px;
+	margin-left: 10px;
+}
+.app #form_access .admin_form_bars > li{
+	min-width: 380px;
+}
+.app #form_access .info_bar, .app #system_access .info_bar{
+	height: 15px; 
+	margin: 0 10px; 
+	max-width: 422px;
+	min-width: 260px;
+}
+.app #system_access .department_contentarea .info_bar{
+	height: 13px;
+}
+.app #form_access .info_bar .r_info_label{
+	right: 45px;
+}
+.app #system_access > .info_bar .r_info_label{
+	right: 63px;
+}
+
+/***style overided for admin users***/
+.app ul.horizontal_tab {
+	padding-top: 5px;
+}
+ul.pbtnc {
+	margin: 1px 6px;
+}
+.app .forms_list > li > label {
+	_width: 120px;
+	margin: 2px 0;
+}
+.app #left_nav.tall_header, .app #right_content.tall_header {
+	top: 41px;
+}
+.app #active_page_header.tall_header {
+	height: 36px;
+	background-position: 0 -1598px;
+}
+.app #active_page_header .info_label {
+	color: #333;
+	font-size: 11px;
+	left: 49px;
+	position: absolute;
+	text-shadow: 0 1px 0 #EFEFEF;
+	top: 24px;
+}
+/**overwrite superlayout styles to allow forms in between**/
+.app .contentarea.rightcontent_true > form > .contentarea.left_conten {
+	left: 0;
+	right: 211px;
+}
+.app .contentarea.rightcontent_true > form > .contentarea.right_content {
+	right: 0;
+	left: auto;
+	width: 210px;
+	border-left: 1px solid #aaa;
+}
+/**@end**/
+
+
+/**start: messagebox inner form**/
+.app .msgmodal .msgbox_form {
+/*margin: 10px;*/
+}
+.app .msgmodal .msgbox_form li {
+	margin: 2px 0px 8px;
+}
+.app .msgmodal .msgbox_form li label {
+	width: 120px;
+	display: inline-block;
+}
+.app .msgmodal .msgbox_form li input, .app .msgmodal .msgbox_form li select, .app .msgmodal .msgbox_form li label {
+	padding: 2px 0;
+}
+.app .msgmodal .msgbox_form li input, .app .msgmodal .msgbox_form li select {
+	width: 200px;
+}
+.app .msgmodal .msgbox_form li.txt {
+	color: #afafaf;
+	/*padding: 4px 10px;*/
+	font-size: 12px;
+}
+.app .msgmodal.add_user_form {	
+	width:740px;
+	margin-left:-350px;
+	
+	height:400px;
+	margin-top:-200px;	
+}
+.app .msgmodal.add_dept_form {
+	height:300px;
+	margin-top:-150px;
+	
+	width:500px;
+	margin-left:-250px;	
+}
+.app .msgmodal .msgbox_form.user > li {
+	float: left;
+	width: 318px;/*height: 38px;*/
+	margin:2px 1px 6px;
+	padding:0 20px;
+}
+.app .msgmodal .msgbox_form.user li label {
+	width: 80px;
+	color: #818181;
+}
+.app .msgmodal .msgbox_form.user li label.status {
+	float: left;
+	width: 84px;
+}
+.app .msgmodal .msgbox_form.user li .ro {
+	border-bottom: 1px dotted #444;
+	color: #444;
+}
+.app .msgmodal #newUsers .special_row {
+	background: url(images/controls.png) repeat-x 0 -5600px;
+	bottom: 60px;
+	left: 16px;
+	padding-top: 9px;
+	position: absolute;
+	width: 708px;
+}
+.app .msgmodal #newUsers .special_row label {
+	width: 200px;
+}
+
+
+/**start: users search**/
+.app .a_u_s_bar{
+	top: 6px;
+}
+.app #search_ac.a_u_s_bar .clear_search, .app #search_ac.a_u_s_bar .loading_img{
+	right: 8px;
+}
+.app #loading_users .load_spinner{
+	margin-top: 100%;
+	margin-left: 89px;
+}
+/**end: users search**/
+
+/**start: estimates**/
+.app h3.terms{
+	border-bottom: 1px dotted #51677E;
+	color: #51677E;
+	max-width: 660px;
+}
+.app .forms_list.has_textarea{
+	margin: 0 0 40px 0;
+}
+.app .forms_list.has_textarea > li{
+	margin: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.app a.btn > span > span > img.preview{
+	margin-left: 2px;
+	margin-top: 1px;
+	background: url(images/mail_assets.png) no-repeat -39px -513px;
+	width: 18px;
+	height: 14px;
+	float: none;
+	position: absolute;
+}
+.app a:hover.btn > span > span > img.preview{
+	background-position: -7px -513px;
+}
+
+/**end: estimates**/
+/**@start: custom attributes**/
+.app .header .form_dd_sec{
+	display:  inline-block;
+	margin:  3px 2px;
+}
+
+.app .header .form_dd_sec #formname{
+	max-width: 240px;
+	width: 240px !ie;
+}
+.app .header .search_label{
+	position:  relative;
+	left:  -92px;
+	top:  2px;
+}
+.app .cust_attr #search_ac{
+	margin-top: 4px;
+}
+.app.custom_vals #info_dialog{
+	position: absolute;
+	z-index: 10000;
+	left:  50% !important;
+	top:  40% !important;
+	
+	-moz-box-shadow: 0px 1px 12px #000;
+	-webkit-box-shadow: 0px 1px 12px #000;
+	box-shadow: 0px 1px 12px #000;
+}
+.app .cust_block_grid_att{
+	position:  absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 949;
+	background: #000;
+	opacity: 0.1;
+	filter: Alpha(opacity=10);	
+}
+.app #custom_val_ca{
+	background: #fff;
+	overflow: hidden;
+}
+.app #custom_val_ca .autoGrid{
+	position: absolute;
+	top: 20px;
+	left: 0;
+	bottom: 32px;
+	right: 0;
+}
+.app input[name$="attributes_value"]{
+	width: 90% !important;
+}
+.app .selected-row, .selected-row TD {
+	background-color: #a7b4c1; 
+}
+.app .edit-cell {
+	background-color: #d5d9df !important;
+}
+.app #custom_val_ca .blockUI.blockMsg.blockElement{
+	border:  1px solid #90969B !important;
+	padding:  10px 100px !important;
+	font-size: 16px;
+	font-weight: bold;
+	background: #EFEFEF;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.app #custom_val_ca .blockUI.blockMsg.blockElement .spinner{
+	margin-bottom:  -10px;
+}
+.app #custom_val_ca .save_attr_val{
+	margin: 0 4px -4px 4px;
+}
+.app #search_res_ca{
+	padding: 4px 4px 4px 16px;
+	display: none;
+}
+.app #search_res_ca .search_str{
+	font-weight: bold;
+}
+.app #active_heading.search_res{
+	background:url(images/mail_assets.png) left -1210px repeat-x;
+}
+/**@end: custom attributes**/

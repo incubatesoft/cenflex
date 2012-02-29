@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+.app #ac_tab ul.h_tab{
+	font-weight: bold;
+	margin:0 6px;
+	height:25px;
+	position:relative;
+	z-index:5;
+	padding-top:2px;
+}
+.app #ac_tab ul.h_tab li{
+	float:left;
+	margin-right:10px;
+}
+.app #ac_tab ul.h_tab li a{ 
+	text-decoration: none;
+	font-style:normal;
+	color: #777;
+	outline:none;
+	display: block;
+	line-height:14px;
+	padding: 3px 8px;	
+}
+.app #ac_tab ul.h_tab li a:hover{
+	color:#00355e;
+}
+.app #active_content .section{
+	display:none;
+}
+.app #active_content .request{
+	display:block;
+	}
+/*.app #active_content .request a{
+	text-decoration:none;
+	font-style:normal;
+	color:#333;
+	margin-right: 94px;
+	}*/
+.btn_pad{
+	padding:10px 0;
+	}
+.app #active_content .com{
+	display:block}
+.app #ac_tab ul.h_tab li a.active_tab{
+	border: #6e8095 solid 1px;
+	border-bottom: none;
+	background: #7b8da0 url(images/controls.png) left -4208px repeat-x ;
+	color:#fff;
+	padding-top:4px;
+	padding-bottom:4px;
+	text-shadow:0 1px 0 #575757;
+}
+#contentarea h2.online_heading{
+	font-size:14px;
+	margin-top: 0;
+	margin-bottom:8px;
+	}
+
+
+.ac_display{
+	/*display:none;*/
+	min-height:100px
+}
+
+.fwd_job img{
+	margin-bottom: -3px;
+	background: url(images/fwd.png) no-repeat 0  -16px;
+}
+.fwd_job:hover img{
+	margin-bottom: -3px;
+	background: url(images/fwd.png) no-repeat 0  0;
+}
+#old_sts{
+	margin: 10px 20px;
+}
+#old_sts h4{
+	margin: 10px 0 5px;
+}
+#old_sts p{
+	margin: 10px;
+}
+.smallgreytip{
+	font-size: 11px;
+	color: #888;
+	margin-top: 5px;
+}
+.app #left_nav .add_menu{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 36px ;
+	overflow: hidden;
+}
+.app .plus_menu{
+	background: url(images/mail_assets.png) no-repeat 0 -1592px;
+}
+
+.app .plus_menu:hover{
+	background: url(images/mail_assets.png) no-repeat 0 -1626px;
+}
+.app .plus_menu.clicked{
+	background: url(images/mail_assets.png) no-repeat 0 -1660px;
+}
+
+.app .addOption_img{
+	background: url(images/icons/icon_sprites.png) no-repeat 0 -934px;
+	margin-bottom: -3px;
+	margin-right: 2px;
+	float: left;
+}
+.app .addRev_img{
+	background: url(images/icons/icon_sprites.png) no-repeat 0 -954px;
+	float: left;
+	margin-right: 2px;
+	margin-top: -2px;
+}
+.app .lefNav_status_img{
+	background: url(images/mail_assets.png) -36px -291px;
+	margin-left: -12px;
+	margin-right: 1px;
+}
+.app a:hover .lefNav_status_img, .app a.active_nav .lefNav_status_img{
+	background: url(images/mail_assets.png) -36px -308px;
+}
+
+/****/
+.app .ac_tab ul.h_tab{
+	font-weight: bold;
+	margin:0 6px;
+	height:25px;
+	position:relative;
+	z-index:5;
+	padding-top:2px;
+}
+.app .ac_tab ul.h_tab{
+	height:23px; /*prviously it is set to 25px, for options page this is changed*/
+}
+.app .ac_tab ul.h_tab li{
+	float:left;
+	margin-right:10px;
+}
+.app .ac_tab ul.h_tab li a{ 
+	text-decoration: none !important;
+	font-style:normal;
+	color: #777;
+	outline:none;
+	display: block;
+	line-height:14px;
+	padding: 3px 8px;
+	font-size:15px;
+	cursor: default;
+	border: 1px solid transparent;
+}
+.app .ac_tab ul.h_tab li a.active_add_tab{
+	color:#7a7a7a !important;
+}
+
+
+/*......................................03/08/09 ...............................................*/
+
+.app .ac_tab ul.h_tab li a img.add_options{
+	background:url(images/controls.png) no-repeat -8px -3841px;
+	float:left;
+}
+
+/*......................................end ...............................................*/
+.app .ac_tab ul.h_tab li a:hover{
+	color:#00355e;
+}
+.app .ac_tab ul.h_tab li a.active_tab{
+	border: #6e8095 solid 1px;
+	border-bottom: none;
+	background: #7b8da0 url(images/controls.png) repeat-x 0 -4208px;
+	background: #7b8da0 url(images/controls.png) repeat-x 0 -4208px !important !ie;
+	color:#fff !important;
+	padding-top:4px;
+	padding-bottom:4px;
+	text-shadow:0 1px 0 #575757;
+
+}
+
+/*.........start: options_status img..........*/
+
+
+
+/**empty**/
+.app .ac_tab ul.h_tab li a.opt{
+	padding-left: 22px;
+}
+.app li a.opt{
+	position: relative;
+	background: url(images/controls.png) repeat-x scroll 0 -5600px;
+}
+.app a.opt .opt_img{
+	position: absolute;
+	width: 19px;
+	height: 21px;
+	left: 24px;
+	top: 2px;
+	background: url(images/opt_status.png) no-repeat 0 -120px;
+}
+.app a.opt > .opt_status{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 6px;
+	right: 2px;
+	background: url(images/opt_status.png) no-repeat 0 0;
+}
+
+/**has estimate**/
+.app a.opt.opt_est > .opt_status{
+	background-position: 0 -30px;
+}
+/**has estimate**/
+/**send**/
+.app a.opt.opt_estSend > .opt_status{
+	background-position: 0 -60px;
+}
+/**send**/
+
+/**approved**/
+.app a.opt.opt_approved > .opt_status{
+	background-position: 0 -90px;
+}
+/**approved**/
+
+.app #ac_mask.accepted_est{
+	background: url(images/accepted.png) no-repeat center center;
+}
+/*.........end: options_status img..........*/
+
+
+
+/**quick links**/
+.app .ac_tab ul.qLinks{
+	background-color: #8e9dad;
+	height: 25px;
+	padding-left: 4px;
+}
+.app .ac_tab ul.qLinks li{
+	float: left;
+	margin-right:14px;
+}
+.app .ac_tab #qLinks a{
+	text-decoration: none;
+	padding: 5px 6px;
+	display: block;
+	color: #495563;
+	font-size:12px;
+	outline: none;
+	cursor: default;
+}
+.app .ac_tab #qLinks a:hover{
+	color:#fff;
+}
+
+/*....  03/08/09........................*/
+/*................... for product specifications btns........................*/
+
+
+
+.app .ac_tab #qLinks a.active_link{
+	color: #5d5d5d;
+	background:url(images/product_det.png) right 2px no-repeat;
+	padding:0 10px 0 0;
+	margin-top:1px;
+}
+.app .ac_tab #qLinks a.active_link span.left_qlink{
+	background:url(images/product_det.png) left -52px no-repeat;
+	padding-left:10px;
+	display:block;
+}
+.app .ac_tab #qLinks a.active_link span.left_qlink span.mid_qlink{
+	background:url(images/product_det.png) left -28px repeat-x;
+	padding:4px 0 3px 2px;
+	display:block;
+}

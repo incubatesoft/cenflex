@@ -1,0 +1,10 @@
+array (
+  'sans-serif' => 
+  array (
+    'normal' => DOMPDF_FONT_DIR . 'Helvetica',
+    'bold' => DOMPDF_FONT_DIR . 'Helvetica-Bold',
+    'italic' => DOMPDF_FONT_DIR . 'Helvetica-Oblique',
+    'bold_italic' => DOMPDF_FONT_DIR . 'Helvetica-BoldOblique',   
+  ),
+ 
+)

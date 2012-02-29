@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+#est_sent_complete1{
+	font-size: 16px;
+	color: #666;
+	text-shadow: 0 1px 0 #fff;
+	text-align: center;
+}
+.app .options_main1{
+	position: absolute;
+	top:630px; 
+	left:370px;
+	right: 10px; 
+	height: 64px;
+	z-index: 100;
+}
+
+.app .options_main1 > li{
+	float: left;
+	width: 128px;
+	height: 128px;
+	background: url(images/est_optn_active.png) no-repeat 0px 0;
+	border: 1px solid transparent;
+	_padding: 0 10px 0 20px;
+	position: relative;
+	margin-right: 10px;
+	text-shadow: 0 1px 0#fff;
+}
+.app .options_main1 > li > div{
+	font-size: 9px;
+}
+.app .options_main1 > li:hover{
+	background-color: #e2ebf4;
+	border: 1px solid #a2c1e0;
+	/*border-bottom-color: #6E8095;*/
+}
+.app .options_main1 > li.active_thumb1{
+	border: 1px solid #c1d0e0;
+	background: #d6e3f1 url(images/est_optn_active.png) no-repeat 0px 0;
+	/*border-bottom-color: #EEEEEE;*/
+}
+.app .options_main1 > li.active_thumb1:hover{
+	background-color: #c1d4ea;
+	border: 1px solid #a3b8d0;
+}
+.app .options_main1 > li.sent_est1{
+	background: url(images/est_optn_sent.png) no-repeat 0px 0;
+}
+.app .options_main1 > li.accept_est1{
+	background: url(images/est_optn_accepted.png) no-repeat 0px 0;
+}
+.app .options_main1 > li.disable_est1{
+	background: url(images/est_optn_disable.png) no-repeat 0px 0;
+}
+.app .options_main1 > li.active_thumb1{
+	background-color: #d6e3f1; 
+}
+
+.app .options_main1 .est_info1{
+	width: 128px;
+	height: 78px;
+	overflow: hidden;
+	padding-top: 40px;
+   }
+.app .options_main1 .est_info1 > li{
+	font-size: 9px;
+	margin: 4px 30px 6px 28px;
+	text-align: right;
+	color: #1a6d00;
+	width: 70px;
+	overflow: hidden;
+}
+.app .options_main1 .est_info1 > li > label{
+	float: left;
+	color: #575757;
+}
+.app .options_main1 > li .opt_label1{
+	font-size: 14px;
+	color: #666;
+	position: absolute;
+	top: -20px;
+	text-align: center;
+	width: 98px;
+	left: 20px;
+	font-weight: bold;
+}
+.app .options_main1 > li .date_label1{
+	font-size: 12px;
+	color: #666;
+	position: absolute;
+	bottom: -16px;
+	text-align: center;
+	width: 120px;
+	left: 4px;
+}
+.app .options_main1 > li .opt_label1 img.check{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 0;
+	top: 0;
+	background: transparent url(images/controls.png) no-repeat scroll 0 -2400px;
+	z-index: 10;
+}
+.app .options_main1 > li .opt_label1:hover img.check{
+	background-position: 0px -2424px;
+}
+.app .options_main1 > li .opt_label1 img.check.checked{
+	background-position: -16px -2424px;
+}
+.app #preview_estimate_window1 .notes_sec1{
+	position: absolute;
+	top: 300px;
+	left: 40px;
+}
+.app #preview_estimate_window1 .notes_sec1 li{
+	margin: 2px 0 6px;
+	
+}
+.app #preview_estimate_window1 .notes_sec1 li a.add_notes1{
+	font-size: 14px;
+	font-weight: bold;
+	color: #667281;
+	outline: none;
+}
+.app #preview_estimate_window1 .notes_sec1 li a:hover.add_notes1{
+
+}
+.app #preview_estimate_window1 .notes_sec1 li a.add_notes1 img{
+	background: url(images/controls.png) no-repeat 0 -4031px;
+	width: 10px;
+	height: 12px;
+	float: left;
+	margin-top: 4px;
+}
+.app #preview_estimate_window1 .notes_sec1 li a.add_notes1 img.arr_d{
+	background-position: 0 -4049px;
+	margin-top: 6px;
+}
+.app #preview_estimate_window1 .notes_sec1 li.notes_txt1{
+	width: 534px; 
+	height: 101px;
+	display: none;
+}
+
+.app #preview_estimate_window1 .prv_win_loading_box1{
+	width: 210px;
+	height: 30px;
+	border: 1px solid #aaa;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -105px;
+	margin-top: -15px;
+	z-index: 20;
+	font-size: 18px;
+	test-shadow: 0 1px 0 #fff;
+	color: #666666;
+	font-weight: bold;
+	line-height: 30px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px 20px;
+	background: #fff;
+}
+
+
+/**--start: options tab--**/
+/*.app .options_tab{
+	position: absolute;
+	top: 26px; *60px*
+	left: 50%;
+	margin-left: -161px;
+	height: 22px;
+	right: 10px;
+	_border-bottom: 1px solid #6E8095;
+	padding-left: 10px;
+	z-index: 10;
+}
+.app .options_tab li{
+	float: left;
+}
+.app .options_tab li a{
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #fff;
+	padding: 4px 10px 6px;
+	outline: none;
+	cursor: default;
+
+}
+.app .options_tab li a:hover{
+
+}
+.app .options_tab li a.active_opt{
+	border: 1px solid #6E8095;
+	border-bottom-color: #fff;
+	background: #fff;
+}
+
+.app .options_tab li a.show_all_opt{
+	margin-left: -350px;
+	margin-top: -4px;
+	padding: 0 12px 0 0;
+	width: 80px;
+}*/
+/**--end: options tab--**/
+/**--start: new options tab--**/
+.app .options_tab1{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -161px;
+	height: 49px;
+	right: 10px;
+	_border-bottom: 1px solid #6E8095;
+	padding-left: 10px;
+	z-index: 10;
+}
+.app .options_tab1 li{
+	float: left;
+}
+.app .options_tab1 li a.tab_l, .app .options_tab li a.tab_l .tab_r, .app .options_tab li a.tab_l .tab_label{
+	display: inline-block;
+}
+.app .options_tab li a.tab_l{
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #fff;
+	padding-left: 4px;
+	outline: none;
+	cursor: default;
+}
+.app .options_tab li a.tab_l .tab_r{
+	padding-right: 4px;
+}
+.app .options_tab li a.tab_l .tab_label{
+	padding: 23px 10px 10px;
+}
+
+.app .options_tab li a.active_opt.tab_l, .app .options_tab li a.active_opt.tab_l .tab_r, .app .options_tab li a.active_opt.tab_l .tab_label{
+	background: url(images/m_win_tab.png) no-repeat 0 0;
+}
+.app .options_tab li a.active_opt.tab_l{
+	background-position: 0 -60px;
+	color: #fff;
+	text-shadow: 0 1px 0 #052e56;
+}
+.app .options_tab li a.active_opt.tab_l .tab_r{
+	background-position: 100% -120px;
+}
+.app .options_tab li a.active_opt.tab_l .tab_label{
+	background-position: 0 -180px;
+	background-repeat: repeat;
+}
+
+.app .options_tab li a:hover{
+
+}
+.app .options_tab li a.active_opt{
+	_border: 1px solid #6E8095;
+	_border-bottom-color: #fff;
+	_background: #fff;
+}
+
+.app .options_tab li a.show_all_opt{
+	margin-left: -350px;
+	margin-top: -4px;
+	padding: 0 12px 0 0;
+	width: 80px;
+}
+/**--end: new options tab--**/
+
+
+
+
+
+.app .estimates_bdy .options_view{
+	display: none;
+	background: #fff;
+}
+/*<!--#estimates_bdy{
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 60px;
+	top: 93px;
+	overflow: auto;
+}-->*/
+ 
+
+/*--end: options thumnails view--*/
+
+
+#est_btn_bar.estimate_sent .view_est{
+	display: inline-block;
+	zoom: 1;
+	margin: 0 0 0 450px;
+}
+
+#est_btn_bar.estimate_sent.edit_btn .save_prv_est{
+	display: none;
+}
+#est_btn_bar.estimate_sent.edit_btn .view_est{
+	margin: 0 0 0 248px;
+}
+
+.app .job_estimates .estimates_section > ul.twoCols{
+	margin: 2px 0 8px 0;
+}
+.app .job_estimates .estimates_section  > ul.twoCols > li.l > label{
+	width: 172px;
+}
+
+
+/*--end: estimate buttons--*/
+
+

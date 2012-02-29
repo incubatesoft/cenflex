@@ -1,0 +1,784 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**START: pushbutton component styles**/
+ul.pbtnc{
+	list-style:none;
+	margin:0;
+	padding: 0;
+	font-size:12px;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+}
+ul.pbtnc li{
+	float:left;
+	display:inline;
+	margin:0;
+	padding: 0 1px 0 0;
+	background:  no-repeat scroll 100% -216px;
+}
+ul.pbtnc li.l{
+	background:  none;
+}
+
+ul.pbtnc li span{
+	display: block;
+}
+ul.pbtnc li a{
+	background: no-repeat scroll 0px  -54px;
+	padding-left: 7px;	
+	font-weight: bold;
+	color: #666;
+	text-decoration: none;
+	display: block;
+	cursor: default;
+	outline: none;
+}
+ul.pbtnc li.f a{
+	background-position: 0px  0px;
+}
+ul.pbtnc li a span.nav_r{
+	background: no-repeat scroll 100% -54px;
+	padding-right: 7px;
+}
+ul.pbtnc li.l a span.nav_r{
+	background-position: 100%  -27px;
+}
+ul.pbtnc li a span.nav_label{
+	/*padding: 6px 5px 6px 5px;*/ /*use these settings insted of below*/
+	height: 22px;
+	line-height: 21px;
+	padding: 0 2px;
+	background: repeat-x scroll 0px -54px;
+	min-width: 40px;
+	text-align: center;
+}
+ul.pbtnc li a:hover{}
+ul.pbtnc li a:hover span.nav_r{
+}
+ul.pbtnc li a:hover span.nav_label{
+	color: #333;
+}
+ul.pbtnc li.pbtn_selected a{
+	background: no-repeat scroll 0px  -162px;
+	color: #666;
+}
+ul.pbtnc li.pbtn_selected.f a{
+	background-position: 0px  -81px;
+}
+ul.pbtnc li.pbtn_selected a span.nav_r{
+	background: no-repeat scroll 100% -189px;
+}
+ul.pbtnc li.pbtn_selected.l a span.nav_r{
+	background-position: 100%  -108px;
+}
+ul.pbtnc li.pbtn_selected a span.nav_label{
+	background: repeat-x scroll 0px -135px;
+	color: #f0f0f0;
+}
+ul.pbtnc li.pbtn_selected a:hover span.nav_label{
+	/*color: #444;*/
+}
+ul.pbtnc li,
+ul.pbtnc li a,
+ul.pbtnc li a span.nav_r, 
+ul.pbtnc li a span.nav_label, 
+ul.pbtnc li.pbtn_selected a, 
+ul.pbtnc li.pbtn_selected a span.nav_r, 
+ul.pbtnc li.pbtn_selected a span.nav_label{
+	background-image: url(images/pbc_sprites.png);
+}
+/**END: component 001 styles**/
+
+
+/**start: search input component**/
+.app #search_ac{
+	position: relative;
+	float: right;
+	width: 180px;
+	height: 20px;
+	margin-top: 2px;
+	margin-right: 8px;
+}
+.app #search_ac .search_left{
+	position: absolute;
+	top: 0;
+	width: 16px;
+	left: 0;
+	height: 20px;
+	background: url(images/controls.png) no-repeat left -5753px;
+}
+.app #search_ac input.search{
+	background: url(images/controls.png) repeat-x 0 -5777px;
+	border: none;
+	color: #111;
+	left: 16px;
+	top: 0;
+	height: 16px;
+	position: absolute;
+	width: 138px;
+	font-size:12px;
+	line-height: 13px;
+	padding: 3px 10px 0 2px;
+	outline: none;
+	margin: 0;
+}
+.app #search_ac input.blur, .app input.blur{
+	color: #888;
+}
+.app #search_ac .search_right{
+	width: 12px;
+	height: 20px;
+	left:164px;
+	top: 0;
+	position: absolute;
+	display: block;
+	background: url(images/controls.png) no-repeat right -5801px;
+}
+.app #search_ac .clear_search, .app #search_ac .loading_img, .app .search_display > img.cross{
+	background: url(images/mail_assets.png) no-repeat -48px -240px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 8px;
+	top: 2px;
+	display: none;
+	outline: none;
+}
+.app #search_ac .clear_search:hover,  .app .search_display > img:hover.cross{
+	background-position: -48px -208px;
+}
+.app #search_ac .loading_img{
+	background: url(images/loading_14.gif) no-repeat 1px 2px;
+}
+.app #search_ac.contacts_search{
+	width: 280px;
+	margin-top: 4px;
+}
+.app #search_ac.contacts_search input.search{
+	width: 242px;
+	margin: 0;
+}
+.app #search_ac.contacts_search .search_right{
+	right: 0;
+	left: auto;
+}
+.app #search_ac.contacts_search .clear_search, .app #search_ac.contacts_search .loading_img{
+	right: 4px;
+}
+.app .search_display{
+	background:#ffffcc url(images/icon_sprites.png) 2px -671px no-repeat;
+	padding: 6px 4px 6px 18px;
+	display: none;
+	border-bottom: 1px solid #d3d3d3;
+	position: relative;
+	zoom: 1;
+}
+.app .search_display img.cross{
+	top: 6px;
+}
+/**end: search input component styles**/
+
+/**start: horizontal tab styles**/
+.app ul.horizontal_tab{
+	font-weight: bold;
+	margin: 0;
+	height: 25px;
+	position: absolute;
+	z-index: 5;
+	padding: 2px 6px 0 6px;
+	border-bottom: 1px solid #6e8095;
+	background: #eee;
+}
+.app ul.horizontal_tab li{
+	float: left;
+	margin: 2px 10px 0 0;
+}
+.app ul.horizontal_tab li a{ 
+	text-decoration: none;
+	font-style:normal;
+	color: #777;
+	outline:none;
+	display: block;
+	line-height:14px;
+	padding: 3px 8px;
+	cursor: default;
+}
+.app ul.horizontal_tab li a.active_tab{
+	border: #6e8095 solid 1px;
+	border-bottom: none;
+	background: #7b8da0 url(images/controls.png) left -4208px repeat-x ;
+	color:#fff !important;
+	padding-top:4px;
+	padding-bottom:4px;
+	text-shadow:0 1px 0 #575757;
+}
+.app ul.horizontal_tab li a:hover{
+	color:#00355e;
+}
+/**end: horizontal tab styles**/
+
+
+
+/**start: active/inactive componet**/
+.app ul.comp_ai{ 
+	/*display: inline;*/
+}
+.app ul.comp_ai li{
+	float: left;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.app ul.comp_ai li a, .app ul.comp_ai li a > span, .app ul.comp_ai li a > span > span,
+.app ul.comp_ai li.selected a, .app ul.comp_ai li.selected a > span, .app ul.comp_ai li.selected a > span > span{
+	background: transparent url(images/active_inactive.png) no-repeat 0 0;
+}
+.app ul.comp_ai li a{
+	color: #5f5f5f;
+	outline: none;
+	margin-right: 0px;
+	background-position: 0 -105px;
+	cursor: default;
+	text-shadow: 0 1px 0 #fafafa;
+	padding-left: 5px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 14px;
+}
+.app ul.comp_ai li a > span.nav_r{
+	background-position: right -105px;
+	padding-right: 5px;
+	display: block;
+}
+.app ul.comp_ai li a > span > span.nav_label{
+	background-position: 0 -105px;
+	background-repeat: repeat-x;
+	display: block;
+	padding: 2px 10px;
+	text-shadow: 0 1px 0 #;
+}
+
+.app ul.comp_ai.active li.f a{
+	background-position: 0 -63px;
+}
+.app ul.comp_ai.active li a > span.nav_r{
+	background-position: right -105px;
+}
+.app ul.comp_ai.active li.l a > span.nav_r{
+	background-position: right -84px;
+}
+.app ul.comp_ai.active li a > span > span.nav_label{
+	background-position: 0 -105px;
+	background-repeat: repeat-x;
+}
+.app ul.comp_ai.active li a:hover{
+	text-decoration: none;
+}
+.app ul.comp_ai.active li a:hover span.nav_label{
+
+}
+
+.app ul.comp_ai.active li.selected a{
+	color: #fff !important;
+	background-position: 0 -42px;
+	text-shadow: 0 1px 0 #242a3e;
+}
+.app ul.comp_ai.active li.selected.f a{
+	background-position: 0 0;
+}
+.app ul.comp_ai.active li.selected  a > span.nav_r{
+	background-position: right -42px;	
+}
+.app ul.comp_ai.active li.selected.l  a > span.nav_r{
+	background-position: right -21px;	
+}
+.app ul.comp_ai.active li.selected  a > span > span.nav_label{
+	background-position: 0 -42px;	
+	background-repeat: repeat-x;
+}
+
+
+.app ul.comp_ai li.f a{
+	background-position: 0 -63px;
+}
+.app ul.comp_ai li.l a > span.nav_r{
+	background-position: right -84px;
+}
+.app ul.comp_ai li.selected a{
+	color: #fff;
+	background-position: 0 -168px;
+	text-shadow: 0 1px 0 #5f5f5f;
+}
+.app ul.comp_ai li.selected.f a{
+	background-position: 0 -126px;
+}
+.app ul.comp_ai li.selected  a > span.nav_r{
+	background-position: right -168px;	
+}
+.app ul.comp_ai li.selected.l  a > span.nav_r{
+	background-position: right -147px;	
+}
+.app ul.comp_ai li.selected  a > span > span.nav_label{
+	background-position: 0 -168px;	
+	background-repeat: repeat-x;
+}
+
+.app ul.comp_ai li.disable a{
+	background-position: 0 -168px;
+}
+.app ul.comp_ai li.disable a > span.nav_r{
+	background-position: right -168px;
+}
+.app ul.comp_ai li.disable a > span > span.nav_label{
+	background-position: 0 -168px;
+}
+
+.app ul.comp_ai li.f.disable a{
+	background-position: 0 -126px;
+}
+
+.app ul.comp_ai li.l.disable a > span.nav_r{
+	background-position: right -147px;
+}
+
+/**end: active/inactive componet**/
+
+
+/***start: none view edit component***/
+.app ul.comp_radio{ 
+	/*display: inline;*/
+}
+.app ul.comp_radio li{
+	float: left;
+	padding: 0 !important;
+	margin: 0 !important;
+	list-style: none;
+}
+.app ul.comp_radio li a, .app ul.comp_radio li a > span, .app ul.comp_radio li a > span > span,
+.app ul.comp_radio li.selected a, .app ul.comp_radio li.selected a > span, .app ul.comp_radio li.selected a > span > span,
+.app ul.comp_radio li a > span > span > img.status{
+	background: transparent url(images/controls.png) no-repeat 0 0;
+}
+.app ul.comp_radio li a{
+	color: #5f5f5f;
+	outline: none;
+	margin-right: 0px;
+	background-position: 0 -2160px;
+	cursor: default;
+	text-shadow: 0 1px 0 #fafafa;
+	padding-left: 5px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 14px;
+}
+.app ul.comp_radio li a:hover{
+	color: #0f0f0f;
+}
+.app ul.comp_radio li a > span.nav_r{
+	background-position: right -2160px;
+	padding-right: 5px;
+	display: block;
+}
+.app ul.comp_radio li a > span > span.nav_label{
+	background-position: 0 -2160px;
+	background-repeat: repeat-x;
+	display: block;
+	padding: 1px 3px 1px 4px;
+	min-width: 20px;
+	text-align: center;
+	/*text-shadow: 0 1px 0 #fff;*/ 
+}
+.app ul.comp_radio li.f a{
+	background-position: 0 -2016px;
+}
+.app ul.comp_radio li.l a > span.nav_r{
+	background-position: right -2304px;
+}
+.app ul.comp_radio.active li a{
+	background-position: 0 -2064px;
+}
+.app ul.comp_radio.active li.f a{
+	background-position: 0 -1920px;
+}
+.app ul.comp_radio.active li a > span.nav_r{
+	background-position: right -2064px;
+}
+.app ul.comp_radio.active li.l a > span.nav_r{
+	background-position: right -2208px;
+}
+.app ul.comp_radio.active li a > span > span.nav_label{
+	background-position: 0 -2064px;
+	background-repeat: repeat-x;
+}
+
+.app ul.comp_radio.active li.selected a{
+	color: #0f0f0f !important;
+	background-position: 0 -2112px;
+	text-shadow: 0 1px 0 #ccc; /*242a3e*/
+}
+.app ul.comp_radio.active li.selected.f a{
+	background-position: 0 -1968px;
+}
+.app ul.comp_radio.active li.selected  a > span.nav_r{
+	background-position: right -2112px;	
+}
+.app ul.comp_radio.active li.selected.l  a > span.nav_r{
+	background-position: right -2256px;	
+}
+.app ul.comp_radio.active li.selected  a > span > span.nav_label{
+	background-position: 0 -2112px;	
+	background-repeat: repeat-x;
+}
+
+/*----start: hover styles----*/
+.app ul.comp_radio.active li a:hover{
+	text-decoration: none;
+}
+.app ul.comp_radio.active li a:hover{
+	background-position: 0 -2088px;
+}
+.app ul.comp_radio.active li a:hover > span.nav_r{
+	background-position: right -2088px;
+}
+.app ul.comp_radio.active li a:hover > span > span.nav_label{
+	background-position: 0 -2088px;
+	background-repeat: repeat-x;
+}
+.app ul.comp_radio.active li.f a:hover{
+	background-position: 0 -1944px;
+}
+.app ul.comp_radio.active li.l a:hover > span.nav_r{
+	background-position: right -2232px;
+}
+/*----end: hover styles----*/
+/*----start: disabled styles----*/
+.app ul.comp_radio li.disable a, .app ul.comp_radio li.disable a:hover{
+	background-position: 0 -2031px;
+}
+.app ul.comp_radio li.disable a > span.nav_r, .app ul.comp_radio li.disable a:hover > span.nav_r{
+	background-position: right -2183px;
+}
+.app ul.comp_radio.active li.disable a > span > span.nav_label, .app ul.comp_radio.active li.disable a:hover > span > span.nav_label{
+	background-position: 0 -2160px;
+}
+.app ul.comp_radio.active li.f.disable a, .app ul.comp_radio li.f.disable a:hover{
+	background-position: 0 -2016px;
+	color: #bbb;
+}
+.app ul.comp_radio.active li.l.disable a > span.nav_r, .app ul.comp_radio li.l.disable a:hover > span.nav_r{
+	background-position: right -2304px;
+}
+/*----end: disabled styles----*/
+/*----start: selected styles----*/
+.app ul.comp_radio li.selected a, .app ul.comp_radio li.selected a:hover{
+	/*color: #fff;*/
+	background-position: 0 -2112px;
+	/*text-shadow: 0 1px 0 #5f5f5f;*/
+}
+.app ul.comp_radio li.selected.f a, .app ul.comp_radio li.selected.f a:hover{
+	background-position: 0 -1968px;
+}
+.app ul.comp_radio li.selected  a > span.nav_r, .app ul.comp_radio li.selected  a:hover > span.nav_r{
+	background-position: right -2112px;	
+}
+.app ul.comp_radio li.selected.l  a > span.nav_r, .app ul.comp_radio li.selected.l  a:hover > span.nav_r{
+	background-position: right -2256px;	
+}
+.app ul.comp_radio li.selected  a > span > span.nav_label, .app ul.comp_radio li.selected  a:hover > span > span.nav_label{
+	background-position: 0 -2112px;	
+	background-repeat: repeat-x;
+}
+/*----end: selected styles----*/
+/*--start: status image--*/
+.app ul.comp_radio.active li a > span > span.nav_label > img{
+	width: 11px;
+	height: 12px;
+	margin-right: 2px;
+}
+.app ul.comp_radio.active li a > span > span.nav_label > img.status{
+	background-position: 0 -2543px;
+}
+.app ul.comp_radio.active li a > span > span.nav_label > img.status.partial{
+	background-position: -16px -2615px;
+}
+.app ul.comp_radio.active li a > span > span.nav_label > img.status.full{
+	background-position: -16px -2543px;
+}
+/*--end: status image--*/
+
+/***end: none view edit component***/
+
+
+
+
+/* start: group Message Box */
+.blockUI.blockMsg.blockPage{
+	top: 5%;
+	left: 5%;
+	bottom: 5%;
+	right: 5%;
+}
+/**each time overwrite the 
+	height: X;
+	margin-top: -X/2;
+	width: Y;
+	margin-left: -Y/2		
+properties in your page related style sheet**/
+.msgmodal{
+	display: none;
+	text-align: left;
+	position: absolute;
+	
+	left: 50%;
+	margin-left: -350px;
+	width: 400px;
+	
+	height: 200px;
+	margin-top: -200px;
+	top: 50%;
+	
+	z-index: 1000;
+	
+	/*border: 2px solid #1c4167 !ie;*/
+	box-shadow: 0px 1px 12px #000;
+	-moz-box-shadow: 0px 1px 12px #000;
+	-webkit-box-shadow: 0px 1px 12px #000;
+	
+
+}
+.msgmodal h3{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 0.8em;
+	border-bottom: 1px solid #ffbb59;
+	padding-bottom: 2px;
+	display: block;
+	height: 30px;
+	padding-top: 16px;
+	color: #333333;
+	text-shadow: rgba(250, 250, 250, 0.496094) 0px 1px 0px;
+	padding-left: 20px;/*10*/
+	background: url(images/prefs.png) repeat-x 0 -128px;
+}
+.closeme{
+	float: right;
+	right: 5px;
+	top: 8px;
+	z-index: 110;
+	position: absolute;
+}
+.closeme, .closeme.disabled:hover{
+	background: transparent url(images/mail_assets.png) no-repeat scroll -48px -192px;
+	height: 16px;
+	width: 16px;
+}
+.closeme:hover{
+	background: url(images/mail_assets.png) no-repeat -48px -208px;
+}
+.closeme.disabled{
+	cursor: not-allowed;
+}
+.S_l_t_corner{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	background: url(images/shadow_corners.png) 0 -160px;
+}
+.S_t_tile{
+	height: 40px;
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	top: -20px;
+	background: url(images/shadows_repeat_x.png) 0 -60px;
+}
+.S_r_t_corner{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	background: url(images/shadow_corners.png) 0 -240px;
+}
+.S_r_tile{
+	width: 20px;
+	position: absolute;
+	top: 20px;
+	right: -20px;
+	bottom: 20px;
+	background: url(images/shadows_repeat_y.png) -90px 0;
+}
+.S_l_tile{
+	width: 20px;
+	position: absolute;
+	top: 20px;
+	left: -20px;
+	bottom: 20px;
+	background: url(images/shadows_repeat_y.png) -60px 0;
+}
+.S_r_b_corner{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	right: -20px;
+	bottom: -20px;
+	background: url(images/shadow_corners.png) repeat-x 0 -280px;
+}
+.S_l_b_corner{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: -20px;
+	bottom: -20px;
+	background: url(images/shadow_corners.png) repeat-x 0 -200px;
+}
+.S_b_tile{
+	height: 20px;
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: -20px;
+	background: url(images/shadows_repeat_x.png) 0 -90px;
+}
+.msg_bg{
+	z-index:105;
+	background: #eee;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	text-shadow:0 1px 0 #fff;
+}
+.ext_form{
+	position: absolute;
+	top: 50px;
+	bottom: 60px;
+	left: 10px;
+	right: 10px;
+	overflow: auto;
+}
+.btnholder{
+	background: url(images/controls.png) repeat-x 0 -5600px;
+	padding: 14px 0 12px 30px;
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+	zoom: 1;
+	height: 27px !ie;
+}
+
+.modal_title > span.small_txt{
+	color: #3a5775;
+	font-size: 14px;
+}
+/* @end */
+
+/***start: modal window as tab view header**/
+.msgmodal .modal_title.tab_view{
+	background: #a2c1e0 url(images/m_win_tab.png) repeat-x 0 0;
+}
+
+.msgmodal .modal_title.tab_view .hdr{
+	display: inline-block;
+	width: 340px;
+	
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;	
+}
+.msgmodal .modal_title.tab_view .hdr .sml_txt{
+	font-size: 16px;
+}
+/***end: modal window as tab view header**/
+
+/**********/
+.app .changed_img{
+	margin-left: 4px;
+}
+/**********/
+
+
+
+/*********growlUI styles**********/
+.app .growlUI .delete_ico{
+	position: absolute;
+	right: 5px;
+	top: 4px;
+	width: 14px;
+	height: 14px;
+	opacity: 0.3;
+	filter: Alpha(opacity=30);
+}
+.app .growlUI:hover .delete_ico{
+	opacity: 0.9;
+	filter: Alpha(opacity=90);
+}
+.app .growlUI .delete_ico:hover{
+	opacity: 1;
+	filter: Alpha(opacity=100);
+}
+.app .growlUI .growlUI_hdr{
+	font-size: 16px;
+	margin: 10px;
+	padding: 0;
+	text-shadow: 0 1px 0 #000;
+}
+.app .growlUI .growlUI_bdy{
+	font-size: 14px;
+	margin: 5px 5px 10px;
+	padding: 0;
+	font-weight: normal;
+	text-shadow: 0 1px 0 #000;
+}
+.app .growlUI .growlUI_bdy .load_status{
+	margin-bottom: -3px;
+	margin-right: 2px;
+	width: 16px;
+	height: 16px;
+}
+/*********@end**********/
+/*new select box component*/
+.app .cust_sel_box{
+	position: relative;
+	display: inline-block;
+}
+.app .cust_sel_box .cust_sel{
+	opacity: 1;
+	filter: Alpha(opacity=100);
+}
+.app .cust_sel_box .cust_sel_input{
+	position: absolute;
+	z-index: 1000;
+	width: 100px;
+	left: 0;
+	top: 2px;
+	padding:  0 2px 1px !important;
+}
+.app .cust_sel_box .cust_sel_spinner{
+	background: transparent url(images/controls.png) no-repeat -13px -1488px;
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	z-index: -1;
+	top: 2px;
+	right: 1px;
+	display: none;
+}
+
+.app .cust_sel_box.edit_inline .cust_sel{
+	opacity: 0;
+	filter: Alpha(opacity=0);
+	position: absolute;
+	bottom: 0;
+}
+.app .cust_sel_box.edit_inline .cust_sel_spinner{
+	display: block;
+}
+.app .cust_att_other{
+	width: 300px;
+}

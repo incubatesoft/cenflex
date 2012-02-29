@@ -1,0 +1,161 @@
+/* @group Menu Nav */
+.app ul.nav{
+	/*clear: both;*/
+	margin: 0;
+	padding-top: 6px;
+}
+ul.nav li{
+	float: left;
+}
+ul.nav li a{
+	color: #aaa;
+	font-size: 14px;
+	text-shadow: #000000 0 1px 0;
+	display: block;
+	line-height: 18px;
+	text-decoration: none;
+	outline: none;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+ul.nav li a img{
+	width: 24px;
+	height: 24px;
+	margin-bottom:-6px;
+	margin-right:1px;
+	outline:none;
+}
+ul.nav li a:hover{
+	color: #fff;
+	text-shadow: #000000 0 1px 0;
+	text-decoration: none;
+}
+ul.nav li.current_page a{
+	background:url(images/header_tabs1.png) no-repeat right -110px;
+	color:#222;
+	padding:0 23px 0 0;
+}
+ul.nav li a span{
+	display:block;
+}
+ul.nav li a span.inner_prim_nav{
+	 padding: 0 0 0 23px;
+	 display:block;
+}
+ul.nav li a span.prim_nav_label{
+	padding:10px 0 14px;
+	display:block;
+	margin-left:-5px;
+}
+ul.nav li.current_page a span.inner_prim_nav{
+	background:url(images/header_tabs1.png) no-repeat left -8px;
+}
+ul.nav li.current_page a span.prim_nav_label{
+	background:url(images/header_tabs1.png) repeat-x left -56px;
+	text-shadow: #fff 0px 1px 0px;
+	margin-left:0;
+}
+ul.nav li.allrfqs a img{
+	background:url(images/icons/icon_sprites24.png) no-repeat 0 0;
+	opacity:0.7;
+}
+ul.nav li.allrfqs a:hover img{
+	background:url(images/icons/icon_sprites24.png) no-repeat 0 0;
+	opacity:1;
+}
+ul.nav li.contacts_nav a img{
+    background:url(images/icons/icon_sprites24.png) no-repeat 0 -24px;
+    opacity:0.7;
+}
+ul.nav li.contacts_nav a:hover img{
+    background:url(images/icons/icon_sprites24.png) no-repeat 0 -24px;
+	opacity:1;
+}
+ul.nav li.statistics_nav a img{
+    background:url(images/icons/icon_sprites24.png) no-repeat 0 -72px;
+    opacity:0.7;
+}
+ul.nav li.statistics_nav a:hover img{
+    background:url(images/icons/icon_sprites24.png) no-repeat 0 -72px;
+	opacity:1;
+}
+ul.nav li.shipping_nav a img{
+    background:url(images/icons/icon_sprites24.png) no-repeat 0 -48px;
+    opacity:0.7;
+}
+ul.nav li.shipping_nav a:hover img{
+    background:url(images/icons/icon_sprites24.png) no-repeat 0 -48px;
+	opacity:1;
+}
+ul.nav li.current_page a img{
+	opacity:1;
+}
+.login_info{
+	color: #ddd;
+	padding-right: 16px;
+	width: 150px;
+	height: 34px;
+}
+.login_info .userdetails{
+   	color: #CCCCCC;
+    font-size: 12px;
+	padding: 4px 5px 2px;
+	text-align: right;
+	
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	_min-width: 150px;
+	max-width: 300px;
+ }
+.app .login_info a{
+   color:#eee;
+   float:right;
+   text-decoration: none;
+   display: inline-block;
+   font-size:12px;
+   background:url(images/icons/icon_sprites24.png) no-repeat 0 -96px;
+   opacity:0.7;
+   padding:4px 5px 4px 24px;
+   outline: none;
+}
+.app .login_info a:hover{
+   background:url(images/icons/icon_sprites24.png) no-repeat 0 -96px;
+   opacity:1;
+   color:fff;
+}
+
+
+
+/* @end */
+
+/*ul.nav li > a.jb_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background: url(images/icons/icon_sprites_24.png) no-repeat 0 0;	
+}
+ul.nav li > a.cont_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background: url(images/icons/icon_sprites_24.png) no-repeat 0 -24px;
+}
+ul.nav li > a.stat_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background: url(images/icons/icon_sprites_24.png) no-repeat  0 -72px;
+}
+ul.nav li > a.ships_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background: url(images/icons/icon_sprites_24.png) no-repeat 0 -48px;
+}
+ul.nav li.current_page > a.jb_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background: url(images/icons/icon_sprites_24.png) no-repeat 0 0;	
+}
+ul.nav li.current_page > a.cont_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background: url(images/icons/icon_sprites_24.png) no-repeat 0 -24px;
+}
+ul.nav li.current_page > a.stat_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background: url(images/icons/icon_sprites_24.png) no-repeat  0 -72px;
+}
+ul.nav li.current_page > a.ships_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background: url(images/icons/icon_sprites_24.png) no-repeat 0 -48px;
+}*/
+
+
+
+
+
+

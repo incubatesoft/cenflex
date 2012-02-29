@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+/******@styles for sub revision@********/
+.app #revisions{
+	min-width: 790px;
+}
+.app #revisions .liteblue_bg{
+	background: #f1f2f3;
+	min-width: 700px;
+	min-height: 108px;
+	border-top: #fff 1px sold;
+	border-bottom: #c6c9cc 1px solid;
+}
+.app #revisions .sub_rev{
+	width: 210px;
+    margin-left: 2px;
+} 
+.app #revisions .sub_rev .rev_icon{
+	background: url(images/revision_sprite.png) no-repeat 0 -88px;
+	width: 32px;
+	height: 20px;
+	padding: 40px 20px 32px 5px;
+	position:absolute;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 14px;
+	text-align: center;
+	text-shadow: 0 1px #000;
+	color: #fff;
+	overflow: hidden;
+	margin: 0;
+}
+.app #revisions ul.r_details{
+	margin: 0;
+	width: 145px;
+	padding-top: 23px;
+	padding-left: 4px;
+}
+.app #revisions .sub_rev .l_border{
+	background: url(images/lite_doble_border.png) no-repeat;
+	width: 2px;
+	height: 65px;
+	margin-top: 20px;
+}
+.app #revisions ul.r_details li{
+	padding: 2px;
+}
+.app #revisions ul.r_details li.rev_num .r_text,
+.app #revisions ul.r_details li.rev_num .dyn_rev_num{
+	color:#5f5c53;
+	font-size:14px;
+	font-weight:bold;
+}
+.app #revisions ul.r_details li.author_name .c_norm{
+	display:inline-block;
+	width:65px;
+	color: #9c9994;
+	font-size: 12px;
+	font-weight: normal;
+	margin-top:0 !important;
+}
+.app #revisions ul.r_details li.author_name .dyn_text{
+	width: 70px;
+	display:inline-block;
+	overflow-x: hidden;
+    text-overflow: ellipsis;
+	white-space:nowrap;
+	color: #504f49d;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom:-3px;
+	}
+.app #revisions ul.r_details .created_on .dyn_date{
+	color: #504f49;
+	font-size: 12px;
+	font-weight: bold;
+	}
+/**************@end@*****************/
+/*********@styles for option info@ ************/
+.app #revisions .opt_values{
+	width: 560px;
+	margin-top: 20px;
+	margin-left: 4px;
+}
+.app #revisions .inner_revision{
+	width:180px;
+}
+.app #revisions .inner_revision ul.opt_info{
+	margin: 0;
+	padding: 0;
+	width: 105px;
+}
+.app #revisions .inner_revision ul.opt_info li{
+	padding: 2px;
+}
+.app #revisions .inner_revision ul.opt_info .rev_num .r_text,
+.app #revisions .inner_revision ul.opt_info .rev_num .dyn_rev_num{
+	color: #5f5c53;
+	font-size: 14px;
+	font-weight: bold;
+}
+.app #revisions .inner_revision ul.opt_info .opt_num{
+	color: #716e68;
+	font-size: 12px;
+	font-weight: bold;
+}
+.app #revisions .inner_revision ul.opt_info li.total .t_norm,
+.app #revisions .inner_revision ul.opt_info li.q_details .q_norm{
+	color: #8f8c86;
+	font-size: 12px;
+	font-weight: normal;
+}
+.app #revisions .opt_values .inner_revision ul.opt_info li.total .dyn_tot,
+.app #revisions .opt_values .inner_revision ul.opt_info li.q_details .dyn_quan{
+	width: 50px;
+	display:inline-block;
+	overflow-x: hidden;
+    text-overflow: ellipsis;
+	white-space:nowrap;
+	color: #504f49;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom:-3px;
+}
+.app #revisions .inner_revision.info1 .opt_greendollar{
+	background: url(images/revision_sprite.png) no-repeat 0 -296px;
+	width: 56px;
+	height: 64px;
+}
+.app #revisions .inner_revision.info2 .opt_approve{
+	background: url(images/revision_sprite.png) no-repeat 0 -206px;
+	width: 56px;
+	height: 64px;
+}
+.app #revisions .inner_revision.info3 .opt_approve{
+	background: url(images/revision_sprite.png) no-repeat 0 -206px;
+	width: 56px;
+	height: 64px;
+}
+.app #revisions .inner_revision a.show_sel{
+	display: block;
+ 	padding: 4px;
+}
+.app #revisions .inner_revision a.show_sel:hover{
+	background: #e6e6c6;
+}
+/********@end@**********/
+/*********@styles for show details part@*********/
+.app #revisions .show_info{
+	background: url(images/revision_sprite.png) repeat 0 -40px; 
+	min-width: 700px;
+	min-height: 31px;
+	border-bottom: 1px solid #c6c9cc;
+}
+.app #revisions .rel_pos1{
+	position: relative;
+}
+.app #revisions .show_details{
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	color: #a0abb0;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0 1px #fff;
+}
+.app #revisions .show_info img.arrow_ico{
+	background: url(images/revision_sprite.png) no-repeat 0 -2px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 5px;
+	left: 85px;
+}
+.app .parent_nav.tall_nav li a .rev_paper{
+	background: url(images/revision_sprite.png) no-repeat 0 -356px;
+	width: 16px;
+	height: 16px;
+	margin-left:-2px;
+	margin-right:5px;
+}
+/*******@end@*********/
+/***********@end@************/

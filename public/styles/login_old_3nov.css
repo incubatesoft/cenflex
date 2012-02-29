@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/* RFQMS Login Styles */
+body{
+	margin:0;
+	padding:0;
+	/*background: #ebf1f7 url(../images/login/ivielogo_bg.png) 90% 40px no-repeat;*/
+	background:#111 url(images/spiderPat.png);
+}
+.main{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#bbb;
+}
+.main a{
+	color:#778da8;
+	text-decoration:none;
+	border-bottom:1px transparent solid;
+	_border:none;
+}
+.main a:hover{
+	color:#fff;
+	border-bottom:1px dotted #fff;
+}
+.main form{
+	padding: 0;
+	margin: 0;
+}
+#black_grad{
+	background: url(images/band_bg.png) repeat-x;
+	position: absolute;
+	z-index: 4;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 600px;
+	margin-top:-270px;
+}
+#band{
+	/*background:url(../images/login/blu_band.png) repeat-x top;*/
+	background:none;
+	/*margin-top:-120px;*/
+	position:absolute;
+	z-index: 5;
+	height:122px;
+	width:1000px;
+	top:50%;
+	margin-top:-126px;
+	left:50%;
+	margin-left:-500px;
+}
+.main #band #wrap{
+	float:left;
+	min-height:100px;
+	min-width:540px;
+}
+/*.main #logo{
+	width:1000px;
+	margin-left: -500px;
+	position: absolute;
+	left: 50%;
+	z-index: 3;
+	top: 50px;
+	background: url(images/ivie_login.png) no-repeat left 68px;
+	height:500px;
+}*/
+.main #logo{
+	width:532px;
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	background: url(images/ivie_login1.png) no-repeat center center;
+	height:532px;
+	margin-left:-266px;
+	margin-top:-286px;/*margin-top:-326px;*/
+	left:50%;
+}
+
+.main #rfq_logo{
+	height: 100px;
+	width: 200px;
+	background: url(images/login_logo2.png) no-repeat;
+	float:left;
+}
+.main #band #login{
+	padding-left:50px;
+	font-size:15px;
+}
+.main #band #login ul{
+	margin:5px 0;
+	padding:0;
+	list-style:none;
+}
+.main #band #login ul li{
+	margin-top:5px;
+	padding:5px 10px 10px 15px;
+	/*border-top:1px transparent solid;
+	border-bottom: 1px transparent solid;*/
+	float: left;
+	width: 250px;
+}
+.main #band #login ul li label{
+	display:block;
+	margin-bottom:2px;
+}
+.main #band #login ul li input{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	width:240px;
+	color:#666;
+	padding:1px;
+	outline: none;
+}
+.main #band #login ul li span{
+	display:block;
+	font-size:12px;
+	color:#fff;
+	display:none;
+}
+/*.main #band #login ul li .loginbtn, .main .loginbtn{
+	width:100px;
+	color:#b6d2f0;
+	padding:0 2px !ie;
+	font-size:15px;
+	border:1px #7c94b3 solid;
+	background:#3d6996 url(../images/login/loginbtn.png) center 3px repeat-x;
+}
+.main .loginbtn:hover, .main #band #login ul li .loginbtn:hover{
+	color:#fff;
+	color:#222;
+	border-color:#a0bedc;
+	border-color:#ecc13d;
+	background-position:center top;
+	background:#fff9dd url(../images/login/btn_bg.png) top repeat-x;
+}
+.main .active, .main #band #login ul li .active{
+	color:#86a3c0;
+	border-color:#e9bc33;
+	color:#998340;
+	background:#40638e url(../images/login/btn_bg.png) bottom repeat-x;
+}
+.main .active:hover, .main #band #login ul li .active:hover{
+	color:#86a3c0;
+	color:#a1842c;
+	border-color:#e9bc33;
+	background:#fff9dd url(../images/login/btn_bg.png) bottom repeat-x;
+}*/
+/**Start of new login styles**/
+.main #band #login ul li .loginbtn, .main .loginbtn{
+	width:100px;
+	color:#333333;
+	padding:0 2px !ie;
+	font-size:14px;
+	border:0px #7c94b3 none;
+	background: url(../images/login/login_button.png) no-repeat center 0px;
+	text-shadow:0 1px 0 #bbbbbb;
+	outline:none;
+	height: 26px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.main .loginbtn:hover, .main #band #login ul li .loginbtn:hover{
+	color: #111111;
+	background: url(../images/login/login_button.png) no-repeat center -30px;
+}
+.main .btnPress, .main #band #login ul li .btnPress{
+	background: url(../images/login/login_button.png) no-repeat center -60px !important;
+	color: #000;
+	text-shadow:0 1px 0 #aaaaaa;
+}
+.main #band #login ul li .disabled, .main .disabled, .main #band #login ul li .disabled:hover, .main .disabled:hover{
+	background: url(../images/login/login_button.png) no-repeat center -90px;
+	color:#444;
+	text-shadow:0 1px 0 #8d8d8d;
+	cursor:not-allowed;
+}
+input[rel=login].disable{
+	background: #b6b6b6;
+	cursor:not-allowed;
+}
+/**End of new login styles**/
+
+.main #band #login ul li.remember{
+	margin-top:5px;
+	padding: 0 0 0 10px;
+	height:20px;
+}
+.main #band #login ul li.remember:hover{
+	color:#FFF;
+}
+.main #band #login ul li.remember input{
+	width:20px;
+	padding:0;
+	float:left;
+}
+.main #band #login ul li.remember label{
+	height:16px;
+	float:left;
+	font-size:13px;
+	padding-top:2px;
+	display:inline;
+}
+.main .forgot{
+	margin-left:22px;
+	font-size:13px;
+	padding-top:10px;
+	color:#A7BAD4;
+}
+.main #band #login ul li.focused{
+	background:url(../images/login/active_bg1.png) repeat-x left center;
+	color:#fff;
+}
+/*.main #band #login ul li.focused{
+	background:#FFF9DC url(../images/login/active_bg1.png) repeat-x left center;
+	border-top:1px solid #afc1d5;
+	border-bottom:1px solid #799cc3;
+	border-color:#FFCC33;
+	color:#000;
+}*/
+.main #band #login ul li.focused input{
+	color:#000;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix {display:-moz-inline-stack; display:inline-block;}
+/* Hide from IE Mac \*/
+	.clearfix {display:block;}
+/* End hide from IE Mac */
+.main #log ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.main #log ul li{
+	margin-bottom: 12px;
+	padding-left: 5px;
+}
+.main .stories{
+	background: #171717;
+	margin-top: 80px;
+	border: 1px solid #444;
+	margin-left: 250px;
+	width: 500px;
+	position:relative;
+	/*opacity: 0.3;
+	margin-left: 290px;*/
+}
+.main .stories h2.log_text, .main .stories p{
+	margin:0;
+	padding: 0;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #aeaeae;
+}
+.main .stories h2.log_text{
+	font-size:16px;
+	border-bottom: 1px dotted #333;
+	margin-bottom:8px;
+	color:#bebebe;
+	font-weight:normal;
+}
+/*Browser Check Error message*/
+div.ie_error_msg{
+	background: #ebebeb url(../images/login/error_browser.gif) no-repeat scroll 15px 15px;
+	border: 1px solid #a1a1a1;
+	margin: 100px auto;
+	padding: 20px 20px 20px 100px;
+	width: 500px;
+	color: #262626;
+}
+div.ie_error_msg h1{
+	font-size: 24px;
+	padding: 10px 10px 10px 0;
+	margin: 0px;
+}
+div.ie_error_msg ul{
+	padding: 0;
+	margin: 20px;
+}
+div.ie_error_msg li{
+	padding: 0 0 4px 0;
+	margin: 0;
+}
+div.ie_error_msg ul a{
+	color: #1c4fad;
+	border: none;
+	
+}
+div.ie_error_msg ul a:hover{
+	color: #1c4fad;
+	border: none;
+	text-decoration: underline;
+}
+
+.spin_login{
+	margin-top: 5px;
+	width: 16px; 
+	height: 16px;
+	background: url(images/spin_login.gif) no-repeat 0 0;
+	float: right;
+	display: none;
+}

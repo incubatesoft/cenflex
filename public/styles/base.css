@@ -1,0 +1,789 @@
+/* RFQMS base UI Styles */
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	background-color: #d3d3d3;
+	min-width:1000px;
+}
+/*.app{
+	color: #565656;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+}*/
+ 
+/* @group Global & Resets */
+.app a{
+	text-decoration: none;
+	color: #333;
+}
+.app a:hover{
+	color: #000;
+}
+.app a{
+	color: #336999;
+	cursor: pointer;
+	/*text-decoration: underline;*/
+}
+.app a:hover{
+	color: #111;
+	text-decoration: underline;
+}
+.app img, .app a img{border: none}
+.app ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.app input[type="text"], .app input.text, .app textarea{
+	font-size: 13px;
+	color: #333;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+}
+.app .fr{
+	float: right;
+	float: right !important;
+}
+.app .fl{
+	float: left;
+	float: left !important;
+}
+.app .grey{
+	color: #9f9f9f;
+}
+/* @end */
+ 
+/* @group Layout */
+/*.app #header{
+	background: url(images/admin_header_bg.png) repeat-x top;
+	height: 78px;
+	color: #eee;
+}
+.app #header #logo{
+	background: url(images/small_ivie.png) no-repeat left top;
+	padding-left: 28px;
+	height: 27px;
+	font-size: 17px;
+	line-height: 24px;
+	color: #bbb;
+	font-family: "trebuchet MS", Helvetica, Arial;
+	float: left;
+}*/
+
+/*.app #contentarea{
+	position: absolute;
+	bottom: 30px;
+	top: 45px;
+	overflow: hidden;
+	left: 5px;
+	right: 5px;
+	min-width: 1000px;---.19June.
+	min-height: 500px;---.19June.
+}*/
+.app #cont_box{
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	border: 1px solid #bbbbbb;
+}
+.app #left_nav{
+	/*position: absolute;
+	background: #f0f0f0;
+	width: 210px;
+	bottom: 0;
+	top: 0;*/
+	/*border-right: 1px solid #777;*/
+	_overflow: auto;
+}
+.app #active_content{
+	/*bottom:30px;*/
+	/*top: 31px;*/
+	z-index: 1;
+	/*border-left: 1px solid #ddd;*/
+	overflow-x: hidden;
+	overflow-y:auto;
+}
+.app .ac{
+	left: 211px;
+	right: 0;
+	position: absolute;
+}
+.app #ac_heading{
+	top: 0;
+	z-index: 3;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	height: 24px;
+	/*background:  url(images/grey_grad.gif) repeat-x top;*/
+	background: #ddd url(images/mail_assets.png) repeat-x 0 -1420px;
+	/*border-bottom: 1px solid #ddd;*/
+}
+.app #ac_heading.show_fix{
+	min-width: 1000px;
+}
+.app #active_actions{
+	background: #f0f0f0;
+	height: 26px;
+	padding: 2px;
+	border-top: #777 solid 1px;
+	bottom: 0;
+	z-index:3;
+}
+.app #ac_tablehead{
+	border-bottom: 1px solid #9f9f9f;
+	height: 24px;
+	/*width: 100%;*/
+	overflow: hidden;
+	background: #f7f7f7 url(images/grey_grad.png) 0 -28px;
+}
+.app #ac_tablehead .row div{
+	overflow: hidden;
+}
+.app .row > div{
+	float: left;
+}
+.app .row{
+	/*border-bottom: 1px solid #ddd;*/
+	/*height: 21px;*/
+	overflow: hidden;
+}
+.app #ac_table{
+	position: absolute;
+	/*width: 100%;*/
+	top: 25px;
+	bottom:26px;
+	overflow: auto;
+	padding-bottom: 0;
+	left: 0;
+	right: 0;
+}
+.app #pagination{
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	padding: 3px 4px 1px;
+	border-top: 1px solid #dedede;
+	overflow: hidden;
+	background: #f3f3f3;
+	position: absolute;
+	width: 100%;
+}
+ 
+ 
+.app #ac_table .row:hover, .app #ac_table tr:hover{
+	/*background: #faffed;*/
+}
+.app #overlay.ac_overlay{
+	bottom:30px; top:30px; z-index:50; background:#444; display: none;
+}
+.app .ac_overlay{
+	vertical-align: middle;
+	text-align: center;
+	bottom:30px; top:30px;z-index:51;
+	display: none;
+}
+.spinner{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -16px;
+}
+/*Statistics */
+.app .dashboard{
+	background: #efefef;
+	margin: 10px auto;
+}
+/* @end */
+ 
+ 
+/* @group Pagination */
+#pagination .pages{
+	float: left;
+	/*width: 50%;*/
+	overflow: hidden;
+	height: 18px;
+	padding-top: 0;
+	line-height:18px
+}
+#pagination .pages li{
+	display: inline;
+	padding: 0 3px;
+	/*border-right: 1px solid #aaa;*/
+}
+.pages a{
+	color: #888;
+	padding: 0 3px;
+	border: 1px solid #ddd;
+}
+.pages a:hover{
+	color: #eee;
+	text-decoration: none;
+	background-color: #666;
+	border-color: #555;
+}
+.pages a.cur_page{
+	background-color: #fff;
+	color: #666;
+	font-weight: bold;
+	border-color: #aaa;
+}
+.pages a.cur_page:hover{
+	background-color: #fff;
+	color: #666;
+}
+.pageinfo{
+	font-size: 12px;
+	/*padding-right: 12px;*/
+	padding-left: 5px;
+	color: #666;
+	text-shadow: #fff 0px 1px 0px;
+}
+.pages .prev_page{
+	background: url(images/l.png) no-repeat left 2px;
+	padding-left: 12px;
+}
+.pages .next_page{
+	background: url(images/r.png) no-repeat right 2px;
+	padding-right: 12px;
+}
+.next_page:hover{
+	background-position: right -14px;	
+}
+.prev_page:hover{
+	background-position: left -14px;
+}
+.line{
+	background: #aaa;
+	border-right: 1px solid #fff;
+	width: 1px;
+	display: block;
+	float: left;
+	height: 18px;
+	margin-left: 3px;
+}
+/* @end */
+.ac_head{
+	padding:1px 6px; margin:0; float:left; font-size:15px;
+	font-weight: normal;
+}
+#ac_title, .ac_title{
+	padding: 2px 6px;
+	border-bottom: 1px dotted #bbc4ce;
+	margin: 4px 0;
+}
+#ac_title h4, .ac_title h4{
+	font-size: 16px;
+	color: #526476;
+	padding:4px 0;
+	margin: 0;
+}
+#ac_title .btn{
+	float: right;
+}
+h2.page_heading{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+#ac_heading h4{
+	padding:2px 0 0 5px; margin:0; font-size:15px; font-weight:bold; 
+}
+ 
+.app #search_ac{
+	position: relative;
+	float: right;
+	width: 180px;
+	height: 20px;
+	margin-top: 2px;
+	margin-right: 8px;
+}
+.app #search_ac .search_left{
+	position: absolute;
+	top: 0;
+	width: 16px;
+	left: 0;
+	height: 20px;
+	background: url(images/controls.png) no-repeat left -5753px;
+}
+.app #search_ac input.search{
+	background: url(images/controls.png) repeat-x 0 -5777px;
+	border: none;
+	color: #111;
+	left: 16px;
+	top: 0;
+	height: 17px;
+	position: absolute;
+	width: 138px;
+	font-size:12px;
+	line-height: 13px;
+	padding: 3px 10px 0 2px;
+	outline: none;
+	margin: 0;
+}
+.app #search_ac input.blur, .app input.blur{
+	color: #888;
+}
+.app #search_ac .search_right{
+	width: 12px;
+	height: 20px;
+	left:164px;
+	top: 0;
+	position: absolute;
+	display: block;
+	background: url(images/controls.png) no-repeat right -5801px;
+}
+.app #search_ac .clear_search{
+	background: url(images/mail_assets.png) no-repeat -48px -240px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 8px;
+	top: 2px;
+	display: none;
+}
+.app #search_ac .clear_search:hover{
+	background-position: -48px -208px;
+}
+.app #search_ac.widesearch{
+	width: 380px;
+}
+.app #search_ac.widesearch input.search{
+	width: 342px;
+	margin: 0;
+}
+.app #search_ac.widesearch .search_right{
+	right: 0;
+	left: auto;
+}
+.app #search_ac.widesearch .clear_search{
+	right: 4px;
+}
+/* @group Width Classes */
+.app .narrow{
+	width: 60px;
+}
+.app .wide{
+	width: 180px;
+}
+.app .wider{
+	width: 196px;
+}
+.app .opts{
+	width: 40px;
+}
+.app #ac_tablehead .wide{
+	width: 184px;
+}
+.app #ac_tablehead .wider{
+	width: 200px;
+}
+.app #ac_tablehead .narrow{
+	width: 64px;
+}
+.app #ac_tablehead .opts{
+	width: 44px;
+}
+ 
+/* @end */
+ 
+/* @group Data Table Styles */
+.app #ac_tablehead .row div, .app #ac_tablehead th{
+	font-weight: normal;
+	color: #626262;
+	/*cursor: default;*/
+	border-right: 1px solid #c7c7c7;
+	overflow: hidden;
+}
+.app #ac_tablehead .row div a, .app #ac_tablehead th a{
+	font-weight: normal;
+	padding: 4px;
+	border-left: 1px solid #fff;
+	display: block;
+	height: 24px;
+	color: #626262;
+	text-align: center;
+	text-decoration: none;
+	cursor: default;
+}
+.app #ac_tablehead >div a:hover, .app #ac_tablehead th a:hover{
+	text-decoration: none;
+	color: #333;
+	background: #fff;
+}
+.app #ac_tablehead >div a:active, .app #ac_tablehead th a:active{
+	color: #666;
+	background: #ddd;
+}
+ 
+.app #ac_table .row > div, .app #ac_table td {
+	border-right: 1px solid #c7c7c7;
+	padding: 3px 2px;
+	overflow: hidden;
+	line-height: 18px;
+}
+.app #ac_table .row > .opts, .app #ac_tablehead .row div.opts{
+	border: none;
+}
+.app .altBlu{
+	background-color: #f1f5fa;
+}
+.app .row input.text{
+	height: 15px;
+	margin: 0;
+}
+.app input.date{
+    background:#fff url(images/calendar.png) right center no-repeat;
+	padding-right:16px;
+	width: 80px;
+}
+.app #ac_table .editing_row, .app #ac_table .editing_row:hover{
+	background: #f1e8d8 url(images/mail_assets.png) repeat-x 0 -1196px;
+}
+.app #ac_table .deleting_row, .app #ac_table .deleting_row:hover{
+	background: #ebc7d2 url(images/mail_assets.png) repeat-x 0 -1532px;
+}
+ 
+ 
+.app .lastrow{
+	font-style: italic;
+	color: #999;
+	border-bottom: 1px solid #b3a997;
+	border-top: 1px solid #e8d8bc;
+}
+.app .edit_saved{
+	color: #111;
+}
+.app .norecord{
+	padding:15px;
+}
+.app .row div form.editing input, .app .editing_row .addterm{
+	width:96%;
+	height:16px;
+	line-height:15px;
+	padding:0 1px;
+}
+.app .editing_row .addterm{
+	
+}
+/* @end */
+ 
+/* @group Icons */
+.del img {
+	background: url(images/mail_assets.png) no-repeat -48px -192px;
+}
+.delete, .closeme{
+	background: url(images/mail_assets.png) no-repeat -48px -192px;
+	width: 16px;
+	height: 16px;
+}
+.row:hover .delete{
+	background: url(images/mail_assets.png) no-repeat -48px -240px;
+}
+.row:hover .delete:hover, .closeme:hover, .delete:hover, .del:hover img{
+	background: url(images/mail_assets.png) no-repeat -48px -208px;
+}
+.save_disk{
+	background: url(images/disk_black.png) no-repeat center top;
+	width: 16px;
+	height: 16px;
+	float:left;
+}
+.save_disk:hover{
+	background: url(images/disk_black.png) no-repeat center center;
+}
+.search_ico{
+	padding-left: 16px;
+	background: url(images/zoom.png) no-repeat left center;
+}
+.pencil{
+	width: 16px;
+	height: 16px;
+}
+.collapse{
+	width: 12px;
+	height: 10px;
+}
+.pencil img{
+	background: url(images/pencils.png) no-repeat 0 top;
+	border: 1px solid transparent;
+}
+.collapse img{
+	background: url(images/controls.png) no-repeat 0 -4032px;
+}
+.expand img{
+	background: url(images/controls.png) no-repeat 0 -4048px;
+	
+}
+.expand img, .collapse img{
+	cursor:pointer;
+}
+.pencil:hover img{
+	background-position: 0 -17px;
+}
+.clear_add{
+	float:right;
+	/*background: url(images/delete.png) no-repeat center center;*/
+}
+/* @end */
+ 
+ 
+/* @group Buttons */
+ 
+ 
+.prev_nextWrap span, .prev_nextWrap a{
+	display: inline;
+	margin: auto;
+	padding: 0;
+}
+.prev_nextWrap span.fl{
+	color: #777;
+	margin-top: -1px;
+}
+.prev_nextWrap span.fl select{
+	color: #777;
+	font-size: 11px;
+	background: #efefef;
+	border: 1px solid #999;
+	margin: -2px 2px;
+}
+.prev_nextWrap img{
+	margin-top: -2px;
+}
+.prev img{
+	background: url(images/controls.png) left -5344px;
+	margin-right: -3px;
+	margin-left: -2px;
+	margin-bottom: -3px;
+}
+.prev a.active img{
+	background-position: left -5280px;
+}
+.prev a.mdown img{
+	background-position: left -5312px;
+}
+.prev_disabled{
+	background: url(images/controls.png) left -5344px;
+	cursor: default;
+}
+.next img{
+	background: url(images/controls.png) left -5440px;
+	margin-right: -3px;
+	margin-left: -3px;
+	margin-bottom: -3px;
+}
+.next a.active img{
+	background: url(images/controls.png) left -5376px;
+	cursor: default;
+}
+.next a.mdown img{
+	background-position: left -5408px;
+}
+/* @end */
+.clearfloat{
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.overlay{
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	display: none;
+	/*opacity: 0.5;*/
+	background-image: url(images/spacer.gif);
+	background: none;
+}
+ 
+ 
+/* @group Forms */
+.form_list li{
+	margin-bottom: 5px;
+}
+.form_list label{
+	width: 160px;
+	display: block;
+	margin-top: 0.5em;
+	float: left;
+}
+.form_list .btn_bar{
+	position: relative;
+	padding-top: 10px;
+}
+.form_list .btn_bar a.main_btn{
+	position: absolute;
+	left: 160px;
+	top: 10px;
+}
+/* @end */
+ 
+.ar{
+	text-align:right;
+}
+.loud label{
+	color:#000;
+}
+ 
+/*.....................for Page title...................................*/
+/*.app #contentarea h2.header{
+	display:block;
+	background:#b6b6b6 url(images/hd_bg.gif) left bottom repeat-x;;
+	padding:3px 4px;
+	border:1px solid #777;
+	height:26px;
+	font-weight: normal;
+	margin: 0;
+}*/
+.app #contentarea h2.header a#title_btn{
+	outline:none;
+}
+.app #contentarea h2.page_heading a#title_btn.rt_btn{
+	background:url(images/title_btn.png) right -174px no-repeat;
+	padding-right:16px;
+	display:-moz-inline-stack;
+	display:inline-block;
+	font-size:14px;
+	color:#000;
+	margin-left:-6px;
+	text-shadow: #dcdcdc 0 1px 0;
+	outline: none; /*..22 June 2009..*/
+}
+.app #contentarea h2.header a#title_btn.rt_btn span.tl_btn{
+	background:url(images/title_btn.png) -9px -208px no-repeat;
+	padding-left:8px;
+	display:block;
+}
+.app #contentarea h2.header a#title_btn.rt_btn span.td_btn{
+	background:none;
+}
+.app #contentarea h2.header a#title_btn.rt_btn span.td_btn span.mid_btn{
+	background:url(images/title_btn.png) left -139px repeat-x;
+	padding:2px 2px 6px;
+	line-height:18px;
+	display:block;
+}
+.app #contentarea h2.header a#title_btn.rt_btn span.tl_btn span.mid_pad{
+	padding-top:5px !important;
+}
+.app #contentarea h2.header a#title_btn.rt_btn span.tl_btn span.mid_btn{
+	background:url(images/title_btn.png) left -139px repeat-x;
+	padding:2px 5px 5px 2px;
+	display:block;
+}
+ 
+.app #contentarea h2.header a#title_btn.rt_btn span.tl_btn span.mid_btn img{
+	background:url(images/icons/icon_sprites.png) left -760px no-repeat;
+	margin-right:2px;
+}
+.app #contentarea h2.header a#title_btn.rt_btn span.tl_btn span.mid_btn img.ship_brd{
+	background: url(images/icons/icon_sprites.png) left -219px no-repeat;
+	float:left;
+}
+.app #contentarea h2.header a#second_btn.rt_btn img.rt_img{
+	background:url(images/icons/icon_sprites.png) left -783px no-repeat;
+	margin-right:2px;
+}
+ 
+.app #contentarea h2.header a#second_btn.rt_btn{
+	background:url(images/title_btn.png) right -280px no-repeat;
+	padding-right:16px;
+	display:-moz-inline-stack;
+	display:inline-block;
+	font-size:15px;
+	color:#000;
+	margin-left:-6px;
+	text-shadow: #dcdcdc 0 1px 0;
+	outline: none;
+}
+.app #contentarea h2.header a#second_btn.rt_btn span.td_btn span.mid_btn{
+	background:url(images/title_btn.png) left -139px repeat-x;
+	padding:2px 2px 6px;
+	line-height:18px;
+	display:block;
+}
+/*................*/
+ 
+ 
+.app #contentarea h2.header a#title_btn.ht_btn{
+	background:url(images/title_btn.png) right -106px no-repeat;
+	padding-right:18px;
+	display:-moz-inline-stack;
+	display:inline-block;
+	font-size:14px;
+	color:#333;
+	text-shadow: #eee 0 1px 0;
+}
+.app #contentarea h2.header a#title_btn.ht_btn:hover{
+	background:url(images/title_btn.png) right -315px no-repeat;
+}
+.app #contentarea h2.header a#title_btn.ht_btn:hover span.tl_btn{
+	background:url(images/title_btn.png) left -382px no-repeat;
+}
+.app #contentarea h2.header a#title_btn.ht_btn:hover span.tl_btn span.mid_btn{
+	background:url(images/title_btn.png) left -349px repeat-x;
+}
+ 
+.app #contentarea h2.header a#title_btn.ht_btn span.tl_btn{
+	background:url(images/title_btn.png) left top no-repeat;
+	padding-left:9px;
+	display:block;
+}
+.app #contentarea h2.header a#title_btn.ht_btn span.tl_btn span.mid_btn{
+	background:url(images/title_btn.png) left -34px repeat-x;
+	padding:2px 6px 6px 2px;
+	display:block;
+}
+.app #contentarea h2.header a#title_btn.ht_btn img{
+	background:url(images/icons/icon_sprites.png) left -759px no-repeat;
+	margin-right:2px;
+}
+.app #contentarea h2.header a#title_btn.rt_btn span.td_btn span.mid_btn img.crt_b{
+	background:url(images/icons/icon_sprites.png) no-repeat left -853px;
+}
+/*...............end of page title.................*/
+ 
+/* @group Progress Bars */
+.app .progBar{
+	width: 202px;
+	position: relative;
+	padding: 0;
+	height: 12px;
+	background: url(images/pBarTubes_sprite.png) no-repeat right -160px;
+}
+.app .progBar .lftTube{
+	width: 1px;
+	height: 12px;
+	position: absolute;
+	left: 0;
+	background: url(images/pBarTubes_sprite.png) no-repeat left -120px;
+	top: 0;
+}
+.app .progBar .Ctube{
+	height: 12px;
+	position: absolute;
+	left: 1px;
+	right: 1px;
+	width:200px;
+	background: url(images/pBarTubes_sprite.png) repeat-x left -200px;
+	top: 0;
+}
+.app .progBar .Ctube .autoProg{
+	background: url(images/pbar_sprite.gif) left -52px;
+	width: 100%;
+	height: 10px;
+}
+.myPbar{
+	display: -moz-inline-stack;
+	display: inline-block;	
+	margin-left: 20px;
+	margin-bottom: -2px;
+}
+/* @end */
+
+/*Added for Timeago*/
+.app abbr{
+	cursor: default;
+}

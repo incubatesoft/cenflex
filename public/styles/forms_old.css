@@ -1,0 +1,157 @@
+.forms_list, .form_bars{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.forms_list > li{
+	margin-bottom: 6px;
+	padding: 5px 6px;
+}
+.forms_list > li > label{
+	display: block;
+	float: left;
+	/*padding-top: 6px;
+	margin-top: 0.3em;*/
+	width: 100px;
+	color: #777;
+}
+.forms_list > li > input[type="text"], .forms_list > li > select{
+	/*margin-top: 4px !important;*/
+}
+.forms_list > li > div.r_label{
+	color: #333;
+	/*padding-top: 6px;*/
+}
+.loud label{
+	color:#000;
+}
+
+
+.form_bars > li{
+	margin: 2px 0 4px;
+	max-width: 764px;
+	min-width: 560px;
+	padding: 2px 4px 2px 6px;
+	height: 26px; /*144px edit_mode*/
+	background: #f0f0f0;
+	border: 1px solid #c2c2c2;
+	text-shadow: #fff 0 1px 0;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+}
+.form_bars > li.edit_mode, .form_bars > li:hover.edit_mode{
+	height: 144px;
+	background-color: #fffac1;
+}
+.form_bars > li:hover{
+	background: #f6f6f6;
+}
+.form_bars > li  div{
+	margin: 4px 0 0;
+}
+.form_bars > li  img.arr{
+	position: absolute;
+	left: 9px;
+	top: 9px;
+	width: 12px;
+	height: 12px;
+	background: transparent url(images/left_bottom_arrows.png) no-repeat 0 0;
+}
+.form_bars > li.edit_mode  img.arr{
+	background-position: 0 -14px;
+}
+.form_bars > li  div.bar_label{
+	position: absolute;
+	left: 30px;
+	width: 220px;
+}
+.form_bars.no_arr > li div.bar_label{
+	left: 10px;
+	width: 240px;
+}
+.form_bars > li  div.bar_label > span{
+	display: block;
+	width: 220px;
+	height: 18px;
+	overflow: hidden;
+}
+.form_bars > li.edit_mode  div.bar_label > span{
+	display: none;
+}
+.form_bars li  div.bar_label > input.label_txt{
+	display: none;
+}
+.form_bars > li.edit_mode  div.bar_label > input.label_txt{
+	display: block;
+}
+.form_bars > li  div.short_desc{
+	font-size: 12px;
+	color: #8393a5;
+	width: 170px;
+	height: 18px;
+	position: absolute;
+	left: 250px;
+	overflow: hidden;	
+}
+.form_bars > li.edit_mode  div.short_desc{
+	display: none;
+}
+.form_bars > li  div.bar_tools{
+	font-size: 12px;
+	position: absolute;
+	right: 6px;
+	width: 300px;
+	text-align: right;	
+}
+.form_bars > li  div.bar_tools .btn_bar{
+	position: absolute;
+	left: 0;
+	text-align: right;
+	width: 160px;
+	margin: 0;
+}
+.form_bars > li  div.bar_tools > a{
+	font-size: 13px;
+	color: #404040 !important;
+	line-height: 14px;
+}
+.form_bars  li  div.bar_tools > ul{
+	margin-left: 10px;
+}
+
+.form_bars > li  div.long_desc{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 30px;
+	display: none;
+}
+.form_bars > li.edit_mode  div.long_desc{
+	display: block;
+}
+.form_bars  li  div.long_desc > textarea{
+	width: 720px;
+	height: 80px;
+	margin: 0 10px;
+}
+.form_bars > li  div.long_desc > div.small_description{
+	margin-left: 10px; 
+	font-size: 12px; 
+	color: #777;
+}
+
+
+.forms_list input.email, .forms_list input.wider{
+	width: 340px;
+}
+.forms_list input.wide{
+	width: 300px;
+}
+.forms_list input.slim{
+	width: 140px;
+}
+.forms_list input.number{
+	width: 60px;
+}

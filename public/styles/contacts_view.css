@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Application Control bar*/
+.app #right_content.controlbar_true .contentarea.contacts_view{
+	bottom: 31px;
+	border-bottom: 1px solid #aaa;
+}
+
+/*start: contacts specific styles*/
+.app #active_right_content_header, .app #active_heading {
+	padding: 0px;
+	height: 31px;
+}
+.app #active_right_content_header.contacts{
+	background-position: 0 -1661px;
+	border-bottom: 1px solid #989898;
+}
+.app #active_right_content_header h3.comp_name{
+	padding: 5px 6px 7px;
+	margin: 0;
+	height: 18px;
+	position: relative;
+	background:#eee none repeat scroll 0 0;
+}
+
+.app .comp_name_txt{
+	display: none;
+	width: 240px;
+}
+.app .comp_name_new_txt{
+	width: 240px;
+}
+.app .error_com{
+	position: absolute;
+	left: 260px;
+	top: 7px;
+	font-weight: normal;
+	display: none;
+}
+.app #active_right_content_header .err{
+	background: #FDF3F8 url(images/err.png) repeat-x scroll center bottom;
+}
+.app #active_right_content_header .focus{
+	background: #F4F9FE url(images/focused.png) repeat-x scroll center bottom;
+}
+.app #contacts_contentarea{
+	top: 27px;
+}
+.app #contacts_contentarea .section{
+	width: 750px;
+}
+.app #contacts_contentarea .contact_person_area{
+	background: #fdfdfd;
+	border: 1px dotted #fafafa;
+	margin: 10px;
+}
+.app #contacts_contentarea .contact_person_area ul{
+	margin: 0;
+}
+.app #contacts_contentarea ul{
+	clear: both;
+}
+.app #contacts_contentarea .section ul li.single{
+	width: 718px;
+	min-height: 20px;
+}
+.app #contacts_contentarea .section ul li.single.empty{
+	background: #fdf3f8 url(images/err.png) center bottom repeat-x;
+	border-top: 1px dotted #f2cfd9;
+	float: none;
+}
+.app #contacts_contentarea .visible_content ul.inner_section{
+	background: #fdfdfd;
+	border: 1px dotted #fafafa;
+	margin-bottom: 20px;
+}
+.app #contacts_contentarea .visible_content ul h4{
+	border-bottom: 1px dotted #D4DBE2;
+	color: #5f7389;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0;
+	padding: 2px;
+}
+.app #contacts_contentarea .visible_content .edit_hdr{
+	border-bottom: 1px dotted #D4DBE2;
+}
+.app #contacts_contentarea .visible_content ul h4 span.feature{
+	font-weight: normal;
+	color: #878787;
+	font-size:12px;
+	margin-left: 20px;
+}
+.app #contacts_contentarea .visible_content a.add_contact_person{
+	color: #687F98;
+	font-weight: bold;
+	background: transparent url(images/add_person.png) no-repeat 0 0;
+	margin-left: 10px;
+	padding-left: 18px;
+	padding-top: 2px;
+	border-bottom: 1px dotted #ccc;	
+}
+.app #contacts_contentarea .visible_content a:hover.add_contact_person{
+	border-bottom: 1px dotted #aaa;
+	color: #3a4e64;
+}
+.app #contacts_contentarea .visible_content p{
+	padding: 0px;
+	margin: 0 0 10px 0;
+}
+.app #right_content.controlbar_true .controlbar{
+	background: #f0f0f0;
+	height: 26px;
+	padding: 2px;
+	z-index:3;
+}
+/*start: client history grid*/
+
+.app #client_history li{
+	width: 100px;
+}
+.app #client_history .g_header{
+	background: #dbdbdb url(images/grid_header.png) repeat-x 0 bottom;
+	border: 1px solid #999999;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 708px;
+	height: 25px;
+}
+.app #client_history .g_header ul, .app .g_footer ul{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.app #client_history .g_header ul li{
+	font-weight: bold;
+	color: #202020;
+	text-decoration: #cccccc 0px 1px 0px;
+	padding: 5px 6px 4px 5px;
+	border-right: 1px solid #a5a5a5;
+}
+.app #client_history .g_header ul li:last-child{
+	border-right: 0 none #a5a5a5;
+}
+.app #client_history .g_body{
+	/*border: 1px solid #aaa;*/
+	position: absolute;
+	/*top: 47px;
+	left: 20px;
+	width: 680px;
+	height: 319px;*/
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.app #client_history .g_body th.grid_resize{
+	background: #dbdbdb url(images/grid_header.png) repeat-x 0 bottom;
+	height: 25px;
+	font-weight: bold;
+}
+.
+/*app #client_history .g_body td{
+	****padding: 16px 6px 16px 5px;******
+	padding: 8px 6px;
+	border-bottom: 1px dotted #f0f0f0;
+}*/
+.app #client_history .g_body .subgrid td {
+	padding: 0;
+}
+
+.app .prev_nextWrap {
+	color: #333;
+}
+
+/*.app #client_history #loadClientHistory.g_body .h_1{
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 1px;
+}
+.app #client_history .g_body > table tr:hover{
+	background-color: #cddaeb;
+}
+.app #client_history .g_body > table tr:hover td{
+	background: url(images/grid_show_arrow.png) no-repeat right center;
+	border-right: 1px solid #aebbcb;
+}
+.app .g_body > table tr.active td{
+	background: url(images/grid_show_arrow_a.png) no-repeat right center;
+}
+.app #client_history .g_body .alt{
+	background-color: #f1f5fa;
+}
+.app #client_history .g_body td{
+	padding: 16px 6px 16px 5px;
+	border-right: 1px solid #f2f2f3;
+	border-bottom: 1px dotted #f0f0f0;
+}
+.app #client_history tr td:last-child{
+	border-right: 0 none #fff;
+}	
+.app #client_history .g_body > table td a{
+	font-weight: bold;
+	color: #336999;
+	background: url(images/grid_path_arrow.png) no-repeat right top;
+	text-decoration: underline;
+	padding: 2px 20px 0 2px;
+	
+}
+.app #client_history .g_body > table td a:hover{
+	background-position: right bottom;
+}
+.app #client_history .g_footer{
+	background: #dbdbdb;
+	border: 1px solid #999999;
+	position: absolute;
+	top: 347px;
+	left: 20px;
+	width: 708px;
+	height: 26px;
+} 
+.app #client_history .g_footer span.grid_ftr_info{
+	color: #777;
+	vertical-align: top;
+}
+.app #client_history .g_footer li img{
+	width: 19px;
+	height: 17px;
+	background: url(images/prev-next.png) no-repeat 0 0;
+}
+.app #client_history .g_footer li img.l_arr{
+	background-position: 0 0;
+}
+.app #client_history .g_footer li img:hover.l_arr{
+	background-position: 0 -17px;
+}
+.app #client_history .g_footer li img.r_arr{
+	width: 20px;
+	background-position: 0 -34px;
+}
+.app #client_history .g_footer li img:hover.r_arr{
+	background-position: 0 -51px;
+}*/
+/*end: client history grid*/
+/*end: contacts specific styles*/
+
+
+
+/****start: grid contact specific styles******/
+.app .autoGrid{
+	position:absolute;
+	left:0;
+	right:0;
+	top:20px;
+	bottom:31px;
+	z-index:1;/*_3*/
+	border-bottom:1px solid #bcc2c7;
+}
+
+.app #loadClientHistory table.scroll thead th:first-child, .app #loadClientHistory table.scroll tbody td:first-child{
+	padding: 0;
+}
+
+.app #loadClientHistory table.scroll thead th:nth-child(2), .app #loadClientHistory table.scroll tbody td:nth-child(2){
+	border-left: 0 none !important;
+}
+
+
+
+/****end: grid contact specific styles******/
+
+
+.app .save_error_msg.contacts_notify{
+	position: static;	
+}
+
+
+
+/**start: table empty row**/
+.no_rec{
+	position:absolute;
+	width:100%;
+	background:#f0f0f0;
+	color:#555;
+	left:0;
+	top:0;
+	text-align:left;
+	bottom:0;
+	padding:6px 0 0 6px;
+	font-weight:bold;
+	font-size: 14px;
+}
+/**end: table empty row**/

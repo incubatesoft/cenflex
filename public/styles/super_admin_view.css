@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+.app .contentarea .form_container{
+	margin: 20px;
+}
+.app .contentarea .form_container li{
+	margin: 6px 0 10px 0;
+	vertical-align: top;
+}
+.app .contentarea .form_container label{
+	width: 100px;
+	display: block;
+	float: left;
+	vertical-align: top;
+	color: #777777;
+}
+
+.app .contentarea #user_form{
+	width: 300px;
+	background: #fff;
+	border-right: #fff;
+}
+.app .contentarea #user_extras{
+	left: 301px;
+}
+.app .contentarea .btn_container{
+	margin: 10px;
+	padding: 10px 0 0 0;
+	border-top: 1px dotted #ccc;
+}
+
+.app .mec_form{
+	margin: 40px;
+}
+.app .mec_form li{
+	float: left;
+	margin-right: 10px;
+}
+.app .mec_form li label{
+	display: inline-block;
+	margin-right: 10px;
+	padding: 4px 6px; 
+}
+.app .mec_form li label.rad{
+	position: relative;
+	top: -1px;
+}
+.app .mec_form li input{
+	margin: 0;
+}

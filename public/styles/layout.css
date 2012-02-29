@@ -1,0 +1,599 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	background-color: #d3d3d3;
+	min-width:1000px;
+}
+.main{
+	color: #565656;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+ 
+/* @group Global & Resets */
+ 
+.main a{
+	text-decoration: none;
+	color: #333;
+}
+.main a:hover{
+	color: #000;
+}
+.main #active_content a{
+	color: #336999;
+	text-decoration: underline;
+}
+.main #active_content a:hover{
+	color: #111;
+	text-decoration: underline;
+}
+.main img, .main a img{border: none}
+.main ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.main input[type="text"], .main input.text, .main textarea{
+	font-size: 13px;
+	padding: 1px 2px;
+	line-height: 16px;
+	color: #333;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+}
+.main .fr{
+	float: right;
+	float: right !important;
+}
+.main .fl{
+	float: left;
+	float: left !important;
+}
+.ar{
+	text-align:right;
+}
+.main .grey{
+	color: #9f9f9f;
+}
+.clearfloat{
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+/* @end */
+
+ 
+/* @group Layout */
+.main #header{
+	background: #31373c url(images/header_bg2.png) repeat-x top;
+	height: 63px;
+	height: 43px;
+	overflow: hidden;
+	color: #fff;
+	position: relative;
+	z-index: 8;
+}
+.main #header #logo{
+	background: url(images/small_ivie_logo.png) no-repeat left center;	
+	padding: 4px 8px 2px 39px;
+	height: 38px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #dedede;
+	float: left;
+	text-shadow: #000 0 1px 0;
+}
+#logo .smallerText{
+	font-size: 10px;
+	display: block;
+	margin-top: -5px;
+}
+.main #contentarea{
+	position: absolute;
+	bottom: 0;
+	top: 43px;
+	overflow: hidden;
+	left: 0;
+	right: 0;
+	min-width: 1000px;/*.19June.*/
+	min-height: 500px;/*.19June.*/
+}
+.main #cont_box{
+	position: absolute;
+	top: 33px;
+	bottom: 30px;
+	right: 5px;
+	left: 5px;
+	border: 1px solid #777;
+}
+.main #cont_box.notitle{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: none;
+}
+.main #left_nav{
+	position: absolute;
+	background: #f0f0f0;
+	/*background: #dfe1e3;*/
+	width: 210px;
+	bottom: 0;
+	top: 0;
+	border-right: 1px solid #777;
+	overflow: auto;
+}
+.main #right_content{
+	left: 211px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+}
+.main #active_content, .main #active_actions, .main #active_heading{
+	left: 0;
+	right: 0;
+	position: absolute;
+}
+.main #active_heading{
+	top: 0;
+	position: absolute;
+	z-index: 3;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	height: 24px;
+	background: url(images/mail_assets.png) repeat-x 0 -1420px;
+}
+.main #active_content{
+	bottom:30px;
+	top: 31px;
+	z-index: 1;
+	position: absolute;
+	/*border-left: 1px solid #ddd;*/
+	background: #fff;
+	overflow-x: hidden;
+	overflow-y:auto;
+}
+.main #active_actions{
+	background: #f0f0f0;
+	height: 26px;
+	padding: 2px;
+	position: absolute;
+	border-top: #777 solid 1px;
+	bottom: 0;
+	z-index:3;
+}
+
+.spinner{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -16px;
+}
+
+.main #active_left_nav{
+	top: 0;
+	bottom: 0;
+	width: 210px;
+	overflow: auto;
+	background: #f5f5f5;
+	border-right: 1px solid #888;
+	position: absolute;
+}
+.main #active_right_content{
+	left: 211px;
+	right: 0;
+	position: absolute;
+	top: 0;
+	overflow: auto;
+	bottom:0;
+}
+.main #active_left_nav .control_bar{
+	background: #f0f0f0;
+}
+.main #active_right_content .control_bar{
+	background: #f5f5f5;
+	border-top: 1px solid #fff;
+}
+.main #active_content.actions_inside{
+	bottom: 0;
+}
+/*Generic Control bar Styles, applies to all containers*/
+.main .content_place{
+	position: absolute;
+	top: 0;
+	bottom: 31px;
+	left: 0;
+	right: 0;
+	padding: 4px;
+	border-bottom: 1px solid #aaa;
+	overflow: auto;
+}
+/*.main #active_right_content .content_place{
+	border-bottom: 1px dotted #aaa;
+}*/
+.main .control_bar{
+	height: 26px;
+	padding: 2px 4px;
+	position: absolute;
+	bottom:0;
+	border-top: 1px solid #fff;
+	left: 0;
+	right: 0;
+}
+/* @end */
+
+ 
+/* @group Menu Nav */
+ul.nav{
+	/*clear: both;*/
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #444;
+}
+ul.nav li{
+	float: left;
+	
+}
+ul.nav li a{
+	color: #aaa;
+	font-size: 14px;
+	text-shadow: #000000 0 1px 0;
+	padding: 13px 12px 9px 8px;
+	display: block;
+	height: 18px;
+	line-height: 18px;
+	border-right: 1px solid #495055;
+	border-left: 1px solid #000;
+}
+ul.nav li a img{
+	margin-bottom: -2px;
+}
+ul.nav li a:hover{
+	color: #fff;
+	text-shadow: #000000 0 1px 0;
+}
+ul.nav li.current_page a{
+	color: #fff;
+	font-size: 14px;
+	background: url(images/controls.png) 0 -3696px repeat-x;
+	text-shadow: #000000 0 1px 0;
+	padding: 12px 14px 10px 12px;
+	display: block;
+	border-right: 1px solid #495055;
+	border-left: 1px solid #000;
+}
+
+
+.login_info{
+	color: #ddd;
+	padding-right: 10px;
+}
+.login_info a.logout{
+	color: #eee;
+	margin-left: 10px;
+	padding-left:12px;
+	background: url(images/logout.png) no-repeat 0px 3px;
+}
+/* @end */
+
+ 
+ 
+/* @group Buttons */
+.main .cbtn{
+	border: 1px solid #7a7a7a;
+	background: #f6f6f6 url(images/button.png) center top;
+	color: #666;
+	padding: 3px 10px;
+}
+.main .cbtn:hover{
+	border: 1px solid #555;
+	background: #f6f6f6 url(images/button.png) center -26px;
+	color: #333;
+}
+.main .cbtn:active{
+	border: 1px solid #555;
+	background: #f6f6f6 url(images/button.png) center -53px;
+	color: #555;
+}
+.main .btn_txt{
+	float: left;
+	padding-top: 2px;
+	font-size: 12px;
+	display: block;
+	height: 17px;
+	padding-bottom: 2px;
+	background: url(images/controls.png) repeat-x 0 -1152px;
+}
+.main a.btn{
+	text-decoration: none !important;
+	color: #777 !important;
+	background: url(images/controls.png) no-repeat 100% -360px;
+	padding-right: 12px;
+	padding-left: 2px;
+	margin: 2px 3px 2px 0; /*prev: 0 3px 0 0*/
+	height: 24px;
+	display: -moz-inline-stack;
+	display: inline-block;	
+	outline: none;
+	cursor: not-allowed;
+	text-shadow: #fff 0 1px 0;
+}
+.main a.btn span.inner-btn{
+	background: url(images/controls.png) no-repeat left -24px;
+	height: 24px;
+	display: block;
+	padding-left: 4px;
+}
+.main a.btn span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -216px;
+	padding: 3px 0 7px;
+	display: block;
+	min-width:48px;
+	text-align: center;
+	margin-left: 8px;
+	height: 14px;
+}
+/*.main a.btn:hover, .main a.main_btn{
+	background-position:100% -384px;
+}
+.main a.btn:hover span.inner-btn, .main a.main_btn span.inner-btn{
+	background-position: left -48px;
+}
+.main a.btn:hover span.inner-btn span.label, .main a.main_btn span.inner-btn span.label{
+	background-position: left -240px;
+	color: #000;
+	text-shadow: silver 0 1px 0;
+}
+.main a.btn:active, .main a.btn_press:hover  {
+	background-position:100% -408px;
+}
+.main a.btn:active span.inner-btn, .main a.btn_press:hover span.inner-btn{
+	background-position: left -72px;
+}
+.main a.btn:active span.inner-btn span.label, .main a.btn_press:hover span.inner-btn span.label{
+	background-position: left -264px;
+	color: #222;
+	text-shadow: #aaa 0 1px 0;
+}*/
+ 
+/* @group Active Button Styles */
+.main a.active{
+	text-decoration: none !important;
+	color: #444 !important;
+	background: url(images/controls.png) no-repeat 100% -336px;
+	cursor: default;
+	text-shadow: #fff 0 1px 0;
+}
+.main a.active span.inner-btn{
+	background: url(images/controls.png) no-repeat left top;
+}
+.main a.active span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -192px;
+}
+.main a.active:hover, .main a.main_btn{
+	background-position:100% -384px;
+}
+.main a.active:hover span.inner-btn, .main a.main_btn span.inner-btn{
+	background-position: left -48px;
+}
+.main a.active:hover span.inner-btn span.label, .main a.main_btn span.inner-btn span.label{
+	background-position: left -240px;
+	color: #000;
+	text-shadow: silver 0 1px 0;
+}
+.main a.active:active, .main a.active.btn_press:hover  {
+	background-position:100% -408px;
+}
+.main a.active:active span.inner-btn, .main a.active.btn_press:hover span.inner-btn{
+	background-position: left -72px;
+}
+.main a.active:active span.inner-btn span.label, .main a.active.btn_press:hover span.inner-btn span.label{
+	background-position: left -264px;
+	color: #222;
+	text-shadow: #aaa 0 1px 0;
+}
+ 
+ 
+ 
+/* @end */
+ 
+.main a.smallbtn{
+	text-decoration: none !important;
+	color: #777 !important;
+	background: url(images/controls.png) no-repeat 100% -1800px;
+	padding-right: 11px;
+	padding-left: 2px;
+	margin-right: 3px;
+	height: 19px;
+	display: -moz-inline-stack;
+	display: inline-block;	
+	outline: none;
+	font-size: 12px;
+	cursor: not-allowed;
+	text-shadow: #fff 0 1px 0;
+}
+.main a.smallbtn span.inner-btn{
+	background: url(images/controls.png) no-repeat left -1656px;
+	height: 24px;
+	display: block;
+	padding-left: 3px;
+}
+.main a.smallbtn span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -1176px;
+	padding: 2px 0 7px;
+	display: block;
+	min-width:48px;
+	text-align: center;
+	margin-left: 8px;
+	height: 14px;
+}
+/* @group Active Button Styles */
+.main a.smallbtn.smallactive{
+	text-decoration: none !important;
+	color: #444 !important;
+	background: url(images/controls.png) no-repeat 100% -1776px;
+	cursor: default;
+	text-shadow: #fff 0 1px 0;
+}
+ 
+.main a.smallbtn.smallactive{
+	text-decoration: none !important;
+	color: #444 !important;
+	background: url(images/controls.png) no-repeat 100% -1776px;
+	cursor: default;
+	text-shadow: #fff 0 1px 0;
+}
+.main a.smallbtn.smallactive span.inner-btn{
+	background: url(images/controls.png) no-repeat left -1632px;
+}
+.main a.smallbtn.smallactive span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -1152px;
+}
+.main a.smallbtn.smallactive:hover, .main a.smallmain_btn{
+	background-position:100% -1824px;
+}
+.main a.smallbtn.smallactive:hover span.inner-btn, .main a.smallbtn.main_btn span.inner-btn{
+	background-position: left -1680px;
+}
+.main a.smallbtn.smallactive:hover span.inner-btn span.label, .main a.smallbtn.main_btn span.inner-btn span.label{
+	background-position: left -1200px;
+	color: #000;
+	text-shadow: silver 0 1px 0;
+}
+.main a.smallbtn.smallactive:active, .main a.smallbtn.smallactive.btn_press:hover  {
+	background-position:100% -1824px;
+}
+.main a.smallbtn.smallactive:active span.inner-btn, .main a.smallbtn.smallactive.btn_press:hover span.inner-btn{
+	background-position: left -1680px;
+}
+.main a.smallbtn.smallactive:active span.inner-btn span.label, .main a.smallbtn.smallactive.btn_press:hover span.inner-btn span.label{
+	background-position: left -1200px;
+	color: #222;
+	text-shadow: #aaa 0 1px 0;
+}
+ 
+ 
+.main a.smallbtn.smallactive span.inner-btn{
+	background: url(images/controls.png) no-repeat left -1632px;
+}
+.main a.smallbtn.smallactive span.inner-btn span.label{
+	background: url(images/controls.png) repeat-x left -1152px;
+}
+.main a.smallbtn.smallactive:hover, .main a.smallbtn.main_btn{
+	background-position:100% -1824px;
+}
+.main a.smallbtn.smallactive:hover span.inner-btn, .main a.smallbtn.main_btn span.inner-btn{
+	background-position: left -1680px;
+}
+.main a.smallbtn.smallactive:hover span.inner-btn span.label, .main a.smallbtn.main_btn span.inner-btn span.label{
+	background-position: left -1200px;
+	color: #000;
+	text-shadow: silver 0 1px 0;
+}
+.main a.smallbtn.smallactive:active, .main a.smallbtn.smallactive.btn_press:hover  {
+	background-position:100% -1848px;
+}
+.main a.smallbtn.smallactive:active span.inner-btn, .main a.smallbtn.smallactive.btn_press:hover span.inner-btn{
+	background-position: left -1704px;
+}
+.main a.smallbtn.smallactive:active span.inner-btn span.label, .main a.smallbtn.smallactive.btn_press:hover span.inner-btn span.label{
+	background-position: left -1224px;
+	color: #222;
+	text-shadow: #aaa 0 1px 0;
+}
+ 
+.main .block_load{
+	color:#333;
+	font-size:20px;
+	min-width: 300px;
+	font-weight: bold;
+	background: #f0f0f0;
+	padding: 10px 20px;
+	/*white-space: nowrap;*/
+	overflow: hidden;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #999;
+	text-shadow: #fff 0 1px 0;
+}
+.main h2.block_load{
+	display: -moz-inline-stack;
+	display: inline-block;	
+	font-size: 16px;
+	white-space: nowrap;
+	max-width:350px !ie;
+	overflow: hidden;
+}
+ 
+.load_over{
+	overflow: hidden;
+}
+.main .block_load img{
+	margin-bottom: -6px;
+}
+.main h2.block_load img{
+	margin-bottom: -8px;
+}
+/* @end */
+ 
+ 
+.prev_nextWrap{
+	width: 400px;
+	/*float: right;*/
+	position: relative;
+	padding:3px 8px 1px;
+	float: right;
+	text-align: right;
+}
+.prev_nextWrap span, .prev_nextWrap a{
+	display: inline;
+	margin: auto;
+	padding: 0;
+}
+.prev_nextWrap span.fl{
+	color: #777;
+	margin-top: -1px;
+}
+.prev_nextWrap span.fl select{
+	color: #777;
+	font-size: 11px;
+	background: #efefef;
+	border: 1px solid #999;
+	margin: -2px 2px;
+}
+.prev_nextWrap img{
+	margin-top: -2px;
+}
+.prev img{
+	background: url(images/controls.png) left -5344px;
+	margin-right: -3px;
+	margin-left: -2px;
+	margin-bottom: -3px;
+}
+.prev a.active img{
+	background-position: left -5280px;
+}
+.prev a.mdown img{
+	background-position: left -5312px;
+}
+.prev_disabled{
+	background: url(images/controls.png) left -5344px;
+	cursor: default;
+}
+.next img{
+	background: url(images/controls.png) left -5440px;
+	margin-right: -3px;
+	margin-left: -3px;
+	margin-bottom: -3px;
+}
+.next a.active img{
+	background: url(images/controls.png) left -5376px;
+	cursor: default;
+}
+.next a.mdown img{
+	background-position: left -5408px;
+}
+/* @end */

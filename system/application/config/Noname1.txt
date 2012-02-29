@@ -1,0 +1,2 @@
+ <?php echo base_url(); ?>index.php/courses/creation 
+<?php echo base_url(); ?>index.php/courses/creation

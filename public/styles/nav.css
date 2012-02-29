@@ -1,0 +1,199 @@
+ 
+ 
+/* @group Navigation */
+ 
+.main #header #prim_nav{
+	height:51px;
+}
+.main #header #userinfo{
+	float:right;
+	width:210px;
+	height:41px;
+	padding:4px 10px 6px 5px;
+	text-align:right;
+	color:#ccc;
+	font-size:12px;
+}
+.main #header #userinfo ul{
+	margin:10px 0 0;
+	/*margin-top: 5px !ie;*/
+	padding:0;
+	color:#fff;
+	list-style:none;
+}
+.main #header #userinfo ul li{
+	display:inline;
+	margin-left:4px;
+}
+.main #header #userinfo ul li a{
+	color:#eee;
+	border-bottom:1px transparent solid;
+}
+.main #header #userinfo ul li.logout_btn a{
+	padding-left:12px;
+	background: url(images/logout.png) no-repeat 0px 3px;
+}
+.main #header #userinfo ul li a:hover{
+	color:#fff;
+	border-bottom:1px #fff dotted;
+}
+.main #header #prim_nav ul{
+	list-style:none;
+	margin:0;
+	padding:30px 0 0;
+	font-size:16px;
+}
+.main #header #prim_nav ul li{
+	float:left;
+	_display:inline;
+	margin:0 10px 0 10px;
+	padding-left:5px;
+	padding-top: 15px;
+}
+.main #header #prim_nav ul li span{
+	display:block;
+}
+.main #header #prim_nav ul li a{
+	display:block;
+	color:#888;
+}
+.main #header #prim_nav ul li a:hover{
+	color:#fff;
+}
+.main #header #prim_nav ul li.activ_nav{
+	padding: 0;
+	margin: 0;
+}
+.main #header #prim_nav ul li.activ_nav a{
+	color: #222;
+	background:url(../images/global/pressed_btn.png) no-repeat right center;
+	padding:4px 10px 4px 0;
+	cursor:default;
+}
+.main #header #prim_nav ul li a img{
+	background-image: url(images/icons/icon_sprites.png);
+	background-repeat: no-repeat;
+	margin-top:1px;
+	float:left;
+}
+.main #header #prim_nav ul li.activ_nav > a.jb_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background:url(images/icons/icon_sprites.png) no-repeat left -287px;	
+}
+.main #header #prim_nav ul li.activ_nav > a.cont_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background:url(images/icons/icon_sprites.png) no-repeat left -25px;
+}
+.main #header #prim_nav ul li.activ_nav > a.stat_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background:url(images/icons/icon_sprites.png) no-repeat left -64px;
+}
+.main #header #prim_nav ul li.activ_nav > a.ships_tab > span.inner_prim_nav > span.prim_nav_label > img{
+	background:url(images/icons/icon_sprites.png) no-repeat left -243px;
+}
+ 
+#prim_nav ul li.shipping_nav a img {
+background-position:0 -218px;
+}
+#prim_nav ul li.shipping_nav a:hover img{
+	background-position: 0 -242px;
+}
+#prim_nav ul li.contacts_nav a img{
+	background-position: 0 -2px;
+}
+#prim_nav ul li.contacts_nav a:hover img{
+	background-position: 0 -25px;
+}
+#prim_nav ul li.calender_nav a img{
+	background-position: 0 -171px;
+}
+#prim_nav ul li.calender_nav a:hover img{
+	background-position: 0 -195px;
+}
+#prim_nav ul li.allrfqs a img{
+	background-position: 0 -265px;
+}
+#prim_nav ul li.allrfqs a:hover img{
+	background-position: 0 -287px;
+}
+#prim_nav ul li.allrfqs a:hover img, #prim_nav ul li.activ_nav a img{
+	/*background-position: 0 -287px;*/
+}
+#prim_nav ul li.statistics_nav a img{
+	background-position: 0 -43px;
+}
+#prim_nav ul li.statistics_nav a:hover img{
+	background-position: 0 -63px;
+}
+.main #header #prim_nav ul li.activ_nav a{
+	background:url(images/header_tabs1.png) no-repeat right -110px;
+	padding: 0 23px 0 0;
+}
+#prim_nav ul li.activ_nav a span.inner_prim_nav{
+	padding-left:23px;	
+	background:url(images/header_tabs1.png) no-repeat left -8px;
+}
+#prim_nav ul li.activ_nav a span.prim_nav_label{
+	background:url(images/header_tabs1.png) repeat-x left -56px;
+	padding:14px 2px 6px; 
+}
+/* temp for merging styles */
+/*.main #header #prim_nav ul li .contacts_nav img{
+	background-image: url(images/icons/contacts.png);
+	padding-left: 17px;
+}
+.main #header #prim_nav ul li span.calender_nav{
+	background-image: url(images/icons/calender.png);
+	padding-left: 17px;
+}
+.main #header #prim_nav ul li span.allrfqs{
+	background-image: url(images/icons/sheet.png);
+	padding-left:17px
+	}
+.main #header #prim_nav ul li span.statistics_nav{
+	background-image: url(images/icons/statisctics.png);
+	padding-left: 17px;
+}
+.main #header #prim_nav ul li span.shipping_nav{
+	background-image: url(images/icons/ship.png);
+	padding-left: 17px;
+ 
+}
+.main #header #prim_nav ul li.activ_nav a:hover{
+	background-image:url(../images/global/pressed_btn.png);
+}
+.main #header #prim_nav ul li a img{
+	background-position:left 1px;
+	background-repeat:no-repeat;
+	background-position:left 4px !ie;
+} 
+.main #header #prim_nav ul li span.form_nav{
+background-image: url(images/icons/forms_roll.png);
+padding-left: 17px;
+}
+ 
+.main #header #prim_nav ul li span.user_nav{
+background-image: url(images/icons/user_roll.png);
+padding-left: 17px;
+}
+.main #header #prim_nav ul li span.stat_nav{
+background-image: url(images/icons/stat_roll.png);
+padding-left: 17px;
+}
+.main #header #prim_nav ul li span.dept_nav{
+background-image: url(images/icons/dept_roll.png);
+padding-left: 17px;
+}
+ 
+.main #header #prim_nav ul li span.profile_nav{
+background-image: url(images/icons/profile_roll.png);
+padding-left: 17px;
+}
+.main #header #prim_nav ul li span.quote_nav{
+background-image: url(images/icons/quote_roll.png);
+padding-left: 17px;
+}
+ 
+.main #header #prim_nav ul li span:hover, .main #header #prim_nav ul li.activ_nav span{
+  background-position: left bottom;
+}*/
+ 
+ 
+/* @end */

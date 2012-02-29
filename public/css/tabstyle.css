@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.textheadline, .main .textheadline{
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+height:30px;
+background-color:#f4f4f4;
+font-weight:bold;
+text-align:left;
+color:#444;
+}
+.textheadline2, .main .textheadline2{
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+width:128px;
+font-weight:bold;
+text-align:left;
+color:#333;
+}
+.main .text_quote, .text_quote{
+text-align:left;
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:bold;
+/*color:#333;*/
+}
+.color{
+color:#FF0000;
+}
+.main .smalltext, .smalltext{
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+text-align:left;
+font-weight:normal;
+color:#333;
+}
+.headtext, .main .headtext{
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:bold;
+color:#333
+}
+td a{
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:normal;
+color:#333;
+text-decoration:none;
+}
+input{
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+color:#333;
+}
+select {
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+color:#333;
+}
+.main .red_h, .red_h{
+	color: #af0000;
+}
+

@@ -1,0 +1,492 @@
+.app .forms_list, .app .form_bars, .app .admin_form_bars, .app .admin_form_bars > li.has_children .app .form_sep ul.form_details{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.app .form_bars > li{
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.app .forms_list > li{
+	margin-bottom: 6px;
+	padding: 5px 6px;
+	min-height: 20px;
+}
+.app .forms_list > li > label{
+	display: block;
+	float: left;
+	/*padding-top: 6px;
+	margin-top: 0.3em;*/
+	width: 100px;
+	color: #777;
+}
+.app .forms_list > li > input[type="text"], .forms_list > li > select{
+	/*margin-top: 4px !important;*/
+}
+.app .forms_list > li > .r_label{
+	color: #333;
+	width: auto;
+}
+.app .loud label{
+	color:#000;
+}
+.app .forms_list .ro{
+	 border-bottom: 1px dotted #565656;
+}
+.app .forms_list .ro .a_link{
+	font-weight: bold;
+	color: #8196ab;
+}
+.app .forms_list .ro .a_link:hover{
+	color: #3a4b5e;
+}
+
+.app .form_bars > li{
+	margin: 2px 0 4px;
+	max-width: 764px;
+	min-width: 560px;
+	padding: 2px 4px 2px 6px;
+	height: 26px; /*144px edit_mode*/
+	background: #f0f0f0;
+	border: 1px solid #c2c2c2;
+	text-shadow: #fff 0 1px 0;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+}
+.app .form_bars > li.readonly, .app .form_bars > li:hover.readonly{
+	height: 154px;
+}
+.app .form_bars > li.edit_mode, .app .form_bars > li:hover.edit_mode{
+	height: 154px;
+	background-color: #ffffe8;
+}
+
+.app .form_bars > li:hover{
+	background: #f6f6f6;
+}
+.app .form_bars > li  div{
+	margin: 4px 0 0;
+}
+.app .form_bars > li  img.arr{
+	position: absolute;
+	left: 0;
+	top: 3px;
+	width: 12px;
+	height: 12px;
+	background: transparent url(images/controls.png) repeat scroll 0 -4032px;
+}
+.app .form_bars > li.edit_mode  img.arr, .form_bars > li.readonly  img.arr{
+	background-position: 0 -4048px;;
+}
+.app .form_bars > li  .bar_label{
+	position: absolute;
+	left: 10px;
+	width: 220px;
+	padding: 0 0 0 12px;
+}
+.app .form_bars.no_arr > li  .bar_label{
+	padding: 0;
+}
+.app .form_bars.no_arr > li  .bar_label{
+	left: 10px;
+	width: 240px;
+}
+.app .form_bars > li .bar_label > span{
+	display: inline-block;
+	height: 18px;	
+	width: 200px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.app .form_bars > li.edit_mode  .bar_label > span{
+	display: none;
+}
+.app .form_bars li  .bar_label > input.label_txt{
+	display: none;
+}
+.app .form_bars > li.edit_mode  .bar_label > input.label_txt{
+	width: 270px;
+	display: block;
+}
+.app .form_bars > li  .short_desc{
+	font-size: 12px;
+	color: #8393a5;
+	width: 170px;
+	height: 18px;
+	position: absolute;
+	left: 250px;
+	overflow: hidden;	
+	display: none;
+}
+.app .form_bars > li.edit_mode  .short_desc{
+	display: none;
+}
+.app .form_bars > li  .bar_tools{
+	font-size: 12px;
+	position: absolute;
+	right: 6px;
+	/*width: 300px;*/
+	left: 320px;
+	text-align: right;	
+}
+.app .form_bars > li  .bar_tools .ai_status{
+	/*border: 1px soid #999;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-box-shadow: 0 1px 1px #fff;
+	-webkit-box-shadow: 0 1px 1px #fff;*/
+	padding: 2px 10px;
+	text-shadow: 0 1px 0 #fff;
+}
+.app .form_bars > li.edit_mode  .bar_tools .ai_status{
+	display: none;
+}
+.app .form_bars > li  .bar_tools .a{
+	/*background-color: #f5faf5;*/
+	color: #00490c;
+}
+.app .form_bars > li .bar_tools .i{
+	/*background-color: #f9f3f3;*/
+	color: #950000;
+}
+.app .form_bars > li .bar_tools .btn_bar{
+	position: absolute;
+	right: 0;
+	width: 160px;
+	margin: 0;
+}
+
+
+.app .form_bars > li  .bar_tools > a{
+	font-size: 13px;
+	color: #404040 !important;
+	line-height: 14px;
+}
+.app .form_bars  li  .bar_tools > ul{
+	margin-left: 10px;
+}
+
+.app .form_bars > li  .long_desc{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 40px;
+	display: none;
+}
+.app .form_bars > li.edit_mode  .long_desc, .app .form_bars > li.readonly  .long_desc{
+	display: block;
+}
+.app .form_bars  li  .long_desc > textarea{
+	width: 720px;
+	height: 80px;
+	margin: 0 10px;
+	display: none;
+}
+.app .form_bars  li.edit_mode  .long_desc > textarea{
+	display: block;
+}
+.form_bars > li.readonly  .long_desc .description_ro{
+	padding: 0 10px;
+	color: #000;
+	height: 60px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.app .form_bars  li.edit_mode  .long_desc .description_ro{
+	display: none;
+}
+.app .form_bars > li  .long_desc > .small_description{
+	margin-left: 10px; 
+	font-size: 12px; 
+	color: #aaa;
+}
+
+
+.app .forms_list input.email, .forms_list input.wider{
+	width: 340px;
+}
+.app .forms_list input.wide{
+	width: 300px;
+}
+.app .forms_list input.slim{
+	width: 140px;
+}
+.app .forms_list input.med_wide, .app .forms_list select.med_wide{
+	width: 190px;
+}
+.app .forms_list input.number{
+	width: 60px;
+}
+
+
+/****/
+.app .form_bars .bar_label img.up{
+	background: url(images/controls.png) 0 -4032px;
+	float: left;
+	margin-top: 3px;
+}
+.app .form_bars .bar_label img.down{
+	background: url(images/controls.png) 0 -4048px;
+	float: left;
+	margin-top: 3px;
+}
+.app .form_bars .bar_tools{
+	font-size: 11px;
+}
+.app .form_bars .child_tools{
+	clear: both;
+	margin: 0 2px 2px 0px;
+	display: block;
+	border: 1px solid #dedede;
+}
+.app .form_bars .child_tools li{
+	padding: 4px 8px;
+	font-size: 12px;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ededed;
+}
+
+
+/**admin_form_bars**/
+.app ul.admin_form_bars{
+	margin: 0px 0px 10px;;
+}
+.admin_form_bars > li{
+	margin: 2px 0px 4px;
+	max-width: 500px;
+	min-width: 260px;
+	padding: 0px 4px;
+	height: 26px;
+	background: #f0f0f0;
+	border: 1px solid #f00;
+	text-shadow: #fff 0 1px 0;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+}
+.app .department_contentarea.alt .admin_form_bars > li{
+	background: #f0f4f8;
+	border: 1px solid #dfe6ee;
+}
+.app .admin_form_bars > li.ext, .app .department_contentarea.alt .admin_form_bars > li.ext{
+	background: none;
+	border: none;
+}
+.app .admin_form_bars .bar_label, .admin_form_bars .bar_tools{
+	margin: 4px 0;
+	font-size: 12px;
+}
+
+
+/***...admin inner access form bars...***/
+.app ul.a_i_form_bars{
+	margin: 5px 0px 5px;
+	_padding: 10px 10px 0;
+}
+.app ul.a_i_form_bars.ext{
+	margin-top: 10px;
+}
+.a_i_form_bars > li{
+	margin: 2px 6px;
+	max-width: 500px;
+	min-width: 260px;
+	padding: 2px 4px;
+	_height: 26px;
+	background: #fff;
+	border: 1px dotted #fefefe;
+	text-shadow: #fff 0 1px 0;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+	border-bottom-color: #efefef;
+}
+.app .a_i_form_bars > li.ext{
+	background: #eee;
+	border: 0 none;
+	border-bottom: 1px dotted #efefef;
+	margin: 0px 6px 1px;
+}
+.app .new_dept .a_i_form_bars > li{
+	background: #fff3e8;
+	border: 1px dotted #fff3e8;
+	border-bottom-color: #f7e6d7;
+}
+.app .new_dept .a_i_form_bars > li.ext{
+	border-bottom-color: #f7e6d7;
+}
+/*.app .department_contentarea.alt .a_i_form_bars > li{
+	background: #f0f4f8;
+	border: 1px solid #dfe6ee;
+}*/
+
+
+.app .a_i_form_bars > li.ext{
+	background: #F6F6F6 none repeat scroll 0 0;
+}
+.app .access_region .bar_tools{
+	width: 138px;
+}
+.app .access_form_bar  .bar_tools{
+	width: 137px;
+}
+.app .a_i_form_bars .bar_label, .app .a_i_form_bars .bar_tools{
+	margin: 4px 0;
+	font-size: 12px;
+}
+.app .a_i_form_bars > li.ext > .bar_label{
+	width: 160px;
+}
+
+
+/**access form bars **/
+.app .access_form_bar, .admin_form_bars > li{
+	padding: 6px 10px;
+	margin: 0px 10px;
+	margin: 0px 10px -3px !ie;
+	/*background: #fcfcfc;
+	border: 1px solid #fafafa;*/
+	background: #f0f0f0;
+	border: 1px solid #c2c2c2;
+	height: 18px;
+	position: relative;
+	max-width: 400px;
+	min-width: 260px;
+	/*-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;*/
+	border-width: 1px 1px 0;
+}
+.admin_form_bars > li.l, .app .access_form_bar.l{
+	border-bottom: 1px solid #c2c2c2;
+}
+.access_form_bar .access_label{
+	font-weight: bold;
+}
+.access_form_bar .r_info_label, .admin_form_bars > li .r_info_label{
+	font-size: 11px;
+	color: #c0c0c0;
+	position: absolute;
+	right: 70px;
+	top: -16px;
+	border-width: 1px 1px 0 1px;
+}
+
+.form_bars > li:hover, .admin_form_bars > li:hover, .access_form_bar:hover, .app .a_i_form_bars > li:hover{
+	background: #fefef4;
+}
+
+.admin_form_bars > li .form_access_label{
+	
+}
+.admin_form_bars > li .form_access_label:hover{
+	color: #667281;
+}
+.admin_form_bars > li label > .view_children{
+	width: 10px;
+	height: 10px;
+	background: transparent url(images/controls.png) repeat scroll 0 -4032px;
+	cursor: default;
+}
+.admin_form_bars > li label > .expand{
+	background-position: 0 -4048px;
+}
+.admin_form_bars > li.has_children{
+	clear: both;
+	height: auto;
+}
+.admin_form_bars > li.has_children .child_form{
+	border: solid #dedede;
+	border-width: 1px 1px 0;
+	background: #fff;
+	margin: 4px 0;
+}
+.admin_form_bars > li.has_children .child_form ul.form_details > li{
+	padding: 5px 10px;
+	border-bottom: 1px solid #ececec;
+	font-size: 11px;
+	position: relative;
+}
+.admin_form_bars > li.has_children .child_form ul.form_details > li.l{
+	border-color: #dedede;
+}
+.admin_form_bars > li.has_children .child_form ul.form_details > li:hover{
+	background: #fafafa;
+}
+.admin_form_bars > li.has_children .child_form ul.form_details > li > img{
+	position: absolute;
+	width: 10px;
+	height: 11px;
+	background: transparent url(images/controls.png) no-repeat 0 -2808px;
+	top: 7px;
+}
+.admin_form_bars > li.has_children .child_form ul.form_details > li > img.a_0{
+	right: 50px;
+	background-position: 0 -2784px;
+}
+.admin_form_bars > li.has_children .child_form ul.form_details > li > img.a_1{
+	right: 101px;
+}
+.admin_form_bars > li.has_children .child_form ul.form_details > li > img.a_2{
+	right: 28px;
+}
+.admin_form_bars > li.has_children .child_form ul.form_details > li > img.active{
+	background-position: 0 -2784px;
+}
+.admin_form_bars > li.has_children .child_form ul.form_details > li > img.selected{
+	background-position: -16px -2784px;
+}
+
+
+
+/*********start: access form icons**********/
+.app #system_access .access_form_bar .access_label > img{
+	background: transparent url(images/icon_sprites.png) no-repeat 0 -127px;
+	width: 15px;
+	height: 16px;
+	float: left;
+	margin-right: 2px;
+}
+.app #system_access .access_form_bar:hover .access_label > img{
+	background-position: 0 -150px;
+}
+.app #system_access .access_form_bar .access_label > img.access_0{
+	background-position: 0 -739px;
+}
+.app #system_access .access_form_bar:hover .access_label > img.access_0{
+	background-position: 0 -761px;
+}
+.app #system_access .access_form_bar .access_label > img.access_1{
+	background-position: 0 -2px;
+}
+.app #system_access .access_form_bar:hover .access_label > img.access_1{
+	background-position: 0 -25px;
+}
+.app #system_access .access_form_bar .access_label > img.access_2{
+	background-position: 0 -220px;
+}
+.app #system_access .access_form_bar:hover .access_label > img.access_2{
+	background-position: 0 -244px;
+}
+.app #system_access .access_form_bar .access_label > img.access_3{
+	background-position: 0 -265px;
+}
+.app #system_access .access_form_bar:hover .access_label > img.access_3{
+	background-position: 0 -287px;
+}
+/*********end: access form icons**********/
+
+
+/*input*/
+.app .section input.number, .app input.number{
+	width: 70px;
+	text-align: right;
+}
+.app .section input.percent, .app input.percent{
+	width: 40px;
+	text-align: right;
+	padding-right: 16px !important;
+	background: url(images/percent_bg.png) no-repeat right;
+	border: 1px solid #9D9D9D;
+}
